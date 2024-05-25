@@ -3,9 +3,10 @@ import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
 import { Textarea } from '@/components/ui/textarea';
 import { cn } from '@/lib/utils';
-import { useState } from 'react';
+import { Fragment, useState } from 'react';
 import { Loader2, LoaderCircle, SendHorizonal } from 'lucide-react';
 import { completion } from '@/lib/ai';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 type Role = 'user' | 'assistant';
 
@@ -76,14 +77,10 @@ export function ChatbotMessageList({ messages }: ChatbotMessageListProps) {
       {messages.map((message, i) => {
         const isLast = i === messages.length - 1;
         return (
-          <>
-            <ChatbotMessage
-              key={message.content}
-              message={message.content}
-              role={message.role}
-            />
+          <Fragment key={message.content}>
+            <ChatbotMessage message={message.content} role={message.role} />
             {!isLast && <Separator />}
-          </>
+          </Fragment>
         );
       })}
     </div>
@@ -106,6 +103,15 @@ export function Chatbot() {
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
 
+  const handleKeyUp = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
+    const isSend = e.key === 'Enter' && (e.metaKey || e.ctrlKey);
+    console.log('pressed');
+    if (!isSend) {
+      return;
+    }
+    handleSend();
+  };
+
   const handleSend = async () => {
     setLoading(true);
     const userMessage: Message = {
@@ -123,33 +129,41 @@ export function Chatbot() {
           role: 'assistant',
         },
       ]);
+      setInput('');
     } finally {
       setLoading(false);
     }
   };
 
   return (
-    <div className='flex flex-col group'>
-      <ChatbotMessageList messages={messages} />
-      <Textarea
-        className='text-md mt-4'
-        placeholder='Type a message...'
-        onChange={(e) => setInput(e.currentTarget.value)}
-        value={input}
-      />
-      <Button
-        variant='secondary'
-        className='mt-2'
-        disabled={loading}
-        onClick={handleSend}
-      >
-        Send
-        {loading ? (
-          <Loader2 className='h-4 w-4 ml-2 transition-all animate-spin' />
-        ) : (
-          <SendHorizonal className='h-4 w-4 ml-2 text-cyan-700 group-hover:translate-x-1 transition-all' />
-        )}
-      </Button>
-    </div>
+    <Card>
+      <CardHeader>
+        <CardTitle>Chat</CardTitle>
+      </CardHeader>
+      <CardContent className='flex flex-col gap-2'>
+        <ChatbotMessageList messages={messages} />
+        <Textarea
+          className='text-md mt-4'
+          placeholder='Type a message... (⌘ ↵ to send)'
+          onChange={(e) => setInput(e.currentTarget.value)}
+          onKeyDown={handleKeyUp}
+          disabled={loading}
+          value={input}
+        />
+        <Button
+          variant='secondary'
+          className='group'
+          disabled={loading}
+          onClick={handleSend}
+        >
+          Send
+          {loading ? (
+            <Loader2 className='h-4 w-4 ml-2 transition-all animate-spin' />
+          ) : (
+            <SendHorizonal className='h-4 w-4 ml-2 text-cyan-700 group-hover:translate-x-1 transition-all' />
+          )}
+        </Button>
+      </CardContent>
+    </Card>
   );
 }
