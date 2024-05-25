@@ -1,9 +1,3 @@
-/**
- * mik has touched the code here a little.
- * line 144: 600px -> 440px so i could fit the component in the page
- * line 289-300: added code to toggle chat visiblity
- */
-
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import {
@@ -21,14 +15,14 @@ import { cn } from "@/lib/utils";
 import { ExternalLink, Loader2, SendHorizonal } from "lucide-react";
 import { Fragment, useState } from "react";
 import { IoIosChatboxes } from "react-icons/io";
-import { Remark } from 'react-remark';
+import { Remark } from "react-remark";
 
 type Role = "user" | "assistant";
 
 type ChatbotMessageProps = {
     content: string;
     role?: Role;
-  loading?: boolean;
+    loading?: boolean;
 };
 
 type SourceCardProps = {
@@ -101,24 +95,26 @@ export function LoadingChatbotMessage() {
 export function ChatbotMessage({
     content: message,
     role = "assistant",
-  loading = false,
+    loading = false,
 }: ChatbotMessageProps) {
-  return (
-    <div
-      className={cn(
-        'flex gap-4 items-start px-4 py-2',
-        role === 'assistant' && 'bg-muted'
-      )}
-    >
-      <RoleAvatar role={role} />
-      <div>
-        {loading && <Loader2 className='h-8 w-8 animate-spin text-cyan-700' />}
-        <article className='text-wrap prose'>
-          <Remark>{message}</Remark>
-        </article>
-      </div>
-    </div>
-  );
+    return (
+        <div
+            className={cn(
+                "flex gap-4 items-start px-4 py-2",
+                role === "assistant" && "bg-muted"
+            )}
+        >
+            <RoleAvatar role={role} />
+            <div>
+                {loading && (
+                    <Loader2 className="h-8 w-8 animate-spin text-cyan-700" />
+                )}
+                <article className="text-wrap prose">
+                    <Remark>{message}</Remark>
+                </article>
+            </div>
+        </div>
+    );
 }
 
 export type UserMessage = {
@@ -135,18 +131,18 @@ export type AssistantMessage = {
 export type Message = UserMessage | AssistantMessage;
 
 type ChatbotMessageListProps = {
-  messages: Message[];
-  loading?: boolean;
-  loadingMessage?: string;
+    messages: Message[];
+    loading?: boolean;
+    loadingMessage?: string;
 };
 
 /**
  * A list of chatbot mesasges
  */
 export function ChatbotMessageList({
-  messages,
-  loading = false,
-  loadingMessage = 'Hold on a sec...',
+    messages,
+    loading = false,
+    loadingMessage = "Hold on a sec...",
 }: ChatbotMessageListProps) {
     return (
         <ScrollArea className="flex flex-col gap-0 h-[420px]">
@@ -177,7 +173,7 @@ export function ChatbotMessageList({
                                 )}
                             >
                                 {sources.length > 0 && <div>Useful Links:</div>}
-                {sources.map((source) => {
+                                {sources.map((source) => {
                                     return (
                                         <SourceCard
                                             key={source.metadata.link}
@@ -195,42 +191,45 @@ export function ChatbotMessageList({
                     </Fragment>
                 );
             })}
-            {loading && <ChatbotMessage content={loadingMessage} loading={loading} />}
+            {loading && (
+                <ChatbotMessage content={loadingMessage} loading={loading} />
+            )}
         </ScrollArea>
     );
 }
 
 const initialMessages: Message[] = [
-  {
-    content:
-      "Hello there! I'm here to help you with any financial questions you have. What would you like to know about your retirement today?",
-    sources: [
-      {
-        pageContent: 'Make Financial Planning Simple with DBS NAV Planner',
-        metadata: {
-          type: 'dbs',
-          link: 'https://www.dbs.com.sg/personal/articles/nav/financial-planning/making-financial-planning-simple',
-        },
-      },
-      {
-        pageContent:
-          'Make cash top-ups and CPF transfers to your own or loved ones’ Special or Retirement Account to benefit from compounding interest and receive higher monthly payouts in retirement. You can also enjoy tax relief on cash top-ups made.',
-        // TODO add title
-        metadata: {
-          type: 'mymoneysense',
-          link: 'https://www.cpf.gov.sg/member/growing-your-savings/saving-more-with-cpf/top-up-to-enjoy-higher-retirement-payouts',
-        },
-      },
-    ],
-    role: 'assistant',
-  },
+    {
+        content:
+            "Hello there! I'm here to help you with any financial questions you have. What would you like to know about your retirement today?",
+        sources: [
+            {
+                pageContent:
+                    "Make Financial Planning Simple with DBS NAV Planner",
+                metadata: {
+                    type: "dbs",
+                    link: "https://www.dbs.com.sg/personal/articles/nav/financial-planning/making-financial-planning-simple",
+                },
+            },
+            {
+                pageContent:
+                    "Make cash top-ups and CPF transfers to your own or loved ones’ Special or Retirement Account to benefit from compounding interest and receive higher monthly payouts in retirement. You can also enjoy tax relief on cash top-ups made.",
+                // TODO add title
+                metadata: {
+                    type: "mymoneysense",
+                    link: "https://www.cpf.gov.sg/member/growing-your-savings/saving-more-with-cpf/top-up-to-enjoy-higher-retirement-payouts",
+                },
+            },
+        ],
+        role: "assistant",
+    },
 ];
 
 export function Chatbot() {
-  const [messages, setMessages] = useState<Message[]>(initialMessages);
-  const [input, setInput] = useState('');
-  const [loading, setLoading] = useState(false);
-  const [streamingMessage, setStreamingMessage] = useState('');
+    const [messages, setMessages] = useState<Message[]>(initialMessages);
+    const [input, setInput] = useState("");
+    const [loading, setLoading] = useState(false);
+    const [streamingMessage, setStreamingMessage] = useState("");
 
     const disabled = loading || !input;
 
@@ -253,7 +252,7 @@ export function Chatbot() {
 
         try {
             const sources = await callBackend(input);
-                  // TODO: replace wth actual metadata
+            // TODO: replace wth actual metadata
             const updatedContent = `User's Question: ${input}
 Relevant Sources:
 ${sources.map((source) => `${source.metadata}\n${source.pageContent}`)}
@@ -263,33 +262,33 @@ ${sources.map((source) => `${source.metadata}\n${source.pageContent}`)}
                 role: "user",
             };
 
-      let message = '';
+            let message = "";
 
-      const stream = await openai.chat.completions.create({
-        messages: [...messages, userMessageWithSources],
-        model: 'gpt-4o',
-        stream: true,
-      });
+            const stream = await openai.chat.completions.create({
+                messages: [...messages, userMessageWithSources],
+                model: "gpt-4o",
+                stream: true,
+            });
 
-      for await (const chunk of stream) {
-        message += chunk.choices[0].delta.content ?? '';
-        setStreamingMessage(message);
-      }
+            for await (const chunk of stream) {
+                message += chunk.choices[0].delta.content ?? "";
+                setStreamingMessage(message);
+            }
 
-      setStreamingMessage((m) => '');
-      setMessages((messages) => [
-        ...messages,
-        {
-          content: message,
-          sources,
-          role: 'assistant',
-        },
-      ]);
-      setInput('');
-    } finally {
-      setLoading(false);
-    }
-  };
+            setStreamingMessage((m) => "");
+            setMessages((messages) => [
+                ...messages,
+                {
+                    content: message,
+                    sources,
+                    role: "assistant",
+                },
+            ]);
+            setInput("");
+        } finally {
+            setLoading(false);
+        }
+    };
 
     const callBackend = async (query: string): Promise<Source[]> => {
         if (!query) return [];
@@ -312,35 +311,44 @@ ${sources.map((source) => `${source.metadata}\n${source.pageContent}`)}
         setIsChatOpen(!isChatOpen);
     };
 
-  return (
-    <Card>
-      <CardHeader>
-        <CardTitle>Chat</CardTitle>
-      </CardHeader>
-      <CardContent className='flex flex-col gap-2'>
-        <ChatbotMessageList messages={messages} loading={loading} />
-        <Textarea
-          className='text-md mt-4'
-          placeholder='Type a message... (⌘ ↵ to send)'
-          onChange={(e) => setInput(e.currentTarget.value)}
-          onKeyDown={handleKeyUp}
-          disabled={loading}
-          value={input}
-        />
-        <Button
-          variant='secondary'
-          className='group'
-          disabled={disabled}
-          onClick={handleSend}
+    return (
+        <div
+            className={`fixed top-4 right-4 flex flex-row bg-white rounded-md p-2 overflow-hidden transform ${
+                isChatOpen ? "translate-x-0" : "translate-x-[44.5rem]"
+            } transition duration-700 ease-in-out`}
         >
-          Send
-          {loading ? (
-            <Loader2 className='h-4 w-4 ml-2 transition-all animate-spin' />
-          ) : (
-            <SendHorizonal className='h-4 w-4 ml-2 text-cyan-700 group-hover:translate-x-1 transition-all' />
-          )}
-        </Button>
-      </CardContent>
-    </Card>
-  );
+            <Button className="mr-2" onClick={toggleChat}>
+                <IoIosChatboxes />
+            </Button>
+            <Card>
+                <CardHeader>
+                    <CardTitle>Chat</CardTitle>
+                </CardHeader>
+                <CardContent className="flex flex-col gap-2">
+                    <ChatbotMessageList messages={messages} loading={loading} />
+                    <Textarea
+                        className="text-md mt-4"
+                        placeholder="Type a message... (⌘ ↵ to send)"
+                        onChange={(e) => setInput(e.currentTarget.value)}
+                        onKeyDown={handleKeyUp}
+                        disabled={loading}
+                        value={input}
+                    />
+                    <Button
+                        variant="secondary"
+                        className="group"
+                        disabled={disabled}
+                        onClick={handleSend}
+                    >
+                        Send
+                        {loading ? (
+                            <Loader2 className="h-4 w-4 ml-2 transition-all animate-spin" />
+                        ) : (
+                            <SendHorizonal className="h-4 w-4 ml-2 text-cyan-700 group-hover:translate-x-1 transition-all" />
+                        )}
+                    </Button>
+                </CardContent>
+            </Card>
+        </div>
+    );
 }
