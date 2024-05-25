@@ -3,6 +3,55 @@ import { Button } from './button';
 import { useState } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { cn } from '@/lib/utils';
+import { Info, User, CircleHelp, PiggyBank, DollarSign } from 'lucide-react';
+import { Separator } from '@/components/ui/separator';
+
+type NavItemProps = {
+  icon: React.FC<{ className?: string }>;
+  href: string;
+  label: string;
+  small?: boolean;
+};
+
+function NavItem({ icon: Icon, href, label, small = false }: NavItemProps) {
+  if (small) {
+    return (
+      <Button
+        size={'icon'}
+        className={cn(
+          'hover:bg-muted-foreground transition-all py-4 px-4 ml-auto w-12 h-12'
+        )}
+      >
+        <Link
+          className={cn(
+            'text-muted text-lg font-normal flex items-center translate'
+          )}
+          href={href}
+        >
+          <Icon className={cn('text-background h-6 w-6')} />
+        </Link>
+      </Button>
+    );
+  }
+
+  return (
+    <div
+      className={cn(
+        'flex items-center justify-start hover:bg-muted-foreground w-full transition-all py-2 cursor-pointer px-2'
+      )}
+    >
+      <Link
+        className={cn(
+          'text-muted text-lg font-normal flex items-center translate'
+        )}
+        href={href}
+      >
+        <Icon className={cn('text-background mr-2 h-5 w-5')} />
+        <span>{label}</span>
+      </Link>
+    </div>
+  );
+}
 
 export default function Navbar() {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
@@ -25,26 +74,49 @@ export default function Navbar() {
               {isNavbarOpen ? <FaArrowLeft /> : <FaArrowRight />}
             </Button>
           </div>
-          <div className='flex flex-col gap-4 items-start'>
-            <Button variant={'link'}>
-              <Link className='text-gray-300' href='/about'>
-                About Us
-              </Link>
-            </Button>
-            <Button variant={'link'}>
-              <Link className='text-gray-300' href='/contact'>
-                Contact
-              </Link>
-            </Button>
-            <Button variant={'link'}>
-              <Link className='text-gray-300' href='/faq'>
-                FAQ
-              </Link>
-            </Button>
+          <h3 className='text-xl ml-2 text-muted-foreground'>General</h3>
+          <div className='flex flex-col gap-1 items-start mt-2'>
+            <NavItem
+              icon={PiggyBank}
+              href='/savings'
+              label='Savings'
+              small={!isNavbarOpen}
+            />
+            <NavItem
+              icon={DollarSign}
+              href='/invest'
+              label='Investments'
+              small={!isNavbarOpen}
+            />
           </div>
-        </div>
-        <div className='flex justify-center mb-4'>
-          <h3 className=''>navbar uwu</h3>
+          <Separator
+            className={cn(
+              'w-5/6 mx-auto bg-muted-foreground mb-6 mt-8 transition',
+              isNavbarOpen ? 'translate-x-0' : '-translate-x-20'
+            )}
+          />
+
+          <h3 className='text-xl ml-2 text-muted-foreground'>Help</h3>
+          <div className='flex flex-col gap-1 items-start mt-2'>
+            <NavItem
+              icon={Info}
+              href='/about'
+              label='About Us'
+              small={!isNavbarOpen}
+            />
+            <NavItem
+              icon={User}
+              href='/contact'
+              label='Contact'
+              small={!isNavbarOpen}
+            />
+            <NavItem
+              icon={CircleHelp}
+              href='/faq'
+              label='FAQ'
+              small={!isNavbarOpen}
+            />
+          </div>
         </div>
       </nav>
     </div>
