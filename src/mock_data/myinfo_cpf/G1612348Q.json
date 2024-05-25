@@ -1,0 +1,1322 @@
+{
+    "edulevel": {
+        "lastupdated": "2024-04-24",
+        "code": "",
+        "source": "2",
+        "classification": "C",
+        "desc": ""
+    },
+    "dialect": {
+        "lastupdated": "2024-04-24",
+        "code": "",
+        "source": "2",
+        "classification": "C",
+        "desc": ""
+    },
+    "occupation": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "ASSIST MANAGER"
+    },
+    "ltavocationallicences": {
+        "tdvl": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        },
+        "odvl": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        },
+        "bavl": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        },
+        "pdvl": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        },
+        "bdvl": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        }
+    },
+    "mobileno": {
+        "lastupdated": "2024-04-24",
+        "source": "4",
+        "classification": "C",
+        "areacode": {
+            "value": "65"
+        },
+        "prefix": {
+            "value": "+"
+        },
+        "nbr": {
+            "value": "97399245"
+        }
+    },
+    "uuid": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "9bcbe570-28d6-4d67-0a34-43ca8da6055a"
+    },
+    "mailadd": {
+        "country": {
+            "code": "",
+            "desc": ""
+        },
+        "unit": {
+            "value": ""
+        },
+        "street": {
+            "value": ""
+        },
+        "lastupdated": "2024-04-24",
+        "block": {
+            "value": ""
+        },
+        "source": "2",
+        "postal": {
+            "value": ""
+        },
+        "classification": "C",
+        "floor": {
+            "value": ""
+        },
+        "type": "SG",
+        "building": {
+            "value": ""
+        }
+    },
+    "marriedname": {
+        "lastupdated": "2024-04-24",
+        "source": "3",
+        "classification": "C",
+        "value": ""
+    },
+    "sponsoredchildrenrecords": [],
+    "academicqualifications": {
+        "lastupdated": "2024-04-24",
+        "source": "3",
+        "classification": "C",
+        "certificates": [],
+        "transcripts": [
+            {
+                "name": {
+                    "value": "SINGAPORE-CAMBRIDGE GENERAL CERTIFICATE OF EDUCATION NORMAL LEVEL"
+                },
+                "results": [
+                    {
+                        "subgrade": {
+                            "value": ""
+                        },
+                        "level": {
+                            "value": "NORMAL"
+                        },
+                        "subject": {
+                            "value": "Mathematics"
+                        },
+                        "subsubject": {
+                            "value": ""
+                        },
+                        "grade": {
+                            "value": "Six"
+                        }
+                    },
+                    {
+                        "subgrade": {
+                            "value": ""
+                        },
+                        "level": {
+                            "value": "NORMAL"
+                        },
+                        "subject": {
+                            "value": "English Language"
+                        },
+                        "subsubject": {
+                            "value": ""
+                        },
+                        "grade": {
+                            "value": "Five"
+                        }
+                    },
+                    {
+                        "subgrade": {
+                            "value": ""
+                        },
+                        "level": {
+                            "value": "NORMAL"
+                        },
+                        "subject": {
+                            "value": "Chinese"
+                        },
+                        "subsubject": {
+                            "value": ""
+                        },
+                        "grade": {
+                            "value": "Five"
+                        }
+                    },
+                    {
+                        "subgrade": {
+                            "value": ""
+                        },
+                        "level": {
+                            "value": "NORMAL"
+                        },
+                        "subject": {
+                            "value": "Science (Phy/Chem)"
+                        },
+                        "subsubject": {
+                            "value": ""
+                        },
+                        "grade": {
+                            "value": "Five"
+                        }
+                    },
+                    {
+                        "subgrade": {
+                            "value": ""
+                        },
+                        "level": {
+                            "value": "NORMAL"
+                        },
+                        "subject": {
+                            "value": "Combined Humanities"
+                        },
+                        "subsubject": {
+                            "value": ""
+                        },
+                        "grade": {
+                            "value": "Four"
+                        }
+                    },
+                    {
+                        "subgrade": {
+                            "value": ""
+                        },
+                        "level": {
+                            "value": "NORMAL"
+                        },
+                        "subject": {
+                            "value": "Design and Technology"
+                        },
+                        "subsubject": {
+                            "value": ""
+                        },
+                        "grade": {
+                            "value": "Three"
+                        }
+                    },
+                    {
+                        "subgrade": {
+                            "value": ""
+                        },
+                        "level": {
+                            "value": "NORMAL"
+                        },
+                        "subject": {
+                            "value": "Art"
+                        },
+                        "subsubject": {
+                            "value": ""
+                        },
+                        "grade": {
+                            "value": "Three"
+                        }
+                    }
+                ],
+                "yearattained": {
+                    "value": "1981"
+                },
+                "explanatorynotes": {
+                    "value": ""
+                }
+            },
+            {
+                "name": {
+                    "value": "SINGAPORE-CAMBRIDGE GENERAL CERTIFICATE OF EDUCATION ORDINARY LEVEL"
+                },
+                "results": [
+                    {
+                        "subgrade": {
+                            "value": ""
+                        },
+                        "level": {
+                            "value": "ORDINARY"
+                        },
+                        "subject": {
+                            "value": "Mathematics"
+                        },
+                        "subsubject": {
+                            "value": ""
+                        },
+                        "grade": {
+                            "value": "Two"
+                        }
+                    },
+                    {
+                        "subgrade": {
+                            "value": ""
+                        },
+                        "level": {
+                            "value": "ORDINARY"
+                        },
+                        "subject": {
+                            "value": "English Language"
+                        },
+                        "subsubject": {
+                            "value": ""
+                        },
+                        "grade": {
+                            "value": "Three"
+                        }
+                    },
+                    {
+                        "subgrade": {
+                            "value": ""
+                        },
+                        "level": {
+                            "value": "ORDINARY"
+                        },
+                        "subject": {
+                            "value": "Malay"
+                        },
+                        "subsubject": {
+                            "value": ""
+                        },
+                        "grade": {
+                            "value": "Two"
+                        }
+                    },
+                    {
+                        "subgrade": {
+                            "value": ""
+                        },
+                        "level": {
+                            "value": "ORDINARY"
+                        },
+                        "subject": {
+                            "value": "Science (Phy/Bio)"
+                        },
+                        "subsubject": {
+                            "value": ""
+                        },
+                        "grade": {
+                            "value": "Five"
+                        }
+                    },
+                    {
+                        "subgrade": {
+                            "value": ""
+                        },
+                        "level": {
+                            "value": "ORDINARY"
+                        },
+                        "subject": {
+                            "value": "Combined Humanities"
+                        },
+                        "subsubject": {
+                            "value": ""
+                        },
+                        "grade": {
+                            "value": "Three"
+                        }
+                    },
+                    {
+                        "subgrade": {
+                            "value": ""
+                        },
+                        "level": {
+                            "value": "ORDINARY"
+                        },
+                        "subject": {
+                            "value": "Principles of Accounts"
+                        },
+                        "subsubject": {
+                            "value": ""
+                        },
+                        "grade": {
+                            "value": "Two"
+                        }
+                    },
+                    {
+                        "subgrade": {
+                            "value": ""
+                        },
+                        "level": {
+                            "value": "ORDINARY"
+                        },
+                        "subject": {
+                            "value": "Art"
+                        },
+                        "subsubject": {
+                            "value": ""
+                        },
+                        "grade": {
+                            "value": "Four"
+                        }
+                    }
+                ],
+                "yearattained": {
+                    "value": "1905-06-29"
+                },
+                "explanatorynotes": {
+                    "value": ""
+                }
+            },
+            {
+                "name": {
+                    "value": "SINGAPORE-CAMBRIDGE GENERAL CERTIFICATE OF EDUCATION ADVANCED LEVEL"
+                },
+                "results": [
+                    {
+                        "subgrade": {
+                            "value": ""
+                        },
+                        "level": {
+                            "value": "ADVANCED"
+                        },
+                        "subject": {
+                            "value": "Mathematics"
+                        },
+                        "subsubject": {
+                            "value": ""
+                        },
+                        "grade": {
+                            "value": "D"
+                        }
+                    },
+                    {
+                        "subgrade": {
+                            "value": ""
+                        },
+                        "level": {
+                            "value": "ADVANCED"
+                        },
+                        "subject": {
+                            "value": "Project Work"
+                        },
+                        "subsubject": {
+                            "value": ""
+                        },
+                        "grade": {
+                            "value": "A"
+                        }
+                    },
+                    {
+                        "subgrade": {
+                            "value": ""
+                        },
+                        "level": {
+                            "value": "ADVANCED"
+                        },
+                        "subject": {
+                            "value": "Chinese"
+                        },
+                        "subsubject": {
+                            "value": ""
+                        },
+                        "grade": {
+                            "value": "A"
+                        }
+                    },
+                    {
+                        "subgrade": {
+                            "value": ""
+                        },
+                        "level": {
+                            "value": "ADVANCED"
+                        },
+                        "subject": {
+                            "value": "Chemistry"
+                        },
+                        "subsubject": {
+                            "value": ""
+                        },
+                        "grade": {
+                            "value": "C"
+                        }
+                    },
+                    {
+                        "subgrade": {
+                            "value": ""
+                        },
+                        "level": {
+                            "value": "ADVANCED"
+                        },
+                        "subject": {
+                            "value": "History"
+                        },
+                        "subsubject": {
+                            "value": ""
+                        },
+                        "grade": {
+                            "value": "B"
+                        }
+                    },
+                    {
+                        "subgrade": {
+                            "value": ""
+                        },
+                        "level": {
+                            "value": "ADVANCED"
+                        },
+                        "subject": {
+                            "value": "Economics"
+                        },
+                        "subsubject": {
+                            "value": ""
+                        },
+                        "grade": {
+                            "value": "B"
+                        }
+                    },
+                    {
+                        "subgrade": {
+                            "value": ""
+                        },
+                        "level": {
+                            "value": "ADVANCED"
+                        },
+                        "subject": {
+                            "value": "Art"
+                        },
+                        "subsubject": {
+                            "value": ""
+                        },
+                        "grade": {
+                            "value": "Pass"
+                        }
+                    }
+                ],
+                "yearattained": {
+                    "value": "2004"
+                },
+                "explanatorynotes": {
+                    "value": ""
+                }
+            }
+        ]
+    },
+    "divorcedate": {
+        "lastupdated": "2024-04-24",
+        "source": "3",
+        "classification": "C",
+        "value": ""
+    },
+    "marriagecertno": {
+        "lastupdated": "2024-04-24",
+        "source": "3",
+        "classification": "C",
+        "value": ""
+    },
+    "noahistory": {
+        "noas": [
+            {
+                "amount": {
+                    "value": 64400
+                },
+                "trade": {
+                    "value": 0
+                },
+                "interest": {
+                    "value": 0
+                },
+                "yearofassessment": {
+                    "value": "2023"
+                },
+                "taxclearance": {
+                    "value": "N"
+                },
+                "employment": {
+                    "value": 64400
+                },
+                "rent": {
+                    "value": 0
+                },
+                "category": {
+                    "value": "ORIGINAL"
+                }
+            },
+            {
+                "amount": {
+                    "value": 53700
+                },
+                "trade": {
+                    "value": 0
+                },
+                "interest": {
+                    "value": 0
+                },
+                "yearofassessment": {
+                    "value": "2022"
+                },
+                "taxclearance": {
+                    "value": "N"
+                },
+                "employment": {
+                    "value": 36112.8
+                },
+                "rent": {
+                    "value": 0
+                },
+                "category": {
+                    "value": "ORIGINAL"
+                }
+            }
+        ],
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C"
+    },
+    "ownerprivate": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": false
+    },
+    "cpfdependantprotectionscheme": {
+        "lastupdated": "2024-04-24",
+        "source": "3",
+        "classification": "C",
+        "unavailable": true
+    },
+    "cpfmedishieldlife": {
+        "lastupdated": "2024-04-24",
+        "source": "3",
+        "classification": "C",
+        "unavailable": true
+    },
+    "cpfemployers": {
+        "lastupdated": "2024-04-24",
+        "source": "3",
+        "classification": "C",
+        "unavailable": true
+    },
+    "housingtype": {
+        "lastupdated": "2024-04-24",
+        "code": "132",
+        "source": "1",
+        "classification": "C",
+        "desc": "EXECUTIVE CONDOMINIUM"
+    },
+    "passexpirydate": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "2035-12-31"
+    },
+    "homeno": {
+        "lastupdated": "2024-04-24",
+        "source": "2",
+        "classification": "C",
+        "areacode": {
+            "value": ""
+        },
+        "prefix": {
+            "value": ""
+        },
+        "nbr": {
+            "value": ""
+        }
+    },
+    "residentialstatus": {
+        "lastupdated": "2024-04-24",
+        "source": "3",
+        "code": "",
+        "classification": "C",
+        "desc": ""
+    },
+    "cpfbalances": {
+        "oa": {
+            "lastupdated": "2024-04-24",
+            "source": "3",
+            "classification": "C",
+            "unavailable": true
+        },
+        "ma": {
+            "lastupdated": "2024-04-24",
+            "source": "3",
+            "classification": "C",
+            "unavailable": true
+        },
+        "sa": {
+            "lastupdated": "2024-04-24",
+            "source": "3",
+            "classification": "C",
+            "unavailable": true
+        },
+        "ra": {
+            "lastupdated": "2024-04-24",
+            "source": "3",
+            "classification": "C",
+            "unavailable": true
+        }
+    },
+    "passportnumber": {
+        "lastupdated": "2024-04-24",
+        "source": "2",
+        "classification": "C",
+        "value": ""
+    },
+    "schoolname": {
+        "lastupdated": "2024-04-24",
+        "code": "",
+        "source": "2",
+        "classification": "C",
+        "desc": ""
+    },
+    "hanyupinyinaliasname": {
+        "lastupdated": "2024-04-24",
+        "source": "3",
+        "classification": "C",
+        "value": ""
+    },
+    "aliasname": {
+        "lastupdated": "2024-04-24",
+        "source": "3",
+        "classification": "C",
+        "value": ""
+    },
+    "passstatus": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "Live"
+    },
+    "nationality": {
+        "lastupdated": "2024-04-24",
+        "code": "TR",
+        "source": "1",
+        "classification": "C",
+        "desc": "TURK"
+    },
+    "dob": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "1992-02-01"
+    },
+    "pioneergen": {
+        "lastupdated": "2024-04-24",
+        "eligibility": {
+            "value": false
+        },
+        "source": "1",
+        "classification": "C"
+    },
+    "name": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "ALFONSO CRUZ"
+    },
+    "cpfhousingwithdrawal": {
+        "lastupdated": "2024-04-24",
+        "source": "3",
+        "classification": "C",
+        "unavailable": true
+    },
+    "noa": {
+        "amount": {
+            "value": 64400
+        },
+        "trade": {
+            "value": 0
+        },
+        "interest": {
+            "value": 0
+        },
+        "yearofassessment": {
+            "value": "2023"
+        },
+        "taxclearance": {
+            "value": "N"
+        },
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "employment": {
+            "value": 64400
+        },
+        "classification": "C",
+        "rent": {
+            "value": 0
+        },
+        "category": {
+            "value": "ORIGINAL"
+        }
+    },
+    "noa-basic": {
+        "yearofassessment": {
+            "value": "2023"
+        },
+        "lastupdated": "2024-04-24",
+        "amount": {
+            "value": 64400
+        },
+        "source": "1",
+        "classification": "C"
+    },
+    "passtype": {
+        "lastupdated": "2024-04-24",
+        "code": "RPass",
+        "source": "1",
+        "classification": "C",
+        "desc": "Work Permit"
+    },
+    "cpfinvestmentscheme": {
+        "oainvestmentamountavailable": {
+            "lastupdated": "2024-04-24",
+            "source": "3",
+            "classification": "C",
+            "value": ""
+        },
+        "sainvestmentamountavailable": {
+            "lastupdated": "2024-04-24",
+            "source": "3",
+            "classification": "C",
+            "value": ""
+        },
+        "sdsnetshareholdingqty": {
+            "lastupdated": "2024-04-24",
+            "source": "3",
+            "classification": "C",
+            "unavailable": true
+        },
+        "account": {
+            "lastupdated": "2024-04-24",
+            "source": "3",
+            "classification": "C",
+            "unavailable": true
+        },
+        "saqparticipationstatus": {
+            "lastupdated": "2024-04-24",
+            "source": "3",
+            "classification": "C",
+            "unavailable": true
+        }
+    },
+    "regadd": {
+        "country": {
+            "code": "SG",
+            "desc": "SINGAPORE"
+        },
+        "unit": {
+            "value": "219"
+        },
+        "street": {
+            "value": "TELOK BLANGAH STREET 31"
+        },
+        "lastupdated": "2024-04-24",
+        "block": {
+            "value": "92A"
+        },
+        "source": "1",
+        "postal": {
+            "value": "101092"
+        },
+        "classification": "C",
+        "floor": {
+            "value": "20"
+        },
+        "type": "SG",
+        "building": {
+            "value": "TELOK BLANGAH PARCVIEW"
+        }
+    },
+    "vehicles": [
+        {
+            "roadtaxexpirydate": {
+                "value": "2020-02-11"
+            },
+            "engineno": {
+                "value": "4G15PAU9168"
+            },
+            "attachment3": {
+                "value": ""
+            },
+            "effectiveownership": {
+                "value": "2013-05-19T10:45:50+08:00"
+            },
+            "scheme": {
+                "value": "OPC - OFF PEAK CAR"
+            },
+            "powerrate": {
+                "value": 0.7
+            },
+            "source": "1",
+            "primarycolour": {
+                "value": "BLUE"
+            },
+            "type": {
+                "value": "Motor Car"
+            },
+            "vehicleno": {
+                "value": "SDN7484U"
+            },
+            "coeexpirydate": {
+                "value": "2023-05-19"
+            },
+            "chassisno": {
+                "value": "WDB2100482B495144"
+            },
+            "noxemission": {
+                "value": 0.013456
+            },
+            "model": {
+                "value": "FORTUNER"
+            },
+            "openmarketvalue": {
+                "value": 19393.3
+            },
+            "coemission": {
+                "value": 0.153209
+            },
+            "attachment2": {
+                "value": ""
+            },
+            "attachment1": {
+                "value": "No Attachment"
+            },
+            "make": {
+                "value": "TOYOTA"
+            },
+            "pmemission": {
+                "value": 0.199
+            },
+            "originalregistrationdate": {
+                "value": "2013-05-19"
+            },
+            "yearofmanufacture": {
+                "value": "2013"
+            },
+            "vpc": {
+                "value": ""
+            },
+            "enginecapacity": {
+                "value": 1700
+            },
+            "classification": "C",
+            "nooftransfers": {
+                "value": 0
+            },
+            "propellant": {
+                "value": "Petrol"
+            },
+            "co2emission": {
+                "value": 146
+            },
+            "motorno": {
+                "value": ""
+            },
+            "minimumparfbenefit": {
+                "value": 2500
+            },
+            "thcemission": {
+                "value": 0.187765
+            },
+            "firstregistrationdate": {
+                "value": "2013-05-19"
+            },
+            "lastupdated": "2024-04-24",
+            "maximumunladenweight": {
+                "value": 1500
+            },
+            "coecategory": {
+                "value": "A - CAR UP TO 1600CC & 97KW (130BHP)"
+            },
+            "maximumladenweight": {
+                "value": 1900
+            },
+            "secondarycolour": {
+                "value": ""
+            },
+            "iulabelno": {
+                "value": "1021757258"
+            },
+            "quotapremium": {
+                "value": 20001
+            },
+            "status": {
+                "code": "2",
+                "desc": "DE-REGISTERED"
+            }
+        }
+    ],
+    "billadd": {
+        "country": {
+            "code": "",
+            "desc": ""
+        },
+        "unit": {
+            "value": ""
+        },
+        "street": {
+            "value": ""
+        },
+        "lastupdated": "2024-04-24",
+        "block": {
+            "value": ""
+        },
+        "source": "2",
+        "postal": {
+            "value": ""
+        },
+        "classification": "C",
+        "floor": {
+            "value": ""
+        },
+        "type": "SG",
+        "building": {
+            "value": ""
+        }
+    },
+    "hanyupinyinname": {
+        "lastupdated": "2024-04-24",
+        "source": "3",
+        "classification": "C",
+        "value": ""
+    },
+    "passportexpirydate": {
+        "lastupdated": "2024-04-24",
+        "source": "2",
+        "classification": "C",
+        "value": ""
+    },
+    "cpfrstuselftopupamount": {
+        "lastupdated": "2024-04-24",
+        "source": "3",
+        "classification": "C",
+        "unavailable": true
+    },
+    "uinfin": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "G1612348Q"
+    },
+    "gradyear": {
+        "lastupdated": "2024-04-24",
+        "source": "2",
+        "classification": "C",
+        "value": ""
+    },
+    "vocationallicences": [
+        {
+            "number": {
+                "value": "L/PS/109156/1642S"
+            },
+            "expirydate": {
+                "value": "2026-11-03"
+            },
+            "name": {
+                "value": "General Operator's Certificate of Competency"
+            },
+            "lastupdated": "2024-04-24",
+            "source": "3",
+            "classification": "C",
+            "issuanceagency": {
+                "value": "Info-communications Media Development Authority"
+            },
+            "issuedate": {
+                "value": "2008-12-04"
+            },
+            "status": {
+                "value": "ACT"
+            }
+        },
+        {
+            "number": {
+                "value": "S8103278Y"
+            },
+            "expirydate": {
+                "value": "2032-10-12"
+            },
+            "name": {
+                "value": "Restricted Operator's Certificate of Competency"
+            },
+            "lastupdated": "2024-04-24",
+            "source": "3",
+            "classification": "C",
+            "issuanceagency": {
+                "value": "Info-communications Media Development Authority"
+            },
+            "issuedate": {
+                "value": "2012-04-08"
+            },
+            "status": {
+                "value": "ACT"
+            }
+        }
+    ],
+    "cpfrstucurrentyeartaxrelief": {
+        "lastupdated": "2024-04-24",
+        "source": "3",
+        "classification": "C",
+        "unavailable": true
+    },
+    "householdincome": {
+        "lastupdated": "2024-04-24",
+        "high": {
+            "value": 0
+        },
+        "source": "2",
+        "classification": "C",
+        "low": {
+            "value": 0
+        }
+    },
+    "partialuinfin": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "*****348Q"
+    },
+    "merdekagen": {
+        "lastupdated": "2024-04-24",
+        "eligibility": {
+            "value": false
+        },
+        "source": "1",
+        "classification": "C"
+    },
+    "cpfmonthlypayouts": {
+        "lastupdated": "2024-04-24",
+        "source": "3",
+        "classification": "C",
+        "unavailable": true
+    },
+    "cpfcontributions": {
+        "lastupdated": "2024-04-24",
+        "source": "3",
+        "classification": "C",
+        "unavailable": true
+    },
+    "gstvoucher": {
+        "gstregular": {
+            "value": 0
+        },
+        "year": {
+            "value": ""
+        },
+        "lastupdated": "2024-04-24",
+        "exclusion": {
+            "value": ""
+        },
+        "gstmedisave": {
+            "value": 0
+        },
+        "gstspecial": {
+            "value": 0
+        },
+        "source": "1",
+        "classification": "C",
+        "signup": {
+            "value": ""
+        }
+    },
+    "email": {
+        "lastupdated": "2024-04-24",
+        "source": "4",
+        "classification": "C",
+        "value": "myinfotesting@gmail.com"
+    },
+    "noahistory-basic": {
+        "noas": [
+            {
+                "yearofassessment": {
+                    "value": "2023"
+                },
+                "amount": {
+                    "value": 64400
+                }
+            },
+            {
+                "yearofassessment": {
+                    "value": "2022"
+                },
+                "amount": {
+                    "value": 53700
+                }
+            }
+        ],
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C"
+    },
+    "birthcountry": {
+        "lastupdated": "2024-04-24",
+        "code": "TR",
+        "source": "1",
+        "classification": "C",
+        "desc": "T\u00dcRK\u0130YE"
+    },
+    "cpflife": {
+        "lastupdated": "2024-04-24",
+        "source": "3",
+        "classification": "C",
+        "unavailable": true
+    },
+    "race": {
+        "lastupdated": "2024-04-24",
+        "code": "EU",
+        "source": "1",
+        "classification": "C",
+        "desc": "EURASIAN"
+    },
+    "silversupport": {
+        "lastupdated": "2024-04-24",
+        "eligibility": {
+            "value": ""
+        },
+        "amount": {
+            "value": 0
+        },
+        "source": "1",
+        "classification": "C",
+        "year": {
+            "value": ""
+        }
+    },
+    "sex": {
+        "lastupdated": "2024-04-24",
+        "code": "M",
+        "source": "1",
+        "classification": "C",
+        "desc": "MALE"
+    },
+    "countryofmarriage": {
+        "lastupdated": "2024-04-24",
+        "code": "",
+        "source": "3",
+        "classification": "C",
+        "desc": ""
+    },
+    "hdbtype": {
+        "lastupdated": "2024-04-24",
+        "code": "",
+        "source": "1",
+        "classification": "C",
+        "desc": ""
+    },
+    "employmentsector": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "SERVICE"
+    },
+    "marriagedate": {
+        "lastupdated": "2024-04-24",
+        "source": "2",
+        "classification": "C",
+        "value": ""
+    },
+    "employment": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "UBI COMPUTER SYSTEMS PTE. LTD."
+    },
+    "hdbownership": [],
+    "marital": {
+        "lastupdated": "2024-04-24",
+        "code": "",
+        "source": "2",
+        "classification": "C",
+        "desc": ""
+    },
+    "cpfhomeprotectionscheme": {
+        "lastupdated": "2024-04-24",
+        "source": "3",
+        "classification": "C",
+        "unavailable": true
+    },
+    "childrenbirthrecords": [],
+    "drivinglicence": {
+        "revocation": {
+            "startdate": {
+                "value": ""
+            },
+            "enddate": {
+                "value": ""
+            }
+        },
+        "totaldemeritpoints": {
+            "value": 0
+        },
+        "disqualification": {
+            "startdate": {
+                "value": ""
+            },
+            "enddate": {
+                "value": ""
+            }
+        },
+        "qdl": {
+            "expirydate": {
+                "value": "2025-09-18"
+            },
+            "validity": {
+                "code": "V",
+                "desc": "VALID"
+            },
+            "classes": [
+                {
+                    "class": {
+                        "value": "3"
+                    },
+                    "issuedate": {
+                        "value": "2015-09-19"
+                    }
+                }
+            ]
+        },
+        "lastupdated": "2024-04-24",
+        "pdl": {
+            "expirydate": {
+                "value": ""
+            },
+            "validity": {
+                "code": "",
+                "desc": ""
+            },
+            "classes": []
+        },
+        "source": "1",
+        "classification": "C",
+        "comstatus": {
+            "code": "Y",
+            "desc": "Eligible"
+        },
+        "photocardserialno": {
+            "value": "009812382B"
+        },
+        "suspension": {
+            "startdate": {
+                "value": ""
+            },
+            "enddate": {
+                "value": ""
+            }
+        }
+    },
+    "secondaryrace": {
+        "lastupdated": "2024-04-24",
+        "code": "",
+        "source": "3",
+        "classification": "C",
+        "desc": ""
+    }
+}

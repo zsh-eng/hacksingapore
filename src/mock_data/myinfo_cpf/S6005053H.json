@@ -1,0 +1,913 @@
+{
+    "edulevel": {
+        "lastupdated": "2024-04-24",
+        "code": "",
+        "source": "2",
+        "classification": "C",
+        "desc": ""
+    },
+    "dialect": {
+        "lastupdated": "2024-04-24",
+        "code": "",
+        "source": "1",
+        "classification": "C",
+        "desc": ""
+    },
+    "occupation": {
+        "lastupdated": "2024-04-24",
+        "source": "2",
+        "classification": "C",
+        "value": ""
+    },
+    "ltavocationallicences": {
+        "tdvl": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        },
+        "odvl": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        },
+        "bavl": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        },
+        "pdvl": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        },
+        "bdvl": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        }
+    },
+    "mobileno": {
+        "lastupdated": "2024-04-24",
+        "source": "4",
+        "classification": "C",
+        "areacode": {
+            "value": ""
+        },
+        "prefix": {
+            "value": ""
+        },
+        "nbr": {
+            "value": ""
+        }
+    },
+    "uuid": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "91e19e80-3add-723f-4009-0e190b870098"
+    },
+    "mailadd": {
+        "country": {
+            "code": "",
+            "desc": ""
+        },
+        "unit": {
+            "value": ""
+        },
+        "street": {
+            "value": ""
+        },
+        "lastupdated": "2024-04-24",
+        "block": {
+            "value": ""
+        },
+        "source": "2",
+        "postal": {
+            "value": ""
+        },
+        "classification": "C",
+        "floor": {
+            "value": ""
+        },
+        "type": "SG",
+        "building": {
+            "value": ""
+        }
+    },
+    "marriedname": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": ""
+    },
+    "sponsoredchildrenrecords": [],
+    "academicqualifications": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "divorcedate": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "2013-02-15"
+    },
+    "marriagecertno": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "128990"
+    },
+    "noahistory": {
+        "noas": [
+            {
+                "amount": {
+                    "value": 214500
+                },
+                "trade": {
+                    "value": 0
+                },
+                "interest": {
+                    "value": 32000
+                },
+                "yearofassessment": {
+                    "value": "2023"
+                },
+                "taxclearance": {
+                    "value": "N"
+                },
+                "employment": {
+                    "value": 182500
+                },
+                "rent": {
+                    "value": 0
+                },
+                "category": {
+                    "value": "ORIGINAL"
+                }
+            },
+            {
+                "amount": {
+                    "value": 202500
+                },
+                "trade": {
+                    "value": 0
+                },
+                "interest": {
+                    "value": 30000
+                },
+                "yearofassessment": {
+                    "value": "2022"
+                },
+                "taxclearance": {
+                    "value": "N"
+                },
+                "employment": {
+                    "value": 172500
+                },
+                "rent": {
+                    "value": 0
+                },
+                "category": {
+                    "value": "ORIGINAL"
+                }
+            }
+        ],
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C"
+    },
+    "ownerprivate": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": false
+    },
+    "cpfdependantprotectionscheme": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "cpfmedishieldlife": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "cpfemployers": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "housingtype": {
+        "lastupdated": "2024-04-24",
+        "code": "",
+        "source": "1",
+        "classification": "C",
+        "desc": ""
+    },
+    "passexpirydate": {
+        "lastupdated": "2024-04-24",
+        "source": "3",
+        "classification": "C",
+        "value": ""
+    },
+    "homeno": {
+        "lastupdated": "2024-04-24",
+        "source": "2",
+        "classification": "C",
+        "areacode": {
+            "value": ""
+        },
+        "prefix": {
+            "value": ""
+        },
+        "nbr": {
+            "value": ""
+        }
+    },
+    "residentialstatus": {
+        "lastupdated": "2024-04-24",
+        "code": "C",
+        "source": "1",
+        "classification": "C",
+        "desc": "CITIZEN"
+    },
+    "cpfbalances": {
+        "oa": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "value": 49602.38
+        },
+        "ma": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "value": 17253
+        },
+        "sa": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "value": 12939.75
+        },
+        "ra": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "value": 34265.64
+        }
+    },
+    "passportnumber": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "E2345234FDFEW9874326LO"
+    },
+    "schoolname": {
+        "lastupdated": "2024-04-24",
+        "code": "",
+        "source": "2",
+        "classification": "C",
+        "desc": ""
+    },
+    "hanyupinyinaliasname": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "HANYUD12"
+    },
+    "aliasname": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": ""
+    },
+    "passstatus": {
+        "lastupdated": "2024-04-24",
+        "source": "3",
+        "classification": "C",
+        "value": ""
+    },
+    "nationality": {
+        "lastupdated": "2024-04-24",
+        "code": "SG",
+        "source": "1",
+        "classification": "C",
+        "desc": "SINGAPORE CITIZEN"
+    },
+    "dob": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "1948-09-10"
+    },
+    "pioneergen": {
+        "lastupdated": "2024-04-24",
+        "eligibility": {
+            "value": true
+        },
+        "source": "1",
+        "classification": "C"
+    },
+    "name": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "MY,INFO%BB"
+    },
+    "cpfhousingwithdrawal": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "withdrawaldetails": [
+            {
+                "principalwithdrawalamt": {
+                    "value": 1275000
+                },
+                "address": {
+                    "country": {
+                        "code": "SG",
+                        "desc": "SINGAPORE"
+                    },
+                    "unit": {
+                        "value": ""
+                    },
+                    "street": {
+                        "value": "Ah Soo Walk"
+                    },
+                    "block": {
+                        "value": "106"
+                    },
+                    "postal": {
+                        "value": "536726"
+                    },
+                    "type": "SG",
+                    "floor": {
+                        "value": ""
+                    },
+                    "building": {
+                        "value": ""
+                    }
+                },
+                "accruedinterestamt": {
+                    "value": 75000
+                },
+                "monthlyinstalmentamt": {
+                    "value": 10000
+                },
+                "totalamountofcpfallowedforproperty": {
+                    "value": 3000000
+                }
+            },
+            {
+                "principalwithdrawalamt": {
+                    "value": 255000
+                },
+                "address": {
+                    "country": {
+                        "value": "Singapore"
+                    },
+                    "unit": {
+                        "value": "235"
+                    },
+                    "street": {
+                        "value": "Hougang Avenue 5"
+                    },
+                    "block": {
+                        "value": "1900-10"
+                    },
+                    "postal": {
+                        "value": "530305"
+                    },
+                    "type": "SG",
+                    "floor": {
+                        "value": "15"
+                    },
+                    "building": {
+                        "value": ""
+                    }
+                },
+                "accruedinterestamt": {
+                    "value": 15000
+                },
+                "monthlyinstalmentamt": {
+                    "value": 2000
+                },
+                "totalamountofcpfallowedforproperty": {
+                    "value": 600000
+                }
+            }
+        ]
+    },
+    "noa": {
+        "amount": {
+            "value": 214500
+        },
+        "trade": {
+            "value": 0
+        },
+        "interest": {
+            "value": 32000
+        },
+        "yearofassessment": {
+            "value": "2023"
+        },
+        "taxclearance": {
+            "value": "N"
+        },
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "employment": {
+            "value": 182500
+        },
+        "classification": "C",
+        "rent": {
+            "value": 0
+        },
+        "category": {
+            "value": "ORIGINAL"
+        }
+    },
+    "noa-basic": {
+        "yearofassessment": {
+            "value": "2023"
+        },
+        "lastupdated": "2024-04-24",
+        "amount": {
+            "value": 214500
+        },
+        "source": "1",
+        "classification": "C"
+    },
+    "passtype": {
+        "lastupdated": "2024-04-24",
+        "code": "",
+        "source": "3",
+        "classification": "C",
+        "desc": ""
+    },
+    "cpfinvestmentscheme": {
+        "oainvestmentamountavailable": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "value": ""
+        },
+        "sainvestmentamountavailable": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "value": ""
+        },
+        "sdsnetshareholdingqty": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        },
+        "account": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        },
+        "saqparticipationstatus": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        }
+    },
+    "regadd": {
+        "country": {
+            "code": "SG",
+            "desc": "SINGAPORE"
+        },
+        "unit": {
+            "value": "112"
+        },
+        "street": {
+            "value": "BUKIT BATOK STREET 25"
+        },
+        "lastupdated": "2024-04-24",
+        "block": {
+            "value": "289C"
+        },
+        "source": "1",
+        "postal": {
+            "value": "652289"
+        },
+        "classification": "C",
+        "floor": {
+            "value": "02"
+        },
+        "type": "SG",
+        "building": {
+            "value": "NATURE VIEW"
+        }
+    },
+    "vehicles": [],
+    "billadd": {
+        "country": {
+            "code": "",
+            "desc": ""
+        },
+        "unit": {
+            "value": ""
+        },
+        "street": {
+            "value": ""
+        },
+        "lastupdated": "2024-04-24",
+        "block": {
+            "value": ""
+        },
+        "source": "2",
+        "postal": {
+            "value": ""
+        },
+        "classification": "C",
+        "floor": {
+            "value": ""
+        },
+        "type": "SG",
+        "building": {
+            "value": ""
+        }
+    },
+    "hanyupinyinname": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "MYINFOALIAS D"
+    },
+    "passportexpirydate": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "2025-01-01"
+    },
+    "cpfrstuselftopupamount": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "uinfin": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "S6005053H"
+    },
+    "gradyear": {
+        "lastupdated": "2024-04-24",
+        "source": "2",
+        "classification": "C",
+        "value": ""
+    },
+    "vocationallicences": [],
+    "cpfrstucurrentyeartaxrelief": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "householdincome": {
+        "lastupdated": "2024-04-24",
+        "high": {
+            "value": 0
+        },
+        "source": "2",
+        "classification": "C",
+        "low": {
+            "value": 0
+        }
+    },
+    "partialuinfin": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "*****053H"
+    },
+    "merdekagen": {
+        "lastupdated": "2024-04-24",
+        "eligibility": {
+            "value": false
+        },
+        "source": "1",
+        "classification": "C"
+    },
+    "cpfmonthlypayouts": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "cpfcontributions": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "gstvoucher": {
+        "gstregular": {
+            "value": 0
+        },
+        "year": {
+            "value": ""
+        },
+        "lastupdated": "2024-04-24",
+        "exclusion": {
+            "value": ""
+        },
+        "gstmedisave": {
+            "value": 0
+        },
+        "gstspecial": {
+            "value": 0
+        },
+        "source": "1",
+        "classification": "C",
+        "signup": {
+            "value": ""
+        }
+    },
+    "email": {
+        "lastupdated": "2024-04-24",
+        "source": "4",
+        "classification": "C",
+        "value": ""
+    },
+    "noahistory-basic": {
+        "noas": [
+            {
+                "yearofassessment": {
+                    "value": "2023"
+                },
+                "amount": {
+                    "value": 214500
+                }
+            },
+            {
+                "yearofassessment": {
+                    "value": "2022"
+                },
+                "amount": {
+                    "value": 202500
+                }
+            }
+        ],
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C"
+    },
+    "birthcountry": {
+        "lastupdated": "2024-04-24",
+        "code": "SG",
+        "source": "1",
+        "classification": "C",
+        "desc": "SINGAPORE"
+    },
+    "cpflife": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "race": {
+        "lastupdated": "2024-04-24",
+        "code": "MY",
+        "source": "1",
+        "classification": "C",
+        "desc": "MALAY"
+    },
+    "silversupport": {
+        "lastupdated": "2024-04-24",
+        "eligibility": {
+            "value": ""
+        },
+        "amount": {
+            "value": 0
+        },
+        "source": "1",
+        "classification": "C",
+        "year": {
+            "value": ""
+        }
+    },
+    "sex": {
+        "lastupdated": "2024-04-24",
+        "code": "F",
+        "source": "1",
+        "classification": "C",
+        "desc": "FEMALE"
+    },
+    "countryofmarriage": {
+        "lastupdated": "2024-04-24",
+        "code": "SG",
+        "source": "1",
+        "classification": "C",
+        "desc": "SINGAPORE"
+    },
+    "hdbtype": {
+        "lastupdated": "2024-04-24",
+        "code": "115",
+        "source": "1",
+        "classification": "C",
+        "desc": "5-ROOM FLAT (HDB)"
+    },
+    "employmentsector": {
+        "lastupdated": "2024-04-24",
+        "source": "3",
+        "classification": "C",
+        "value": ""
+    },
+    "marriagedate": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "2011-09-01"
+    },
+    "employment": {
+        "lastupdated": "2024-04-24",
+        "source": "2",
+        "classification": "C",
+        "value": ""
+    },
+    "hdbownership": [
+        {
+            "termoflease": {
+                "value": 99
+            },
+            "dateofpurchase": {
+                "value": "2000-01-31"
+            },
+            "leasecommencementdate": {
+                "value": "2000-03-15"
+            },
+            "address": {
+                "country": {
+                    "code": "SG",
+                    "desc": "SINGAPORE"
+                },
+                "unit": {
+                    "value": "112"
+                },
+                "street": {
+                    "value": "BUKIT BATOK STREET 25"
+                },
+                "block": {
+                    "value": "289C"
+                },
+                "postal": {
+                    "value": "652289"
+                },
+                "type": "SG",
+                "floor": {
+                    "value": "02"
+                },
+                "building": {
+                    "value": "NATURE VIEW"
+                }
+            },
+            "balanceloanrepayment": {
+                "years": {
+                    "value": 0
+                },
+                "months": {
+                    "value": 0
+                }
+            },
+            "originalloanrepayment": {
+                "value": 0
+            },
+            "hdbtype": {
+                "code": "115",
+                "desc": "5-ROOM FLAT (HDB)"
+            },
+            "source": "1",
+            "classification": "C",
+            "purchaseprice": {
+                "value": ""
+            },
+            "monthlyloaninstalment": {
+                "value": 0
+            },
+            "outstandingloanbalance": {
+                "value": 0
+            },
+            "outstandinginstalment": {
+                "value": ""
+            },
+            "lastupdated": "2024-04-24",
+            "noofowners": {
+                "value": 1
+            },
+            "dateofownershiptransfer": {
+                "value": ""
+            },
+            "loangranted": {
+                "value": 300000
+            }
+        }
+    ],
+    "marital": {
+        "lastupdated": "2024-04-24",
+        "code": "5",
+        "source": "1",
+        "classification": "C",
+        "desc": "DIVORCED"
+    },
+    "cpfhomeprotectionscheme": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "childrenbirthrecords": [],
+    "drivinglicence": {
+        "revocation": {
+            "startdate": {
+                "value": ""
+            },
+            "enddate": {
+                "value": ""
+            }
+        },
+        "totaldemeritpoints": {
+            "value": 0
+        },
+        "disqualification": {
+            "startdate": {
+                "value": ""
+            },
+            "enddate": {
+                "value": ""
+            }
+        },
+        "qdl": {
+            "expirydate": {
+                "value": ""
+            },
+            "validity": {
+                "code": "V",
+                "desc": "VALID"
+            },
+            "classes": [
+                {
+                    "class": {
+                        "value": "3"
+                    },
+                    "issuedate": {
+                        "value": "2010-07-07"
+                    }
+                }
+            ]
+        },
+        "lastupdated": "2024-04-24",
+        "pdl": {
+            "expirydate": {
+                "value": ""
+            },
+            "validity": {
+                "code": "",
+                "desc": ""
+            },
+            "classes": []
+        },
+        "source": "1",
+        "classification": "C",
+        "comstatus": {
+            "code": "Y",
+            "desc": "Eligible"
+        },
+        "photocardserialno": {
+            "value": "115615"
+        },
+        "suspension": {
+            "startdate": {
+                "value": ""
+            },
+            "enddate": {
+                "value": ""
+            }
+        }
+    },
+    "secondaryrace": {
+        "lastupdated": "2024-04-24",
+        "code": "",
+        "source": "1",
+        "classification": "C",
+        "desc": ""
+    }
+}

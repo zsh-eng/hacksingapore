@@ -1,0 +1,1348 @@
+{
+    "edulevel": {
+        "lastupdated": "2024-04-24",
+        "code": "",
+        "source": "2",
+        "classification": "C",
+        "desc": ""
+    },
+    "dialect": {
+        "lastupdated": "2024-04-24",
+        "code": "",
+        "source": "1",
+        "classification": "C",
+        "desc": ""
+    },
+    "occupation": {
+        "lastupdated": "2024-04-24",
+        "source": "2",
+        "classification": "C",
+        "value": ""
+    },
+    "ltavocationallicences": {
+        "tdvl": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        },
+        "odvl": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        },
+        "bavl": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        },
+        "pdvl": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        },
+        "bdvl": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        }
+    },
+    "mobileno": {
+        "lastupdated": "2024-04-24",
+        "source": "4",
+        "classification": "C",
+        "areacode": {
+            "value": "65"
+        },
+        "prefix": {
+            "value": "+"
+        },
+        "nbr": {
+            "value": "97399245"
+        }
+    },
+    "uuid": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "d3a125b4-71bf-8832-6671-0c55c047613e"
+    },
+    "mailadd": {
+        "country": {
+            "code": "",
+            "desc": ""
+        },
+        "unit": {
+            "value": ""
+        },
+        "street": {
+            "value": ""
+        },
+        "lastupdated": "2024-04-24",
+        "block": {
+            "value": ""
+        },
+        "source": "2",
+        "postal": {
+            "value": ""
+        },
+        "classification": "C",
+        "floor": {
+            "value": ""
+        },
+        "type": "SG",
+        "building": {
+            "value": ""
+        }
+    },
+    "marriedname": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "MARISOL NALDO JOHN"
+    },
+    "sponsoredchildrenrecords": [],
+    "academicqualifications": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "divorcedate": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": ""
+    },
+    "marriagecertno": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "901889"
+    },
+    "noahistory": {
+        "noas": [
+            {
+                "amount": {
+                    "value": 224900
+                },
+                "trade": {
+                    "value": 0
+                },
+                "interest": {
+                    "value": 2400
+                },
+                "yearofassessment": {
+                    "value": "2023"
+                },
+                "taxclearance": {
+                    "value": "N"
+                },
+                "employment": {
+                    "value": 222500
+                },
+                "rent": {
+                    "value": 0
+                },
+                "category": {
+                    "value": "ORIGINAL"
+                }
+            },
+            {
+                "amount": {
+                    "value": 196800
+                },
+                "trade": {
+                    "value": 0
+                },
+                "interest": {
+                    "value": 2400
+                },
+                "yearofassessment": {
+                    "value": "2022"
+                },
+                "taxclearance": {
+                    "value": "N"
+                },
+                "employment": {
+                    "value": 194400
+                },
+                "rent": {
+                    "value": 0
+                },
+                "category": {
+                    "value": "ORIGINAL"
+                }
+            }
+        ],
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C"
+    },
+    "ownerprivate": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": false
+    },
+    "cpfdependantprotectionscheme": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "cpfmedishieldlife": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "cpfemployers": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "history": [
+            {
+                "month": {
+                    "value": "2021-12"
+                },
+                "employer": {
+                    "value": "AAS SISTEMAS PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2022-01"
+                },
+                "employer": {
+                    "value": "AAS SISTEMAS PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2022-02"
+                },
+                "employer": {
+                    "value": "AAS SISTEMAS PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2022-03"
+                },
+                "employer": {
+                    "value": "AAS SISTEMAS PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2022-04"
+                },
+                "employer": {
+                    "value": "AAS SISTEMAS PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2022-05"
+                },
+                "employer": {
+                    "value": "AAS SISTEMAS PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2022-06"
+                },
+                "employer": {
+                    "value": "AAS SISTEMAS PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2022-07"
+                },
+                "employer": {
+                    "value": "AAS SISTEMAS PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2022-08"
+                },
+                "employer": {
+                    "value": "AAS SISTEMAS PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2022-09"
+                },
+                "employer": {
+                    "value": "AAS SISTEMAS PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2022-10"
+                },
+                "employer": {
+                    "value": "AAS SISTEMAS PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2022-11"
+                },
+                "employer": {
+                    "value": "AAS SISTEMAS PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2022-12"
+                },
+                "employer": {
+                    "value": "AAS SISTEMAS PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2023-01"
+                },
+                "employer": {
+                    "value": "AAS SISTEMAS PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2023-02"
+                },
+                "employer": {
+                    "value": "AAS SISTEMAS PTE LTD"
+                }
+            }
+        ],
+        "classification": "C"
+    },
+    "housingtype": {
+        "lastupdated": "2024-04-24",
+        "code": "",
+        "source": "1",
+        "classification": "C",
+        "desc": ""
+    },
+    "passexpirydate": {
+        "lastupdated": "2024-04-24",
+        "source": "3",
+        "classification": "C",
+        "value": ""
+    },
+    "homeno": {
+        "lastupdated": "2024-04-24",
+        "source": "2",
+        "classification": "C",
+        "areacode": {
+            "value": ""
+        },
+        "prefix": {
+            "value": ""
+        },
+        "nbr": {
+            "value": ""
+        }
+    },
+    "residentialstatus": {
+        "lastupdated": "2024-04-24",
+        "code": "P",
+        "source": "1",
+        "classification": "C",
+        "desc": "PR"
+    },
+    "cpfbalances": {
+        "oa": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "value": 201825
+        },
+        "ma": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "value": 70200
+        },
+        "sa": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "value": 52650
+        },
+        "ra": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        }
+    },
+    "passportnumber": {
+        "lastupdated": "2024-04-24",
+        "source": "2",
+        "classification": "C",
+        "value": ""
+    },
+    "schoolname": {
+        "lastupdated": "2024-04-24",
+        "code": "",
+        "source": "2",
+        "classification": "C",
+        "desc": ""
+    },
+    "hanyupinyinaliasname": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": ""
+    },
+    "aliasname": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": ""
+    },
+    "passstatus": {
+        "lastupdated": "2024-04-24",
+        "source": "3",
+        "classification": "C",
+        "value": ""
+    },
+    "nationality": {
+        "lastupdated": "2024-04-24",
+        "code": "MX",
+        "source": "1",
+        "classification": "C",
+        "desc": "MEXICAN"
+    },
+    "dob": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "1999-10-06"
+    },
+    "pioneergen": {
+        "lastupdated": "2024-04-24",
+        "eligibility": {
+            "value": false
+        },
+        "source": "1",
+        "classification": "C"
+    },
+    "name": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "MARISOL NALDO"
+    },
+    "cpfhousingwithdrawal": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "noa": {
+        "amount": {
+            "value": 224900
+        },
+        "trade": {
+            "value": 0
+        },
+        "interest": {
+            "value": 2400
+        },
+        "yearofassessment": {
+            "value": "2023"
+        },
+        "taxclearance": {
+            "value": "N"
+        },
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "employment": {
+            "value": 222500
+        },
+        "classification": "C",
+        "rent": {
+            "value": 0
+        },
+        "category": {
+            "value": "ORIGINAL"
+        }
+    },
+    "noa-basic": {
+        "yearofassessment": {
+            "value": "2023"
+        },
+        "lastupdated": "2024-04-24",
+        "amount": {
+            "value": 224900
+        },
+        "source": "1",
+        "classification": "C"
+    },
+    "passtype": {
+        "lastupdated": "2024-04-24",
+        "code": "",
+        "source": "3",
+        "classification": "C",
+        "desc": ""
+    },
+    "cpfinvestmentscheme": {
+        "oainvestmentamountavailable": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "value": ""
+        },
+        "sainvestmentamountavailable": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "value": ""
+        },
+        "sdsnetshareholdingqty": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        },
+        "account": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        },
+        "saqparticipationstatus": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        }
+    },
+    "regadd": {
+        "country": {
+            "code": "SG",
+            "desc": "SINGAPORE"
+        },
+        "unit": {
+            "value": "11"
+        },
+        "street": {
+            "value": "WEST COAST ROAD"
+        },
+        "lastupdated": "2024-04-24",
+        "block": {
+            "value": "90"
+        },
+        "source": "1",
+        "postal": {
+            "value": "126810"
+        },
+        "classification": "C",
+        "floor": {
+            "value": "03"
+        },
+        "type": "SG",
+        "building": {
+            "value": ""
+        }
+    },
+    "vehicles": [],
+    "billadd": {
+        "country": {
+            "code": "",
+            "desc": ""
+        },
+        "unit": {
+            "value": ""
+        },
+        "street": {
+            "value": ""
+        },
+        "lastupdated": "2024-04-24",
+        "block": {
+            "value": ""
+        },
+        "source": "2",
+        "postal": {
+            "value": ""
+        },
+        "classification": "C",
+        "floor": {
+            "value": ""
+        },
+        "type": "SG",
+        "building": {
+            "value": ""
+        }
+    },
+    "hanyupinyinname": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": ""
+    },
+    "passportexpirydate": {
+        "lastupdated": "2024-04-24",
+        "source": "2",
+        "classification": "C",
+        "value": ""
+    },
+    "cpfrstuselftopupamount": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "uinfin": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "S9912369I"
+    },
+    "gradyear": {
+        "lastupdated": "2024-04-24",
+        "source": "2",
+        "classification": "C",
+        "value": ""
+    },
+    "vocationallicences": [],
+    "cpfrstucurrentyeartaxrelief": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "householdincome": {
+        "lastupdated": "2024-04-24",
+        "high": {
+            "value": 0
+        },
+        "source": "2",
+        "classification": "C",
+        "low": {
+            "value": 0
+        }
+    },
+    "partialuinfin": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "*****369I"
+    },
+    "merdekagen": {
+        "lastupdated": "2024-04-24",
+        "eligibility": {
+            "value": false
+        },
+        "source": "1",
+        "classification": "C"
+    },
+    "cpfmonthlypayouts": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "cpfcontributions": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "history": [
+            {
+                "date": {
+                    "value": "2021-12-07"
+                },
+                "employer": {
+                    "value": "AAS SISTEMAS PTE LTD"
+                },
+                "amount": {
+                    "value": 4687.5
+                },
+                "month": {
+                    "value": "2021-12"
+                }
+            },
+            {
+                "date": {
+                    "value": "2022-01-07"
+                },
+                "employer": {
+                    "value": "AAS SISTEMAS PTE LTD"
+                },
+                "amount": {
+                    "value": 4687.5
+                },
+                "month": {
+                    "value": "2022-01"
+                }
+            },
+            {
+                "date": {
+                    "value": "2022-02-07"
+                },
+                "employer": {
+                    "value": "AAS SISTEMAS PTE LTD"
+                },
+                "amount": {
+                    "value": 9375
+                },
+                "month": {
+                    "value": "2022-02"
+                }
+            },
+            {
+                "date": {
+                    "value": "2022-03-07"
+                },
+                "employer": {
+                    "value": "AAS SISTEMAS PTE LTD"
+                },
+                "amount": {
+                    "value": 4687.5
+                },
+                "month": {
+                    "value": "2022-03"
+                }
+            },
+            {
+                "date": {
+                    "value": "2022-04-07"
+                },
+                "employer": {
+                    "value": "AAS SISTEMAS PTE LTD"
+                },
+                "amount": {
+                    "value": 4688
+                },
+                "month": {
+                    "value": "2022-04"
+                }
+            },
+            {
+                "date": {
+                    "value": "2022-05-07"
+                },
+                "employer": {
+                    "value": "AAS SISTEMAS PTE LTD"
+                },
+                "amount": {
+                    "value": 4688
+                },
+                "month": {
+                    "value": "2022-05"
+                }
+            },
+            {
+                "date": {
+                    "value": "2022-06-07"
+                },
+                "employer": {
+                    "value": "AAS SISTEMAS PTE LTD"
+                },
+                "amount": {
+                    "value": 18750
+                },
+                "month": {
+                    "value": "2022-06"
+                }
+            },
+            {
+                "date": {
+                    "value": "2022-07-07"
+                },
+                "employer": {
+                    "value": "AAS SISTEMAS PTE LTD"
+                },
+                "amount": {
+                    "value": 5625
+                },
+                "month": {
+                    "value": "2022-07"
+                }
+            },
+            {
+                "date": {
+                    "value": "2022-08-07"
+                },
+                "employer": {
+                    "value": "AAS SISTEMAS PTE LTD"
+                },
+                "amount": {
+                    "value": 5625
+                },
+                "month": {
+                    "value": "2022-08"
+                }
+            },
+            {
+                "date": {
+                    "value": "2022-09-07"
+                },
+                "employer": {
+                    "value": "AAS SISTEMAS PTE LTD"
+                },
+                "amount": {
+                    "value": 5625
+                },
+                "month": {
+                    "value": "2022-09"
+                }
+            },
+            {
+                "date": {
+                    "value": "2022-10-07"
+                },
+                "employer": {
+                    "value": "AAS SISTEMAS PTE LTD"
+                },
+                "amount": {
+                    "value": 5625
+                },
+                "month": {
+                    "value": "2022-10"
+                }
+            },
+            {
+                "date": {
+                    "value": "2022-11-07"
+                },
+                "employer": {
+                    "value": "AAS SISTEMAS PTE LTD"
+                },
+                "amount": {
+                    "value": 5625
+                },
+                "month": {
+                    "value": "2022-11"
+                }
+            },
+            {
+                "date": {
+                    "value": "2022-12-07"
+                },
+                "employer": {
+                    "value": "AAS SISTEMAS PTE LTD"
+                },
+                "amount": {
+                    "value": 5625
+                },
+                "month": {
+                    "value": "2022-12"
+                }
+            },
+            {
+                "date": {
+                    "value": "2023-01-07"
+                },
+                "employer": {
+                    "value": "AAS SISTEMAS PTE LTD"
+                },
+                "amount": {
+                    "value": 5625
+                },
+                "month": {
+                    "value": "2023-01"
+                }
+            },
+            {
+                "date": {
+                    "value": "2023-02-07"
+                },
+                "employer": {
+                    "value": "AAS SISTEMAS PTE LTD"
+                },
+                "amount": {
+                    "value": 11250
+                },
+                "month": {
+                    "value": "2023-02"
+                }
+            }
+        ],
+        "classification": "C"
+    },
+    "gstvoucher": {
+        "gstregular": {
+            "value": 0
+        },
+        "year": {
+            "value": ""
+        },
+        "lastupdated": "2024-04-24",
+        "exclusion": {
+            "value": ""
+        },
+        "gstmedisave": {
+            "value": 0
+        },
+        "gstspecial": {
+            "value": 0
+        },
+        "source": "1",
+        "classification": "C",
+        "signup": {
+            "value": ""
+        }
+    },
+    "email": {
+        "lastupdated": "2024-04-24",
+        "source": "4",
+        "classification": "C",
+        "value": "myinfotesting@gmail.com"
+    },
+    "noahistory-basic": {
+        "noas": [
+            {
+                "yearofassessment": {
+                    "value": "2023"
+                },
+                "amount": {
+                    "value": 224900
+                }
+            },
+            {
+                "yearofassessment": {
+                    "value": "2022"
+                },
+                "amount": {
+                    "value": 196800
+                }
+            }
+        ],
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C"
+    },
+    "birthcountry": {
+        "lastupdated": "2024-04-24",
+        "code": "SG",
+        "source": "1",
+        "classification": "C",
+        "desc": "SINGAPORE"
+    },
+    "cpflife": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "race": {
+        "lastupdated": "2024-04-24",
+        "code": "MX",
+        "source": "1",
+        "classification": "C",
+        "desc": "MEXICAN"
+    },
+    "silversupport": {
+        "lastupdated": "2024-04-24",
+        "eligibility": {
+            "value": ""
+        },
+        "amount": {
+            "value": 0
+        },
+        "source": "1",
+        "classification": "C",
+        "year": {
+            "value": ""
+        }
+    },
+    "sex": {
+        "lastupdated": "2024-04-24",
+        "code": "F",
+        "source": "1",
+        "classification": "C",
+        "desc": "FEMALE"
+    },
+    "countryofmarriage": {
+        "lastupdated": "2024-04-24",
+        "code": "SG",
+        "source": "1",
+        "classification": "C",
+        "desc": "SINGAPORE"
+    },
+    "hdbtype": {
+        "lastupdated": "2024-04-24",
+        "code": "114",
+        "source": "1",
+        "classification": "C",
+        "desc": "4-ROOM FLAT (HDB)"
+    },
+    "employmentsector": {
+        "lastupdated": "2024-04-24",
+        "source": "3",
+        "classification": "C",
+        "value": ""
+    },
+    "marriagedate": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "2012-02-15"
+    },
+    "employment": {
+        "lastupdated": "2024-04-24",
+        "source": "2",
+        "classification": "C",
+        "value": ""
+    },
+    "hdbownership": [
+        {
+            "termoflease": {
+                "value": 99
+            },
+            "dateofpurchase": {
+                "value": "2018-02-19"
+            },
+            "leasecommencementdate": {
+                "value": "2018-08-20"
+            },
+            "address": {
+                "country": {
+                    "code": "SG",
+                    "desc": "SINGAPORE"
+                },
+                "unit": {
+                    "value": "11"
+                },
+                "street": {
+                    "value": "BEDOK RESERVOIR ROAD"
+                },
+                "block": {
+                    "value": "113"
+                },
+                "postal": {
+                    "value": "470113"
+                },
+                "type": "SG",
+                "floor": {
+                    "value": "03"
+                },
+                "building": {
+                    "value": "EUNOS VISTA"
+                }
+            },
+            "balanceloanrepayment": {
+                "years": {
+                    "value": 25
+                },
+                "months": {
+                    "value": 0
+                }
+            },
+            "originalloanrepayment": {
+                "value": 29
+            },
+            "hdbtype": {
+                "code": "114",
+                "desc": "4-ROOM FLAT (HDB)"
+            },
+            "source": "1",
+            "classification": "C",
+            "purchaseprice": {
+                "value": "500,000.00"
+            },
+            "monthlyloaninstalment": {
+                "value": 1300
+            },
+            "outstandingloanbalance": {
+                "value": 390000
+            },
+            "outstandinginstalment": {
+                "value": "1,300.00"
+            },
+            "lastupdated": "2024-04-24",
+            "noofowners": {
+                "value": 2
+            },
+            "dateofownershiptransfer": {
+                "value": ""
+            },
+            "loangranted": {
+                "value": 450000
+            }
+        }
+    ],
+    "marital": {
+        "lastupdated": "2024-04-24",
+        "code": "2",
+        "source": "1",
+        "classification": "C",
+        "desc": "MARRIED"
+    },
+    "cpfhomeprotectionscheme": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "childrenbirthrecords": [
+        {
+            "vaccinationrequirements": [
+                {
+                    "fulfilled": {
+                        "value": "TRUE"
+                    },
+                    "requirement": {
+                        "code": "1M3D",
+                        "desc": "Preschool Admission Vaccination Min Requirement Fulfilled"
+                    }
+                }
+            ],
+            "dialect": {
+                "code": "HK",
+                "desc": "HOKKIEN"
+            },
+            "sgcitizenatbirthind": {
+                "value": "Y"
+            },
+            "race": {
+                "code": "CN",
+                "desc": "CHINESE"
+            },
+            "lifestatus": {
+                "code": "A",
+                "desc": "ALIVE"
+            },
+            "tob": {
+                "value": "0901"
+            },
+            "sex": {
+                "code": "F",
+                "desc": "FEMALE"
+            },
+            "source": "1",
+            "classification": "C",
+            "birthcertno": {
+                "value": "T1162882B"
+            },
+            "hanyupinyinname": {
+                "value": "CHENG PEI NI"
+            },
+            "hanyupinyinaliasname": {
+                "value": ""
+            },
+            "marriedname": {
+                "value": ""
+            },
+            "aliasname": {
+                "value": ""
+            },
+            "dob": {
+                "value": "2011-09-10"
+            },
+            "name": {
+                "value": "TAN PEI NI JO"
+            },
+            "lastupdated": "2024-04-24",
+            "secondaryrace": {
+                "code": "",
+                "desc": ""
+            }
+        },
+        {
+            "vaccinationrequirements": [
+                {
+                    "fulfilled": {
+                        "value": "TRUE"
+                    },
+                    "requirement": {
+                        "code": "1M3D",
+                        "desc": "Preschool Admission Vaccination Min Requirement Fulfilled"
+                    }
+                }
+            ],
+            "dialect": {
+                "code": "HK",
+                "desc": "HOKKIEN"
+            },
+            "sgcitizenatbirthind": {
+                "value": "Y"
+            },
+            "race": {
+                "code": "CN",
+                "desc": "CHINESE"
+            },
+            "lifestatus": {
+                "code": "A",
+                "desc": "ALIVE"
+            },
+            "tob": {
+                "value": "2021"
+            },
+            "sex": {
+                "code": "F",
+                "desc": "FEMALE"
+            },
+            "source": "1",
+            "classification": "C",
+            "birthcertno": {
+                "value": "S8816582I"
+            },
+            "hanyupinyinname": {
+                "value": "CHENG WEI LING"
+            },
+            "hanyupinyinaliasname": {
+                "value": ""
+            },
+            "marriedname": {
+                "value": ""
+            },
+            "aliasname": {
+                "value": ""
+            },
+            "dob": {
+                "value": "2015-07-18"
+            },
+            "name": {
+                "value": "JOYCE TAN WEI LING"
+            },
+            "lastupdated": "2024-04-24",
+            "secondaryrace": {
+                "code": "",
+                "desc": ""
+            }
+        },
+        {
+            "vaccinationrequirements": [
+                {
+                    "fulfilled": {
+                        "value": "TRUE"
+                    },
+                    "requirement": {
+                        "code": "1M3D",
+                        "desc": "Preschool Admission Vaccination Min Requirement Fulfilled"
+                    }
+                }
+            ],
+            "dialect": {
+                "code": "HK",
+                "desc": "HOKKIEN"
+            },
+            "sgcitizenatbirthind": {
+                "value": "Y"
+            },
+            "race": {
+                "code": "CN",
+                "desc": "CHINESE"
+            },
+            "lifestatus": {
+                "code": "A",
+                "desc": "ALIVE"
+            },
+            "tob": {
+                "value": "0901"
+            },
+            "sex": {
+                "code": "F",
+                "desc": "FEMALE"
+            },
+            "source": "1",
+            "classification": "C",
+            "birthcertno": {
+                "value": "T0202564C"
+            },
+            "hanyupinyinname": {
+                "value": "CHENG SHU HUI"
+            },
+            "hanyupinyinaliasname": {
+                "value": ""
+            },
+            "marriedname": {
+                "value": ""
+            },
+            "aliasname": {
+                "value": ""
+            },
+            "dob": {
+                "value": "2012-09-10"
+            },
+            "name": {
+                "value": "JOYCELYN TAN SHU HUI"
+            },
+            "lastupdated": "2024-04-24",
+            "secondaryrace": {
+                "code": "",
+                "desc": ""
+            }
+        }
+    ],
+    "drivinglicence": {
+        "revocation": {
+            "startdate": {
+                "value": ""
+            },
+            "enddate": {
+                "value": ""
+            }
+        },
+        "totaldemeritpoints": {
+            "value": 24
+        },
+        "disqualification": {
+            "startdate": {
+                "value": ""
+            },
+            "enddate": {
+                "value": ""
+            }
+        },
+        "qdl": {
+            "expirydate": {
+                "value": ""
+            },
+            "validity": {
+                "code": "",
+                "desc": ""
+            },
+            "classes": []
+        },
+        "lastupdated": "2024-04-24",
+        "pdl": {
+            "expirydate": {
+                "value": ""
+            },
+            "validity": {
+                "code": "",
+                "desc": ""
+            },
+            "classes": []
+        },
+        "source": "1",
+        "classification": "C",
+        "comstatus": {
+            "code": "N",
+            "desc": "Not Eligible"
+        },
+        "photocardserialno": {
+            "value": ""
+        },
+        "suspension": {
+            "startdate": {
+                "value": "2019-03-29"
+            },
+            "enddate": {
+                "value": "2019-09-12"
+            }
+        }
+    },
+    "secondaryrace": {
+        "lastupdated": "2024-04-24",
+        "code": "",
+        "source": "1",
+        "classification": "C",
+        "desc": ""
+    }
+}
