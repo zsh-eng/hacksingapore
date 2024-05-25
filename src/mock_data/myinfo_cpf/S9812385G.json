@@ -1,0 +1,801 @@
+{
+    "edulevel": {
+        "lastupdated": "2024-04-24",
+        "code": "",
+        "source": "2",
+        "classification": "C",
+        "desc": ""
+    },
+    "dialect": {
+        "lastupdated": "2024-04-24",
+        "code": "",
+        "source": "1",
+        "classification": "C",
+        "desc": ""
+    },
+    "occupation": {
+        "lastupdated": "2024-04-24",
+        "source": "2",
+        "classification": "C",
+        "value": ""
+    },
+    "ltavocationallicences": {
+        "tdvl": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        },
+        "odvl": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        },
+        "bavl": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        },
+        "pdvl": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        },
+        "bdvl": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        }
+    },
+    "mobileno": {
+        "lastupdated": "2024-04-24",
+        "source": "4",
+        "classification": "C",
+        "areacode": {
+            "value": "65"
+        },
+        "prefix": {
+            "value": "+"
+        },
+        "nbr": {
+            "value": "97399245"
+        }
+    },
+    "uuid": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "906f3760-7f77-308a-966c-f8ab6d3583e4"
+    },
+    "mailadd": {
+        "country": {
+            "code": "",
+            "desc": ""
+        },
+        "unit": {
+            "value": ""
+        },
+        "street": {
+            "value": ""
+        },
+        "lastupdated": "2024-04-24",
+        "block": {
+            "value": ""
+        },
+        "source": "2",
+        "postal": {
+            "value": ""
+        },
+        "classification": "C",
+        "floor": {
+            "value": ""
+        },
+        "type": "SG",
+        "building": {
+            "value": ""
+        }
+    },
+    "marriedname": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": ""
+    },
+    "sponsoredchildrenrecords": [],
+    "academicqualifications": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "divorcedate": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": ""
+    },
+    "marriagecertno": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": ""
+    },
+    "noahistory": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "ownerprivate": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": false
+    },
+    "cpfdependantprotectionscheme": {
+        "coverage": {
+            "value": true
+        },
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "sumassuredamount": {
+            "value": 70500
+        },
+        "insurercode": {
+            "value": "9GEL"
+        }
+    },
+    "cpfmedishieldlife": {
+        "lastupdated": "2024-04-24",
+        "integratedshieldplandependants": [],
+        "source": "1",
+        "classification": "C",
+        "integratedshieldplancoverage": {
+            "insurercode": {
+                "value": "AIA"
+            },
+            "hascovertag": {
+                "value": true
+            },
+            "payername": {
+                "value": "ALAKNANDA D/O ABIMANYU"
+            }
+        },
+        "medishieldlifedependants": []
+    },
+    "cpfemployers": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "housingtype": {
+        "lastupdated": "2024-04-24",
+        "code": "",
+        "source": "1",
+        "classification": "C",
+        "desc": ""
+    },
+    "passexpirydate": {
+        "lastupdated": "2024-04-24",
+        "source": "3",
+        "classification": "C",
+        "value": ""
+    },
+    "homeno": {
+        "lastupdated": "2024-04-24",
+        "source": "2",
+        "classification": "C",
+        "areacode": {
+            "value": ""
+        },
+        "prefix": {
+            "value": ""
+        },
+        "nbr": {
+            "value": ""
+        }
+    },
+    "residentialstatus": {
+        "lastupdated": "2024-04-24",
+        "code": "C",
+        "source": "1",
+        "classification": "C",
+        "desc": "CITIZEN"
+    },
+    "cpfbalances": {
+        "oa": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "value": 221337.63
+        },
+        "ma": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "value": 76987
+        },
+        "sa": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "value": 57740.25
+        },
+        "ra": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "value": 32864
+        }
+    },
+    "passportnumber": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "E23452346L"
+    },
+    "schoolname": {
+        "lastupdated": "2024-04-24",
+        "code": "",
+        "source": "2",
+        "classification": "C",
+        "desc": ""
+    },
+    "hanyupinyinaliasname": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": ""
+    },
+    "aliasname": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "CLARISSA DEWANARA VANASAMIN"
+    },
+    "passstatus": {
+        "lastupdated": "2024-04-24",
+        "source": "3",
+        "classification": "C",
+        "value": ""
+    },
+    "nationality": {
+        "lastupdated": "2024-04-24",
+        "code": "SG",
+        "source": "1",
+        "classification": "C",
+        "desc": "SINGAPORE CITIZEN"
+    },
+    "dob": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "1950-10-06"
+    },
+    "pioneergen": {
+        "lastupdated": "2024-04-24",
+        "eligibility": {
+            "value": false
+        },
+        "source": "1",
+        "classification": "C"
+    },
+    "name": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "DEWANARA VANASAMIN"
+    },
+    "cpfhousingwithdrawal": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "noa": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "noa-basic": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "passtype": {
+        "lastupdated": "2024-04-24",
+        "code": "",
+        "source": "3",
+        "classification": "C",
+        "desc": ""
+    },
+    "cpfinvestmentscheme": {
+        "oainvestmentamountavailable": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "value": "30000.01"
+        },
+        "sainvestmentamountavailable": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "value": "10000.01"
+        },
+        "sdsnetshareholdingqty": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "value": 1360
+        },
+        "account": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "invbankacctno": {
+                "value": "098-26644-4"
+            },
+            "agentbankcode": {
+                "value": "OCBC"
+            }
+        },
+        "saqparticipationstatus": {
+            "lastupdated": "2024-04-24",
+            "code": "Y",
+            "source": "1",
+            "classification": "C",
+            "desc": "Participated"
+        }
+    },
+    "regadd": {
+        "country": {
+            "code": "SG",
+            "desc": "SINGAPORE"
+        },
+        "unit": {
+            "value": "10"
+        },
+        "street": {
+            "value": "SIMEI STREET 1"
+        },
+        "lastupdated": "2024-04-24",
+        "block": {
+            "value": "138"
+        },
+        "source": "1",
+        "postal": {
+            "value": "520138"
+        },
+        "classification": "C",
+        "floor": {
+            "value": "38"
+        },
+        "type": "SG",
+        "building": {
+            "value": ""
+        }
+    },
+    "vehicles": [],
+    "billadd": {
+        "country": {
+            "code": "",
+            "desc": ""
+        },
+        "unit": {
+            "value": ""
+        },
+        "street": {
+            "value": ""
+        },
+        "lastupdated": "2024-04-24",
+        "block": {
+            "value": ""
+        },
+        "source": "2",
+        "postal": {
+            "value": ""
+        },
+        "classification": "C",
+        "floor": {
+            "value": ""
+        },
+        "type": "SG",
+        "building": {
+            "value": ""
+        }
+    },
+    "hanyupinyinname": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": ""
+    },
+    "passportexpirydate": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "2025-01-01"
+    },
+    "cpfrstuselftopupamount": {
+        "lastupdated": "2024-04-24",
+        "selftopupusingcpf": {
+            "value": 100.55
+        },
+        "source": "1",
+        "classification": "C",
+        "selftopupusingcash": {
+            "value": 100.55
+        }
+    },
+    "uinfin": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "S9812385G"
+    },
+    "gradyear": {
+        "lastupdated": "2024-04-24",
+        "source": "2",
+        "classification": "C",
+        "value": ""
+    },
+    "vocationallicences": [],
+    "cpfrstucurrentyeartaxrelief": {
+        "totaltaxrelieflovedones": {
+            "value": 100.55
+        },
+        "remainingtaxrelieflovedones": {
+            "value": 7899.45
+        },
+        "lastupdated": "2024-04-24",
+        "remainingtaxreliefself": {
+            "value": 7899.45
+        },
+        "source": "1",
+        "totaltaxreliefself": {
+            "value": 100.55
+        },
+        "classification": "C"
+    },
+    "householdincome": {
+        "lastupdated": "2024-04-24",
+        "high": {
+            "value": 0
+        },
+        "source": "2",
+        "classification": "C",
+        "low": {
+            "value": 0
+        }
+    },
+    "partialuinfin": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "*****385G"
+    },
+    "merdekagen": {
+        "lastupdated": "2024-04-24",
+        "eligibility": {
+            "value": true
+        },
+        "source": "1",
+        "classification": "C"
+    },
+    "cpfmonthlypayouts": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "cpfcontributions": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "gstvoucher": {
+        "gstregular": {
+            "value": 0
+        },
+        "year": {
+            "value": ""
+        },
+        "lastupdated": "2024-04-24",
+        "exclusion": {
+            "value": ""
+        },
+        "gstmedisave": {
+            "value": 0
+        },
+        "gstspecial": {
+            "value": 0
+        },
+        "source": "1",
+        "classification": "C",
+        "signup": {
+            "value": ""
+        }
+    },
+    "email": {
+        "lastupdated": "2024-04-24",
+        "source": "4",
+        "classification": "C",
+        "value": "myinfotesting@gmail.com"
+    },
+    "noahistory-basic": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "birthcountry": {
+        "lastupdated": "2024-04-24",
+        "code": "SG",
+        "source": "1",
+        "classification": "C",
+        "desc": "SINGAPORE"
+    },
+    "cpflife": {
+        "cpflifeplan": {
+            "value": "Escalating Plan"
+        },
+        "lastupdated": "2024-04-24",
+        "cpflifemonthlypayout": {
+            "value": 650
+        },
+        "source": "1",
+        "cpflifepaymentdate": {
+            "value": ""
+        },
+        "classification": "C",
+        "cpflifecoverage": {
+            "value": true
+        },
+        "cpflifepaymentcommencement": {
+            "value": true
+        }
+    },
+    "race": {
+        "lastupdated": "2024-04-24",
+        "code": "EU",
+        "source": "1",
+        "classification": "C",
+        "desc": "EURASIAN"
+    },
+    "silversupport": {
+        "lastupdated": "2024-04-24",
+        "eligibility": {
+            "value": ""
+        },
+        "amount": {
+            "value": 0
+        },
+        "source": "1",
+        "classification": "C",
+        "year": {
+            "value": ""
+        }
+    },
+    "sex": {
+        "lastupdated": "2024-04-24",
+        "code": "F",
+        "source": "1",
+        "classification": "C",
+        "desc": "FEMALE"
+    },
+    "countryofmarriage": {
+        "lastupdated": "2024-04-24",
+        "code": "",
+        "source": "1",
+        "classification": "C",
+        "desc": ""
+    },
+    "hdbtype": {
+        "lastupdated": "2024-04-24",
+        "code": "115",
+        "source": "1",
+        "classification": "C",
+        "desc": "5-ROOM FLAT (HDB)"
+    },
+    "employmentsector": {
+        "lastupdated": "2024-04-24",
+        "source": "3",
+        "classification": "C",
+        "value": ""
+    },
+    "marriagedate": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": ""
+    },
+    "employment": {
+        "lastupdated": "2024-04-24",
+        "source": "2",
+        "classification": "C",
+        "value": ""
+    },
+    "hdbownership": [
+        {
+            "termoflease": {
+                "value": 99
+            },
+            "dateofpurchase": {
+                "value": "2018-05-20"
+            },
+            "leasecommencementdate": {
+                "value": "2018-07-20"
+            },
+            "address": {
+                "country": {
+                    "code": "SG",
+                    "desc": "SINGAPORE"
+                },
+                "unit": {
+                    "value": "10"
+                },
+                "street": {
+                    "value": "SIMEI STREET 1"
+                },
+                "block": {
+                    "value": "138"
+                },
+                "postal": {
+                    "value": "520138"
+                },
+                "type": "SG",
+                "floor": {
+                    "value": "38"
+                },
+                "building": {
+                    "value": "HDB-TAMPINES"
+                }
+            },
+            "balanceloanrepayment": {
+                "years": {
+                    "value": 29
+                },
+                "months": {
+                    "value": 5
+                }
+            },
+            "originalloanrepayment": {
+                "value": 30
+            },
+            "hdbtype": {
+                "code": "115",
+                "desc": "5-ROOM FLAT (HDB)"
+            },
+            "source": "1",
+            "classification": "C",
+            "purchaseprice": {
+                "value": "670,000.00"
+            },
+            "monthlyloaninstalment": {
+                "value": 1000
+            },
+            "outstandingloanbalance": {
+                "value": 353000
+            },
+            "outstandinginstalment": {
+                "value": "1,000.00"
+            },
+            "lastupdated": "2024-04-24",
+            "noofowners": {
+                "value": 1
+            },
+            "dateofownershiptransfer": {
+                "value": ""
+            },
+            "loangranted": {
+                "value": 500000
+            }
+        }
+    ],
+    "marital": {
+        "lastupdated": "2024-04-24",
+        "code": "1",
+        "source": "1",
+        "classification": "C",
+        "desc": "SINGLE"
+    },
+    "cpfhomeprotectionscheme": {
+        "coverage": {
+            "value": true
+        },
+        "lastupdated": "2024-04-24",
+        "shareofcover": {
+            "value": 50
+        },
+        "source": "1",
+        "premium": {
+            "value": 95
+        },
+        "classification": "C"
+    },
+    "childrenbirthrecords": [],
+    "drivinglicence": {
+        "revocation": {
+            "startdate": {
+                "value": "2019-02-27"
+            },
+            "enddate": {
+                "value": "2020-02-26"
+            }
+        },
+        "totaldemeritpoints": {
+            "value": 36
+        },
+        "disqualification": {
+            "startdate": {
+                "value": ""
+            },
+            "enddate": {
+                "value": ""
+            }
+        },
+        "qdl": {
+            "expirydate": {
+                "value": ""
+            },
+            "validity": {
+                "code": "V",
+                "desc": "VALID"
+            },
+            "classes": [
+                {
+                    "class": {
+                        "value": "3"
+                    },
+                    "issuedate": {
+                        "value": "2018-06-06"
+                    }
+                }
+            ]
+        },
+        "lastupdated": "2024-04-24",
+        "pdl": {
+            "expirydate": {
+                "value": ""
+            },
+            "validity": {
+                "code": "",
+                "desc": ""
+            },
+            "classes": []
+        },
+        "source": "1",
+        "classification": "C",
+        "comstatus": {
+            "code": "N",
+            "desc": "Not Eligible"
+        },
+        "photocardserialno": {
+            "value": "115618"
+        },
+        "suspension": {
+            "startdate": {
+                "value": ""
+            },
+            "enddate": {
+                "value": ""
+            }
+        }
+    },
+    "secondaryrace": {
+        "lastupdated": "2024-04-24",
+        "code": "DU",
+        "source": "1",
+        "classification": "C",
+        "desc": "DUTCH"
+    }
+}
