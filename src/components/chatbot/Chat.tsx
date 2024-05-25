@@ -351,7 +351,7 @@ ${sources.map((source) => `${source.metadata}\n${source.pageContent}`)}
 
     return (
         <div
-            className={`fixed top-4 right-4 flex flex-row bg-white rounded-md p-2 overflow-hidden transform ${
+            className={`fixed top-4 right-4 h-9/10 flex flex-row bg-white rounded-md p-2 overflow-visible transform ${
                 isChatOpen ? "translate-x-0" : "translate-x-[44.5rem]"
             } transition duration-700 ease-in-out`}
         >
