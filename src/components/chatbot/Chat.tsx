@@ -7,6 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
+import { ScrollArea } from '@/components/ui/scroll-area';
 import { Separator } from '@/components/ui/separator';
 import { Textarea } from '@/components/ui/textarea';
 import { Source, completion } from '@/lib/ai';
@@ -129,7 +130,7 @@ export function ChatbotMessageList({
   loading = false,
 }: ChatbotMessageListProps) {
   return (
-    <div className='flex flex-col'>
+    <ScrollArea className='flex flex-col h-[600px]'>
       {messages.map((message, i) => {
         const isLast = i === messages.length - 1;
         const sources =
@@ -167,7 +168,7 @@ export function ChatbotMessageList({
         );
       })}
       {loading && <LoadingChatbotMessage />}
-    </div>
+    </ScrollArea>
   );
 }
 
