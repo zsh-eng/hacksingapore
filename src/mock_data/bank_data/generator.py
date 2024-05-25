@@ -5,9 +5,7 @@ import os
 
 # List of IDs
 id_list = ['F1612347K', 'G1612353L', 'S6005053H', 'S6005055D', 'S9812379B', 'S9812381D', 'S9812382B', 'S9812385G']
-#id_list = ['F1612347K']
-# Transaction types
-transaction_types = ['Transport', 'Banking', 'Food', 'Retail', 'Services', 'Entertainment']
+
 # Transaction types and their respective places
 places = {
     'Transport': ['SMRT transit', 'Scoot', 'Singapore Airlines', 'Air Asia'],
@@ -50,9 +48,11 @@ def generate_transaction():
 # Get the directory of the current script
 script_directory = os.path.dirname(os.path.abspath(__file__))
 
-# Generate transactions for each ID and write to JSON files in the same directory as the script
+# Generate transactions for each ID, sort by date and time, and write to JSON files in the same directory as the script
 for id_ in id_list:
-    transactions = [generate_transaction() for _ in range(1000)]
+    transactions = [generate_transaction() for _ in range(100)]
+    # Sort transactions by date and time
+    transactions.sort(key=lambda x: datetime.strptime(x["date_time"], "%Y-%m-%d %H:%M:%S"))
     output_file = os.path.join(script_directory, f"{id_}_transactions.json")
     with open(output_file, "w") as file:
         json.dump(transactions, file, indent=4)
