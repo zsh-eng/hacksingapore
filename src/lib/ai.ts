@@ -3,7 +3,7 @@ import OpenAI from 'openai';
 import { ChatCompletionMessageParam } from 'openai/resources/index.mjs';
 import { z } from 'zod';
 
-const openai = new OpenAI({
+export const openai = new OpenAI({
   apiKey: process.env.NEXT_PUBLIC_OPENAI_API_KEY,
   dangerouslyAllowBrowser: true,
 });
@@ -29,6 +29,7 @@ const sourceTypes = [
   'moh',
   'homage',
   'wikipedia',
+  'mymoneysense',
 ] as const;
 
 export type SourceType = (typeof sourceTypes)[number];

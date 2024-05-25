@@ -10,7 +10,7 @@ import {
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Separator } from '@/components/ui/separator';
 import { Textarea } from '@/components/ui/textarea';
-import { Source, completion } from '@/lib/ai';
+import { Source, completion, openai } from '@/lib/ai';
 import { cn } from '@/lib/utils';
 import { ExternalLink, Loader2, SendHorizonal } from 'lucide-react';
 import { Fragment, useState } from 'react';
@@ -21,6 +21,7 @@ type Role = 'user' | 'assistant';
 type ChatbotMessageProps = {
   content: string;
   role?: Role;
+  loading?: boolean;
 };
 
 type SourceCardProps = {
@@ -29,7 +30,6 @@ type SourceCardProps = {
 
 function SourceCard({ source }: SourceCardProps) {
   const { type, link } = source.metadata;
-  const preview = source.pageContent + '...';
   return (
     <Card className='hover:bg-muted transition-all cursor-pointer mt-2 rounded-none w-full'>
       <a href={link} target='_blank' rel='noopener noreferrer'>
@@ -39,7 +39,7 @@ function SourceCard({ source }: SourceCardProps) {
             <ExternalLink className='h-4 w-4 mt-1 text-blue-700' />
           </div>
           <CardDescription className='text-sm line-clamp-3'>
-            {preview}
+            {source.pageContent}
           </CardDescription>
         </CardHeader>
       </a>
@@ -69,38 +69,24 @@ function RoleAvatar({ role }: { role: Role }) {
   return role === 'assistant' ? <AssistantAvatar /> : <UserAvatar />;
 }
 
-export function LoadingChatbotMessage() {
-  return (
-    <>
-      <Separator />
-      <div className={cn('w-[640px] py-2 bg-muted')}>
-        <div className={cn('flex gap-4 items-start px-4')}>
-          <RoleAvatar role={'assistant'} />
-          <div>
-            <Loader2 className='h-4 w-4 animate-spin' />
-          </div>
-        </div>
-      </div>
-    </>
-  );
-}
-
 /**
  * A single chatbot message
  */
 export function ChatbotMessage({
   content: message,
   role = 'assistant',
+  loading = false,
 }: ChatbotMessageProps) {
   return (
     <div
       className={cn(
-        'flex gap-4 items-start px-4',
+        'flex gap-4 items-start px-4 py-2',
         role === 'assistant' && 'bg-muted'
       )}
     >
       <RoleAvatar role={role} />
       <div>
+        {loading && <Loader2 className='h-8 w-8 animate-spin text-cyan-700' />}
         <article className='text-wrap prose'>
           <Remark>{message}</Remark>
         </article>
@@ -125,6 +111,7 @@ export type Message = UserMessage | AssistantMessage;
 type ChatbotMessageListProps = {
   messages: Message[];
   loading?: boolean;
+  loadingMessage?: string;
 };
 
 /**
@@ -133,9 +120,10 @@ type ChatbotMessageListProps = {
 export function ChatbotMessageList({
   messages,
   loading = false,
+  loadingMessage = 'Hold on a sec...',
 }: ChatbotMessageListProps) {
   return (
-    <ScrollArea className='flex flex-col h-[600px]'>
+    <ScrollArea className='flex flex-col gap-0 h-[600px]'>
       {messages.map((message, i) => {
         const isLast = i === messages.length - 1;
         const sources =
@@ -157,7 +145,7 @@ export function ChatbotMessageList({
                   message.role === 'assistant' && 'bg-muted'
                 )}
               >
-                References:
+                {sources.length > 0 && <div>Useful Links:</div>}
                 {sources.map((source) => {
                   return (
                     <SourceCard key={source.metadata.link} source={source} />
@@ -173,32 +161,34 @@ export function ChatbotMessageList({
           </Fragment>
         );
       })}
-      {loading && <LoadingChatbotMessage />}
+      {loading && <ChatbotMessage content={loadingMessage} loading={loading} />}
     </ScrollArea>
   );
 }
 
 const initialMessages: Message[] = [
   {
-    content: 'hello there',
-    role: 'user',
-  },
-  {
-    content: 'nice to meet you',
+    content:
+      "Hello there! I'm here to help you with any financial questions you have. What would you like to know about your retirement today?",
     sources: [
       {
-        pageContent: 'Lorem ipsum',
+        pageContent: 'Make Financial Planning Simple with DBS NAV Planner',
         metadata: {
           type: 'dbs',
-          link: 'https://www.mymoneysense.gov.sg/buying-a-house/purchase-guide/my-first-house',
+          link: 'https://www.dbs.com.sg/personal/articles/nav/financial-planning/making-financial-planning-simple',
+        },
+      },
+      {
+        pageContent:
+          'Make cash top-ups and CPF transfers to your own or loved ones’ Special or Retirement Account to benefit from compounding interest and receive higher monthly payouts in retirement. You can also enjoy tax relief on cash top-ups made.',
+        // TODO add title
+        metadata: {
+          type: 'mymoneysense',
+          link: 'https://www.cpf.gov.sg/member/growing-your-savings/saving-more-with-cpf/top-up-to-enjoy-higher-retirement-payouts',
         },
       },
     ],
     role: 'assistant',
-  },
-  {
-    content: 'Things are doing great, what about you?',
-    role: 'user',
   },
 ];
 
@@ -206,6 +196,7 @@ export function Chatbot() {
   const [messages, setMessages] = useState<Message[]>(initialMessages);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
+  const [streamingMessage, setStreamingMessage] = useState('');
 
   const disabled = loading || !input;
 
@@ -228,7 +219,6 @@ export function Chatbot() {
 
     try {
       const sources = await callBackend(input);
-      // const sources: Source[] = [];
       // TODO: replace wth actual metadata
       const updatedContent = `User's Question: ${input}
 Relevant Sources:
@@ -239,11 +229,24 @@ ${sources.map((source) => `${source.metadata}\n${source.pageContent}`)}
         role: 'user',
       };
 
-      const message = await completion([...messages, userMessageWithSources]);
+      let message = '';
+
+      const stream = await openai.chat.completions.create({
+        messages: [...messages, userMessageWithSources],
+        model: 'gpt-4o',
+        stream: true,
+      });
+
+      for await (const chunk of stream) {
+        message += chunk.choices[0].delta.content ?? '';
+        setStreamingMessage(message);
+      }
+
+      setStreamingMessage((m) => '');
       setMessages((messages) => [
         ...messages,
         {
-          content: message.choices[0].message.content ?? '',
+          content: message,
           sources,
           role: 'assistant',
         },
@@ -274,7 +277,11 @@ ${sources.map((source) => `${source.metadata}\n${source.pageContent}`)}
         <CardTitle>Chat</CardTitle>
       </CardHeader>
       <CardContent className='flex flex-col gap-2'>
-        <ChatbotMessageList messages={messages} loading={loading} />
+        <ChatbotMessageList
+          messages={messages}
+          loading={loading}
+          loadingMessage={streamingMessage}
+        />
         <Textarea
           className='text-md mt-4'
           placeholder='Type a message... (⌘ ↵ to send)'
