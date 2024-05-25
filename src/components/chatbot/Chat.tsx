@@ -14,6 +14,7 @@ import { Source, completion } from '@/lib/ai';
 import { cn } from '@/lib/utils';
 import { ExternalLink, Loader2, SendHorizonal } from 'lucide-react';
 import { Fragment, useState } from 'react';
+import { Remark } from 'react-remark';
 
 type Role = 'user' | 'assistant';
 
@@ -28,19 +29,21 @@ type SourceCardProps = {
 
 function SourceCard({ source }: SourceCardProps) {
   const { type, link } = source.metadata;
-  const preview = source.pageContent.slice(0, 20) + '...';
+  const preview = source.pageContent + '...';
   return (
-    <a href={link} target='_blank' rel='noopener noreferrer'>
-      <Card className='hover:bg-muted transition-all cursor-pointer mt-2 rounded-none'>
+    <Card className='hover:bg-muted transition-all cursor-pointer mt-2 rounded-none w-full'>
+      <a href={link} target='_blank' rel='noopener noreferrer'>
         <CardHeader className='px-4 py-2'>
           <div className='flex justify-between items-start'>
             <CardTitle className='text-md'>{type.toUpperCase()}</CardTitle>
             <ExternalLink className='h-4 w-4 mt-1 text-blue-700' />
           </div>
-          <CardDescription className='text-sm'>{preview}</CardDescription>
+          <CardDescription className='text-sm line-clamp-3'>
+            {preview}
+          </CardDescription>
         </CardHeader>
-      </Card>
-    </a>
+      </a>
+    </Card>
   );
 }
 
@@ -98,7 +101,9 @@ export function ChatbotMessage({
     >
       <RoleAvatar role={role} />
       <div>
-        <p className='text-wrap'>{message}</p>
+        <article className='text-wrap prose'>
+          <Remark>{message}</Remark>
+        </article>
       </div>
     </div>
   );
@@ -141,17 +146,18 @@ export function ChatbotMessageList({
           <Fragment key={message.content}>
             <div
               className={cn(
-                'w-[640px] py-2',
+                'w-[640px] pt-2 pb-4',
                 message.role === 'assistant' ? 'bg-muted' : 'bg-background'
               )}
             >
               <ChatbotMessage content={message.content} role={message.role} />
               <div
                 className={cn(
-                  'grid grid-cols-3 mx-2',
+                  'flex flex-col ml-8 mr-4 gap-0 mt-2',
                   message.role === 'assistant' && 'bg-muted'
                 )}
               >
+                References:
                 {sources.map((source) => {
                   return (
                     <SourceCard key={source.metadata.link} source={source} />
