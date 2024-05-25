@@ -1,3 +1,9 @@
+/**
+ * mik:
+ * this component displays one of the main features of the product.
+ * a user can click on it to be redirected to the feature.
+ */
+
 import { Card, CardTitle, CardContent } from "./card";
 import { useEffect, useState } from "react";
 
@@ -8,18 +14,18 @@ interface props {
 }
 
 const DashboardCard: React.FC<props> = ({ title, href, children }) => {
-    const [isVisible, setVisibility] = useState(false)
+    const [isVisible, setVisibility] = useState(false) // tracks whether the card exists on the page, used for the ease-in transition
 
     useEffect(() => {
         const timeout = setTimeout(() => {
             setVisibility(true)
         }, 500)
         return () => clearTimeout(timeout)
-    }, [])
+    }, []) // this function is for the fade-in effects of the cards
 
     const handleClick = () => {
         window.location.href = href;
-    };
+    }; // clicking on this card redirects the user to the feature of choice
 
     return (
         <Card

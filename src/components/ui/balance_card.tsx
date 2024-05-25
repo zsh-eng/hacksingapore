@@ -1,3 +1,9 @@
+/**
+ * mik:
+ * this component displays the balance of one of the user's 4 CPF accounts.
+ * the user can hover over one of the cards, and click on them for more details about the different accounts.
+ */
+
 import { Card, CardTitle, CardContent } from "./card";
 import { useEffect, useState } from "react";
 import { FaQuestion } from "react-icons/fa";
@@ -16,7 +22,7 @@ const BalanceCard: React.FC<props> = ({title, balance}) => {
             setVisibility(true)
         }, 500)
         return () => clearTimeout(timeout)
-    }, [])
+    }, []) // this function is for the fade-in effects of the cards
 
     const showModal = () => {
         setModalVisiblity(true)
@@ -41,6 +47,7 @@ const BalanceCard: React.FC<props> = ({title, balance}) => {
     );
 }
 
+// modal component, mainly so that the user knows that an action can be taken on it (clicking for more info).
 const InfoModal = () => {
     return (
         <div className="absolute inset-0 flex items-center justify-center rounded-md bg-black bg-opacity-75 text-white">

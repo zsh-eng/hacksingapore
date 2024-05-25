@@ -1,3 +1,11 @@
+/**
+ * mik:
+ * this page displays an overview of the user's 4 CPF balances, along with a pie chart illustrating how the total CPF is allocated across them.
+ * the user can hover over any of the cards and click on them for more info.
+ * currently the pie chart does not serve any purpose other than a static display.
+ * TODO: find a better pie chart this one actually blows
+ */
+
 import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 import Navbar from "@/components/ui/navbar";
