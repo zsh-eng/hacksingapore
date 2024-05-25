@@ -5,12 +5,14 @@ interface props {
     isOpen: boolean;
     onClose: () => void;
     content: string;
+    productName: string;
 }
 
 const InvestmentProductModal: React.FC<props> = ({
     isOpen,
     onClose,
     content,
+    productName,
 }) => {
     useEffect(() => {
         if (isOpen) {
@@ -24,6 +26,9 @@ const InvestmentProductModal: React.FC<props> = ({
         return null;
     }
 
+    
+    const [risk, description] = content.split(" + ")
+
     return (
         <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
             <div className="bg-white p-8 rounded shadow-lg relative max-w-lg w-full">
@@ -33,7 +38,9 @@ const InvestmentProductModal: React.FC<props> = ({
                 >
                     &times;
                 </Button>
-                <div className="mt-4">{content}</div>
+                <div>{productName}</div>
+                <div className="mt-4">{risk}</div>
+                <div className="mt-4">{description}</div>
             </div>
         </div>
     );

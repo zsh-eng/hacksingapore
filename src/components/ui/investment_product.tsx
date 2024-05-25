@@ -7,6 +7,7 @@ interface props {
 }
 
 const InvestmentProduct: React.FC<props> = ({ product }) => {
+    const productName = product[0]
     const productDescription = product[1]
 
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -24,9 +25,9 @@ const InvestmentProduct: React.FC<props> = ({ product }) => {
 
     return (
         <div>
-            <InvestmentProductModal isOpen={isModalOpen} onClose={closeModal} content={modalContent} />
+            <InvestmentProductModal isOpen={isModalOpen} onClose={closeModal} content={modalContent} productName={productName} />
             <Badge
-                className="w-24 h-24 flex justify-center items-center text-center bg-slate-800"
+                className="w-24 h-24 flex justify-center items-center text-center bg-slate-800 cursor-pointer"
                 onClick={showModal}
             >
                 {product[0]}

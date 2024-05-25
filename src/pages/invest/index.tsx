@@ -17,12 +17,12 @@ const dob = "1948-09-10";
 
 // investment products
 const investmentProducts = [
-    ["Stocks", "Stocks represent ownership in a company and constitute a claim on part of the company’s assets and earnings."],
-    ["Bonds", "Bonds are fixed income instruments that represent a loan made by an investor to a borrower."],
-    ["Exchange Traded Funds", "ETFs are investment funds traded on stock exchanges, much like stocks."],
-    ["Singapore Government Bonds", "SGBs are debt securities issued by the government of Singapore to fund government operations."],
-    ["Fixed Deposits", "Fixed deposits are a type of financial instrument offered by banks with a fixed rate of interest."],
-    ["Fund Management Accounts", "These are investment accounts managed by professionals, offering diversification and professional management."],
+    ["Stocks", "Risk: High + Stocks represent ownership in a company and is a claim on part of the company’s assets and earnings."],
+    ["Bonds", "Risk: High + Bonds are loans made by an investor to a borrower."],
+    ["Exchange Traded Funds (ETFs)", "Risk: High + ETFs are investment funds traded on stock exchanges, much like stocks."],
+    ["Singapore Government Bonds (SGBs)", "Risk: Low + SGBs are debt securities issued by the government of Singapore to fund government operations."],
+    ["Fixed Deposits (FDs)", "Risk: Low + FDs are offered by banks with a fixed interest rate."],
+    ["Fund Management Accounts", "Risk: Low + These are investment accounts managed by professionals, offering diversification and professional management."],
 ];
 
 export default function Invest() {
