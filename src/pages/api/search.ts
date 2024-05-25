@@ -1,17 +1,33 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import { run } from '@/server/search';
+import { run, vectorSearch } from '@/server/search';
 import type { NextApiRequest, NextApiResponse } from 'next';
-
-
+import { z } from 'zod';
 
 type Data = {
   name: string;
 };
 
+const inputSchema = z.object({
+  query: z.string(),
+});
+
 export default async function handler(
   req: NextApiRequest,
-  res: NextApiResponse<Data>
+  // TODO: change this to the appropriate update type
+  res: NextApiResponse<any>
 ) {
-  const result = await run();
-  res.status(200).json({ name: 'John Doe' });
+  if (req.method !== 'POST') {
+    return;
+  }
+
+  const body = req.body;
+  const parsed = inputSchema.safeParse(body);
+  if (!parsed.success) {
+    res.status(400).json({ error: parsed.error });
+    return;
+  }
+
+  const query = parsed.data.query;
+
+  const results = await vectorSearch(query);
+  res.status(200).json(results);
 }
