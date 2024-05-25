@@ -1,7 +1,11 @@
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
+import { Textarea } from '@/components/ui/textarea';
 import { cn } from '@/lib/utils';
-import OpenAI from 'openai';
+import { useState } from 'react';
+import { Loader2, LoaderCircle, SendHorizonal } from 'lucide-react';
+import { completion } from '@/lib/ai';
 
 type Role = 'user' | 'assistant';
 
@@ -55,7 +59,7 @@ export function ChatbotMessage({
 }
 
 export type Message = {
-  message: string;
+  content: string;
   role: Role;
 };
 
@@ -69,15 +73,14 @@ type ChatbotMessageListProps = {
 export function ChatbotMessageList({ messages }: ChatbotMessageListProps) {
   return (
     <div className='flex flex-col'>
-      <ChatbotMessage message='Hello, how can I help you?' role='assistant' />
       {messages.map((message, i) => {
         const isLast = i === messages.length - 1;
         return (
           <>
             <ChatbotMessage
-              key={message.message}
-              message={message.message}
-              role='user'
+              key={message.content}
+              message={message.content}
+              role={message.role}
             />
             {!isLast && <Separator />}
           </>
@@ -87,17 +90,66 @@ export function ChatbotMessageList({ messages }: ChatbotMessageListProps) {
   );
 }
 
-const messages: Message[] = [
+const initialMessages: Message[] = [
   {
-    message: 'hello there',
+    content: 'hello there',
     role: 'user',
   },
   {
-    message: 'nice to meet you',
+    content: 'nice to meet you',
     role: 'assistant',
   },
 ];
 
 export function Chatbot() {
-  return <ChatbotMessageList messages={messages} />;
+  const [messages, setMessages] = useState<Message[]>(initialMessages);
+  const [input, setInput] = useState('');
+  const [loading, setLoading] = useState(false);
+
+  const handleSend = async () => {
+    setLoading(true);
+    const userMessage: Message = {
+      content: input,
+      role: 'user',
+    };
+
+    try {
+      const message = await completion([...messages, userMessage]);
+      setMessages([
+        ...messages,
+        userMessage,
+        {
+          content: message.choices[0].message.content ?? '',
+          role: 'assistant',
+        },
+      ]);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <div className='flex flex-col group'>
+      <ChatbotMessageList messages={messages} />
+      <Textarea
+        className='text-md mt-4'
+        placeholder='Type a message...'
+        onChange={(e) => setInput(e.currentTarget.value)}
+        value={input}
+      />
+      <Button
+        variant='secondary'
+        className='mt-2'
+        disabled={loading}
+        onClick={handleSend}
+      >
+        Send
+        {loading ? (
+          <Loader2 className='h-4 w-4 ml-2 transition-all animate-spin' />
+        ) : (
+          <SendHorizonal className='h-4 w-4 ml-2 text-cyan-700 group-hover:translate-x-1 transition-all' />
+        )}
+      </Button>
+    </div>
+  );
 }
