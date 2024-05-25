@@ -2,8 +2,6 @@
  * mik:
  * i think we can just make the home page the dashboard page. quite likely the user will just
  * navigate to where they want from there, then its one less layer of hierarchy for navigation also
- *
- * feature_X will be replaced with the actual feature names later
  */
 
 import { Inter } from "next/font/google";

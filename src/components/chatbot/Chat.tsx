@@ -1,80 +1,106 @@
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Button } from '@/components/ui/button';
+/**
+ * mik has touched the code here a little.
+ * line 144: 600px -> 440px so i could fit the component in the page
+ * line 289-300: added code to toggle chat visiblity
+ */
+
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Button } from "@/components/ui/button";
 import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card';
-import { ScrollArea } from '@/components/ui/scroll-area';
-import { Separator } from '@/components/ui/separator';
-import { Textarea } from '@/components/ui/textarea';
-import { Source, completion, openai } from '@/lib/ai';
-import { cn } from '@/lib/utils';
-import { ExternalLink, Loader2, SendHorizonal } from 'lucide-react';
-import { Fragment, useState } from 'react';
+    Card,
+    CardContent,
+    CardDescription,
+    CardHeader,
+    CardTitle,
+} from "@/components/ui/card";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { Separator } from "@/components/ui/separator";
+import { Textarea } from "@/components/ui/textarea";
+import { Source, completion, openai } from "@/lib/ai";
+import { cn } from "@/lib/utils";
+import { ExternalLink, Loader2, SendHorizonal } from "lucide-react";
+import { Fragment, useState } from "react";
+import { IoIosChatboxes } from "react-icons/io";
 import { Remark } from 'react-remark';
 
-type Role = 'user' | 'assistant';
+type Role = "user" | "assistant";
 
 type ChatbotMessageProps = {
-  content: string;
-  role?: Role;
+    content: string;
+    role?: Role;
   loading?: boolean;
 };
 
 type SourceCardProps = {
-  source: Source;
+    source: Source;
 };
 
 function SourceCard({ source }: SourceCardProps) {
-  const { type, link } = source.metadata;
-  return (
-    <Card className='hover:bg-muted transition-all cursor-pointer mt-2 rounded-none w-full'>
-      <a href={link} target='_blank' rel='noopener noreferrer'>
-        <CardHeader className='px-4 py-2'>
-          <div className='flex justify-between items-start'>
-            <CardTitle className='text-md'>{type.toUpperCase()}</CardTitle>
-            <ExternalLink className='h-4 w-4 mt-1 text-blue-700' />
-          </div>
-          <CardDescription className='text-sm line-clamp-3'>
-            {source.pageContent}
-          </CardDescription>
-        </CardHeader>
-      </a>
-    </Card>
-  );
+    const { type, link } = source.metadata;
+    const preview = source.pageContent.slice(0, 20) + "...";
+    return (
+        <a href={link} target="_blank" rel="noopener noreferrer">
+            <Card className="hover:bg-muted transition-all cursor-pointer mt-2 rounded-none">
+                <CardHeader className="px-4 py-2">
+                    <div className="flex justify-between items-start">
+                        <CardTitle className="text-md">
+                            {type.toUpperCase()}
+                        </CardTitle>
+                        <ExternalLink className="h-4 w-4 mt-1 text-blue-700" />
+                    </div>
+                    <CardDescription className="text-sm">
+                        {preview}
+                    </CardDescription>
+                </CardHeader>
+            </Card>
+        </a>
+    );
 }
 
 function AssistantAvatar() {
-  return (
-    <Avatar className='w-8 h-8 mt-1'>
-      <AvatarImage src='https://cdn-icons-png.flaticon.com/512/1448/1448779.png' />
-      <AvatarFallback>BOT</AvatarFallback>
-    </Avatar>
-  );
+    return (
+        <Avatar className="w-8 h-8 mt-1">
+            <AvatarImage src="https://cdn-icons-png.flaticon.com/512/1448/1448779.png" />
+            <AvatarFallback>BOT</AvatarFallback>
+        </Avatar>
+    );
 }
 
 function UserAvatar() {
-  return (
-    <Avatar className='w-8 h-8 mt-1'>
-      <AvatarImage src='https://avatars.githubusercontent.com/u/49238630?v=4' />
-      <AvatarFallback>CN</AvatarFallback>
-    </Avatar>
-  );
+    return (
+        <Avatar className="w-8 h-8 mt-1">
+            <AvatarImage src="https://avatars.githubusercontent.com/u/49238630?v=4" />
+            <AvatarFallback>CN</AvatarFallback>
+        </Avatar>
+    );
 }
 
 function RoleAvatar({ role }: { role: Role }) {
-  return role === 'assistant' ? <AssistantAvatar /> : <UserAvatar />;
+    return role === "assistant" ? <AssistantAvatar /> : <UserAvatar />;
+}
+
+export function LoadingChatbotMessage() {
+    return (
+        <>
+            <Separator />
+            <div className={cn("w-[640px] py-2 bg-muted")}>
+                <div className={cn("flex gap-4 items-start px-4")}>
+                    <RoleAvatar role={"assistant"} />
+                    <div>
+                        <Loader2 className="h-4 w-4 animate-spin" />
+                    </div>
+                </div>
+            </div>
+        </>
+    );
 }
 
 /**
  * A single chatbot message
  */
 export function ChatbotMessage({
-  content: message,
-  role = 'assistant',
+    content: message,
+    role = "assistant",
   loading = false,
 }: ChatbotMessageProps) {
   return (
@@ -96,14 +122,14 @@ export function ChatbotMessage({
 }
 
 export type UserMessage = {
-  content: string;
-  role: 'user';
+    content: string;
+    role: "user";
 };
 
 export type AssistantMessage = {
-  content: string;
-  role: 'assistant';
-  sources?: Source[];
+    content: string;
+    role: "assistant";
+    sources?: Source[];
 };
 
 export type Message = UserMessage | AssistantMessage;
@@ -122,48 +148,56 @@ export function ChatbotMessageList({
   loading = false,
   loadingMessage = 'Hold on a sec...',
 }: ChatbotMessageListProps) {
-  return (
-    <ScrollArea className='flex flex-col gap-0 h-[600px]'>
-      {messages.map((message, i) => {
-        const isLast = i === messages.length - 1;
-        const sources =
-          message.role === 'assistant' && message.sources
-            ? message.sources
-            : [];
-        return (
-          <Fragment key={message.content}>
-            <div
-              className={cn(
-                'w-[640px] pt-2 pb-4',
-                message.role === 'assistant' ? 'bg-muted' : 'bg-background'
-              )}
-            >
-              <ChatbotMessage content={message.content} role={message.role} />
-              <div
-                className={cn(
-                  'flex flex-col ml-8 mr-4 gap-0 mt-2',
-                  message.role === 'assistant' && 'bg-muted'
-                )}
-              >
-                {sources.length > 0 && <div>Useful Links:</div>}
+    return (
+        <ScrollArea className="flex flex-col gap-0 h-[420px]">
+            {messages.map((message, i) => {
+                const isLast = i === messages.length - 1;
+                const sources =
+                    message.role === "assistant" && message.sources
+                        ? message.sources
+                        : [];
+                return (
+                    <Fragment key={message.content}>
+                        <div
+                            className={cn(
+                                "w-[640px] pt-2 pb-4",
+                                message.role === "assistant"
+                                    ? "bg-muted"
+                                    : "bg-background"
+                            )}
+                        >
+                            <ChatbotMessage
+                                content={message.content}
+                                role={message.role}
+                            />
+                            <div
+                                className={cn(
+                                    "flex flex-col ml-8 mr-4 gap-0 mt-2",
+                                    message.role === "assistant" && "bg-muted"
+                                )}
+                            >
+                                {sources.length > 0 && <div>Useful Links:</div>}
                 {sources.map((source) => {
-                  return (
-                    <SourceCard key={source.metadata.link} source={source} />
-                  );
-                })}
-              </div>
-            </div>
-            {!isLast && (
-              <div className='py-2 bg-background'>
-                <Separator className='' />
-              </div>
-            )}
-          </Fragment>
-        );
-      })}
-      {loading && <ChatbotMessage content={loadingMessage} loading={loading} />}
-    </ScrollArea>
-  );
+                                    return (
+                                        <SourceCard
+                                            key={source.metadata.link}
+                                            source={source}
+                                        />
+                                    );
+                                })}
+                            </div>
+                        </div>
+                        {!isLast && (
+                            <div className="py-2 bg-background">
+                                <Separator className="" />
+                            </div>
+                        )}
+                    </Fragment>
+                );
+            })}
+            {loading && <ChatbotMessage content={loadingMessage} loading={loading} />}
+        </ScrollArea>
+    );
 }
 
 const initialMessages: Message[] = [
@@ -198,36 +232,36 @@ export function Chatbot() {
   const [loading, setLoading] = useState(false);
   const [streamingMessage, setStreamingMessage] = useState('');
 
-  const disabled = loading || !input;
+    const disabled = loading || !input;
 
-  const handleKeyUp = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
-    const isSend = e.key === 'Enter' && (e.metaKey || e.ctrlKey);
-    console.log('pressed');
-    if (!isSend) {
-      return;
-    }
-    handleSend();
-  };
-
-  const handleSend = async () => {
-    setLoading(true);
-    const userMessage: UserMessage = {
-      content: input,
-      role: 'user',
+    const handleKeyUp = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
+        const isSend = e.key === "Enter" && (e.metaKey || e.ctrlKey);
+        console.log("pressed");
+        if (!isSend) {
+            return;
+        }
+        handleSend();
     };
-    setMessages([...messages, userMessage]);
 
-    try {
-      const sources = await callBackend(input);
-      // TODO: replace wth actual metadata
-      const updatedContent = `User's Question: ${input}
+    const handleSend = async () => {
+        setLoading(true);
+        const userMessage: UserMessage = {
+            content: input,
+            role: "user",
+        };
+        setMessages([...messages, userMessage]);
+
+        try {
+            const sources = await callBackend(input);
+                  // TODO: replace wth actual metadata
+            const updatedContent = `User's Question: ${input}
 Relevant Sources:
 ${sources.map((source) => `${source.metadata}\n${source.pageContent}`)}
 `;
-      const userMessageWithSources: Message = {
-        content: updatedContent,
-        role: 'user',
-      };
+            const userMessageWithSources: Message = {
+                content: updatedContent,
+                role: "user",
+            };
 
       let message = '';
 
@@ -257,19 +291,26 @@ ${sources.map((source) => `${source.metadata}\n${source.pageContent}`)}
     }
   };
 
-  const callBackend = async (query: string): Promise<Source[]> => {
-    if (!query) return [];
-    const res = await fetch('/api/search', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ query }),
-    });
+    const callBackend = async (query: string): Promise<Source[]> => {
+        if (!query) return [];
+        const res = await fetch("/api/search", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ query }),
+        });
 
-    const results = await res.json();
-    return results;
-  };
+        const results = await res.json();
+        return results;
+    };
+
+    // code below handles the toggling of the chatbot
+    const [isChatOpen, setIsChatOpen] = useState(false);
+
+    const toggleChat = () => {
+        setIsChatOpen(!isChatOpen);
+    };
 
   return (
     <Card>
@@ -277,11 +318,7 @@ ${sources.map((source) => `${source.metadata}\n${source.pageContent}`)}
         <CardTitle>Chat</CardTitle>
       </CardHeader>
       <CardContent className='flex flex-col gap-2'>
-        <ChatbotMessageList
-          messages={messages}
-          loading={loading}
-          loadingMessage={streamingMessage}
-        />
+        <ChatbotMessageList messages={messages} loading={loading} />
         <Textarea
           className='text-md mt-4'
           placeholder='Type a message... (⌘ ↵ to send)'

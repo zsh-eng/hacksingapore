@@ -1,9 +1,11 @@
-import { Chatbot } from '@/components/chatbot/Chat';
+import { Chatbot } from "@/components/chatbot/Chat";
+import { Button } from "@/components/ui/button";
 
 export default function Page() {
-  return (
-    <main className='w-screen h-screen flex justify-center items-center'>
-      <Chatbot />
-    </main>
-  );
+    return (
+        <div className="w-screen">
+            <Button>Click me</Button>
+            <Chatbot />
+        </div>
+    );
 }
