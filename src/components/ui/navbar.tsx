@@ -11,7 +11,7 @@ export default function Navbar() {
     };
 
     return (
-        <div className={`bg-slate-800 w-64 h-screen hidden overflow-hidden lg:flex flex-col justify-between absolute left-0 z-50 transform ${isNavbarOpen ? 'translate-x-0' : '-translate-x-48'} transition-transform duration-300 ease-in-out`}>
+        <div className={`bg-slate-800 w-64 min-h-screen hidden overflow-hidden lg:flex flex-col justify-between fixed top-0 left-0 z-50 transform ${isNavbarOpen ? 'translate-x-0' : '-translate-x-48'} transition-transform duration-300 ease-in-out`}>
             <nav className=" text-gray-300 relative flex flex-col justify-between h-full">
                 <div className="p-2">
                     <div className="flex flex-row justify-end -mr-0.25">

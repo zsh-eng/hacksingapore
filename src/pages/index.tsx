@@ -21,16 +21,19 @@ export default function Home() {
             className={`flex min-h-screen flex-col bg-slate-500 items-center justify-center p-24 ${inter.className}`}
         >
             <Navbar />
-            <div className="flex flex-wrap gap-10 justify-center lg:grid-rows-2">
-                <DashboardCard title="Your Savings" href="/savings">
-                    <TbPigMoney size={60}/>
-                </DashboardCard>
-                <DashboardCard title="Chat" href="/chat" >
-                    <IoIosChatboxes size={60}/>
-                </DashboardCard>
-                <DashboardCard title="Feature 3" href="/feature_3" >
-                    <FaQuestion size={60}/>
-                </DashboardCard>
+            <div className="flex flex-col items-center justify-center space-y-16">
+                <h2 className="text-2xl text-slate-200 font-semibold ">What would you like to do today?</h2>
+                <div className="flex flex-wrap gap-10 justify-center lg:grid-rows-2">
+                    <DashboardCard title="Your Savings" href="/savings">
+                        <TbPigMoney size={60}/>
+                    </DashboardCard>
+                    <DashboardCard title="Chat" href="/chat" >
+                        <IoIosChatboxes size={60}/>
+                    </DashboardCard>
+                    <DashboardCard title="Feature 3" href="/feature_3" >
+                        <FaQuestion size={60}/>
+                    </DashboardCard>
+                </div>
             </div>
         </main>
     );
