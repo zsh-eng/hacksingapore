@@ -12,7 +12,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Source, completion } from '@/lib/ai';
 import { cn } from '@/lib/utils';
 import { ExternalLink, Loader2, Phone, SendHorizonal } from 'lucide-react';
-import { useState } from 'react';
+import { Fragment, useState } from 'react';
 
 type Role = 'user' | 'assistant';
 
@@ -67,15 +67,17 @@ function RoleAvatar({ role }: { role: Role }) {
 
 export function LoadingChatbotMessage() {
   return (
-    <div className={cn('w-[640px] py-2 bg-muted')}>
+    <>
       <Separator />
-      <div className={cn('flex gap-4 items-start px-4')}>
-        <RoleAvatar role={'assistant'} />
-        <div>
-          <Loader2 className='h-4 w-4 animate-spin' />
+      <div className={cn('w-[640px] py-2 bg-muted')}>
+        <div className={cn('flex gap-4 items-start px-4')}>
+          <RoleAvatar role={'assistant'} />
+          <div>
+            <Loader2 className='h-4 w-4 animate-spin' />
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
@@ -87,7 +89,12 @@ export function ChatbotMessage({
   role = 'assistant',
 }: ChatbotMessageProps) {
   return (
-    <div className={cn('flex gap-4 items-start px-4')}>
+    <div
+      className={cn(
+        'flex gap-4 items-start px-4',
+        role === 'assistant' && 'bg-muted'
+      )}
+    >
       <RoleAvatar role={role} />
       <div>
         <p className='text-wrap'>{message}</p>
@@ -130,27 +137,33 @@ export function ChatbotMessageList({
             ? message.sources
             : [];
         return (
-          <div
-            key={message.content}
-            className={cn(
-              'w-[640px] py-2',
-              message.role === 'assistant' && 'bg-muted'
-            )}
-          >
-            <ChatbotMessage content={message.content} role={message.role} />
-            <div className={cn('grid grid-cols-3 mx-2')}>
-              {sources.map((source) => {
-                return (
-                  <SourceCard key={source.metadata.link} source={source} />
-                );
-              })}
+          <Fragment key={message.content}>
+            <div
+              className={cn(
+                'w-[640px] py-2',
+                message.role === 'assistant' ? 'bg-muted' : 'bg-background'
+              )}
+            >
+              <ChatbotMessage content={message.content} role={message.role} />
+              <div
+                className={cn(
+                  'grid grid-cols-3 mx-2',
+                  message.role === 'assistant' && 'bg-muted'
+                )}
+              >
+                {sources.map((source) => {
+                  return (
+                    <SourceCard key={source.metadata.link} source={source} />
+                  );
+                })}
+              </div>
             </div>
             {!isLast && (
               <div className='py-2 bg-background'>
                 <Separator className='' />
               </div>
             )}
-          </div>
+          </Fragment>
         );
       })}
       {loading && <LoadingChatbotMessage />}
@@ -175,6 +188,10 @@ const initialMessages: Message[] = [
       },
     ],
     role: 'assistant',
+  },
+  {
+    content: 'Things are doing great, what about you?',
+    role: 'user',
   },
 ];
 
@@ -271,14 +288,6 @@ ${sources.map((source) => `${source.metadata}\n${source.pageContent}`)}
           ) : (
             <SendHorizonal className='h-4 w-4 ml-2 text-cyan-700 group-hover:translate-x-1 transition-all' />
           )}
-        </Button>
-        <Button
-          variant='outline'
-          onClick={() => callBackend(input)}
-          disabled={disabled}
-        >
-          <Phone className='h-4 w-4 mr-2' />
-          Call backend
         </Button>
       </CardContent>
     </Card>
