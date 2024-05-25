@@ -696,7 +696,7 @@
     "merdekagen": {
         "lastupdated": "2024-04-24",
         "eligibility": {
-            "value": false
+            "value": true
         },
         "source": "1",
         "classification": "C"
@@ -999,7 +999,7 @@
     "silversupport": {
         "lastupdated": "2024-04-24",
         "eligibility": {
-            "value": ""
+            "value": "720"
         },
         "amount": {
             "value": 0
