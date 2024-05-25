@@ -41,34 +41,46 @@ export function ChatbotMessage({
   return (
     <div
       className={cn(
-        'flex gap-4 items-start w-96 px-4 py-2',
+        'flex gap-4 items-start w-[600px] px-4 py-2',
         role === 'assistant' && 'bg-muted'
       )}
     >
       <RoleAvatar role={role} />
       <div>
-        <p className='text-wrap w-96'>{message}</p>
+        <p className='text-wrap'>{message}</p>
       </div>
-      <Separator />
     </div>
   );
 }
 
-const messages = [
-  'Hello, how can I help you?',
-  'I am a chatbot, ask me anything!',
-  'I am a chatbot, ask me anything!',
-];
+export type Message = {
+  message: string;
+  role: Role;
+};
+
+type ChatbotMessageListProps = {
+  messages: Message[];
+};
 
 /**
  * A list of chatbot mesasges
  */
-export function ChatbotMessageList() {
+export function ChatbotMessageList({ messages }: ChatbotMessageListProps) {
   return (
-    <div className='flex flex-col gap-2'>
+    <div className='flex flex-col'>
       <ChatbotMessage message='Hello, how can I help you?' role='assistant' />
-      {messages.map((message) => {
-        return <ChatbotMessage key={message} message={message} role='user' />;
+      {messages.map((message, i) => {
+        const isLast = i === messages.length - 1;
+        return (
+          <>
+            <ChatbotMessage
+              key={message.message}
+              message={message.message}
+              role='user'
+            />
+            {!isLast && <Separator />}
+          </>
+        );
       })}
     </div>
   );
