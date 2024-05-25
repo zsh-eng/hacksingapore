@@ -1,0 +1,15 @@
+{
+    "oa_sa_all_investable": {
+        "SINGAPORE T-BILLS": 0.035,
+        "SINGAPORE GOVERNMENT BONDS": 0.02,
+        "MANULIFE ASIA PACIFIC FUND": 0.03
+    },
+    "oa_35percent_investable": {
+        "KEPPEL REIT": 0.072,
+        "CREATIVE TECHNOLOGY LTD": 0.036,
+        "CAPITALAND INVESTMENT LTD": 0.055
+    },
+    "oa_10percent_investable": {
+        "SDPR GOLD TRUST": 0.011
+    }
+}
