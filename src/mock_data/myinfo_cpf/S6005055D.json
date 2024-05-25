@@ -1,0 +1,1088 @@
+{
+    "edulevel": {
+        "lastupdated": "2024-04-24",
+        "code": "",
+        "source": "2",
+        "classification": "C",
+        "desc": ""
+    },
+    "dialect": {
+        "lastupdated": "2024-04-24",
+        "code": "",
+        "source": "1",
+        "classification": "C",
+        "desc": ""
+    },
+    "occupation": {
+        "lastupdated": "2024-04-24",
+        "source": "2",
+        "classification": "C",
+        "value": ""
+    },
+    "ltavocationallicences": {
+        "tdvl": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        },
+        "odvl": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        },
+        "bavl": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        },
+        "pdvl": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        },
+        "bdvl": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        }
+    },
+    "mobileno": {
+        "lastupdated": "2024-04-24",
+        "source": "4",
+        "classification": "C",
+        "areacode": {
+            "value": "65"
+        },
+        "prefix": {
+            "value": "+"
+        },
+        "nbr": {
+            "value": "97399245"
+        }
+    },
+    "uuid": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "1a02a086-7aa6-5a51-64f1-acfa24db029d"
+    },
+    "mailadd": {
+        "country": {
+            "code": "",
+            "desc": ""
+        },
+        "unit": {
+            "value": ""
+        },
+        "street": {
+            "value": ""
+        },
+        "lastupdated": "2024-04-24",
+        "block": {
+            "value": ""
+        },
+        "source": "2",
+        "postal": {
+            "value": ""
+        },
+        "classification": "C",
+        "floor": {
+            "value": ""
+        },
+        "type": "SG",
+        "building": {
+            "value": ""
+        }
+    },
+    "marriedname": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "NAMEG"
+    },
+    "sponsoredchildrenrecords": [],
+    "academicqualifications": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "divorcedate": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": ""
+    },
+    "marriagecertno": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": ""
+    },
+    "noahistory": {
+        "noas": [
+            {
+                "amount": {
+                    "value": 84431
+                },
+                "trade": {
+                    "value": -3030.9
+                },
+                "interest": {
+                    "value": 1800.3
+                },
+                "yearofassessment": {
+                    "value": "2023"
+                },
+                "taxclearance": {
+                    "value": "N"
+                },
+                "employment": {
+                    "value": 77100
+                },
+                "rent": {
+                    "value": 2500
+                },
+                "category": {
+                    "value": "ORIGINAL"
+                }
+            },
+            {
+                "amount": {
+                    "value": 74200
+                },
+                "trade": {
+                    "value": 0
+                },
+                "interest": {
+                    "value": 1800.3
+                },
+                "yearofassessment": {
+                    "value": "2022"
+                },
+                "taxclearance": {
+                    "value": "N"
+                },
+                "employment": {
+                    "value": 69900
+                },
+                "rent": {
+                    "value": 2500
+                },
+                "category": {
+                    "value": "ORIGINAL"
+                }
+            }
+        ],
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C"
+    },
+    "ownerprivate": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": false
+    },
+    "cpfdependantprotectionscheme": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "cpfmedishieldlife": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "cpfemployers": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "history": [
+            {
+                "month": {
+                    "value": "2021-12"
+                },
+                "employer": {
+                    "value": "CLEANPRO FACILITIES PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2022-01"
+                },
+                "employer": {
+                    "value": "CLEANPRO FACILITIES PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2022-02"
+                },
+                "employer": {
+                    "value": "CLEANPRO FACILITIES PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2022-03"
+                },
+                "employer": {
+                    "value": "CLEANPRO FACILITIES PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2022-04"
+                },
+                "employer": {
+                    "value": "CLEANPRO FACILITIES PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2022-05"
+                },
+                "employer": {
+                    "value": "CLEANPRO FACILITIES PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2022-06"
+                },
+                "employer": {
+                    "value": "CLEANPRO FACILITIES PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2022-07"
+                },
+                "employer": {
+                    "value": "CLEANPRO FACILITIES PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2022-08"
+                },
+                "employer": {
+                    "value": "CLEANPRO FACILITIES PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2022-09"
+                },
+                "employer": {
+                    "value": "CLEANPRO FACILITIES PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2022-10"
+                },
+                "employer": {
+                    "value": "CLEANPRO FACILITIES PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2022-11"
+                },
+                "employer": {
+                    "value": "CLEANPRO FACILITIES PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2022-12"
+                },
+                "employer": {
+                    "value": "CLEANPRO FACILITIES PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2023-01"
+                },
+                "employer": {
+                    "value": "CLEANPRO FACILITIES PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2023-02"
+                },
+                "employer": {
+                    "value": "CLEANPRO FACILITIES PTE LTD"
+                }
+            }
+        ],
+        "classification": "C"
+    },
+    "housingtype": {
+        "lastupdated": "2024-04-24",
+        "code": "",
+        "source": "1",
+        "classification": "C",
+        "desc": ""
+    },
+    "passexpirydate": {
+        "lastupdated": "2024-04-24",
+        "source": "3",
+        "classification": "C",
+        "value": ""
+    },
+    "homeno": {
+        "lastupdated": "2024-04-24",
+        "source": "2",
+        "classification": "C",
+        "areacode": {
+            "value": ""
+        },
+        "prefix": {
+            "value": ""
+        },
+        "nbr": {
+            "value": ""
+        }
+    },
+    "residentialstatus": {
+        "lastupdated": "2024-04-24",
+        "code": "C",
+        "source": "1",
+        "classification": "C",
+        "desc": "CITIZEN"
+    },
+    "cpfbalances": {
+        "oa": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "value": 71259.75
+        },
+        "ma": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "value": 24786
+        },
+        "sa": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "value": 18589.5
+        },
+        "ra": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        }
+    },
+    "passportnumber": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "E12345677F"
+    },
+    "schoolname": {
+        "lastupdated": "2024-04-24",
+        "code": "",
+        "source": "2",
+        "classification": "C",
+        "desc": ""
+    },
+    "hanyupinyinaliasname": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "HANYUEE"
+    },
+    "aliasname": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": ""
+    },
+    "passstatus": {
+        "lastupdated": "2024-04-24",
+        "source": "3",
+        "classification": "C",
+        "value": ""
+    },
+    "nationality": {
+        "lastupdated": "2024-04-24",
+        "code": "SG",
+        "source": "1",
+        "classification": "C",
+        "desc": "SINGAPORE CITIZEN"
+    },
+    "dob": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "1948-02-01"
+    },
+    "pioneergen": {
+        "lastupdated": "2024-04-24",
+        "eligibility": {
+            "value": true
+        },
+        "source": "1",
+        "classification": "C"
+    },
+    "name": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "MY.INFO:CC"
+    },
+    "cpfhousingwithdrawal": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "noa": {
+        "amount": {
+            "value": 84431
+        },
+        "trade": {
+            "value": -3030.9
+        },
+        "interest": {
+            "value": 1800.3
+        },
+        "yearofassessment": {
+            "value": "2023"
+        },
+        "taxclearance": {
+            "value": "N"
+        },
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "employment": {
+            "value": 77100
+        },
+        "classification": "C",
+        "rent": {
+            "value": 2500
+        },
+        "category": {
+            "value": "ORIGINAL"
+        }
+    },
+    "noa-basic": {
+        "yearofassessment": {
+            "value": "2023"
+        },
+        "lastupdated": "2024-04-24",
+        "amount": {
+            "value": 84431
+        },
+        "source": "1",
+        "classification": "C"
+    },
+    "passtype": {
+        "lastupdated": "2024-04-24",
+        "code": "",
+        "source": "3",
+        "classification": "C",
+        "desc": ""
+    },
+    "cpfinvestmentscheme": {
+        "oainvestmentamountavailable": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "value": ""
+        },
+        "sainvestmentamountavailable": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "value": ""
+        },
+        "sdsnetshareholdingqty": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        },
+        "account": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        },
+        "saqparticipationstatus": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        }
+    },
+    "regadd": {
+        "country": {
+            "code": "SG",
+            "desc": "SINGAPORE"
+        },
+        "unit": {
+            "value": "11"
+        },
+        "street": {
+            "value": "DOVER CRESCENT"
+        },
+        "lastupdated": "2024-04-24",
+        "block": {
+            "value": "27"
+        },
+        "source": "1",
+        "postal": {
+            "value": "130027"
+        },
+        "classification": "C",
+        "floor": {
+            "value": "03"
+        },
+        "type": "SG",
+        "building": {
+            "value": ""
+        }
+    },
+    "vehicles": [],
+    "billadd": {
+        "country": {
+            "code": "",
+            "desc": ""
+        },
+        "unit": {
+            "value": ""
+        },
+        "street": {
+            "value": ""
+        },
+        "lastupdated": "2024-04-24",
+        "block": {
+            "value": ""
+        },
+        "source": "2",
+        "postal": {
+            "value": ""
+        },
+        "classification": "C",
+        "floor": {
+            "value": ""
+        },
+        "type": "SG",
+        "building": {
+            "value": ""
+        }
+    },
+    "hanyupinyinname": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "MYINFOALIAS E"
+    },
+    "passportexpirydate": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "1999-01-01"
+    },
+    "cpfrstuselftopupamount": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "uinfin": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "S6005055D"
+    },
+    "gradyear": {
+        "lastupdated": "2024-04-24",
+        "source": "2",
+        "classification": "C",
+        "value": ""
+    },
+    "vocationallicences": [],
+    "cpfrstucurrentyeartaxrelief": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "householdincome": {
+        "lastupdated": "2024-04-24",
+        "high": {
+            "value": 0
+        },
+        "source": "2",
+        "classification": "C",
+        "low": {
+            "value": 0
+        }
+    },
+    "partialuinfin": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "*****055D"
+    },
+    "merdekagen": {
+        "lastupdated": "2024-04-24",
+        "eligibility": {
+            "value": false
+        },
+        "source": "1",
+        "classification": "C"
+    },
+    "cpfmonthlypayouts": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "cpfcontributions": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "history": [
+            {
+                "date": {
+                    "value": "2021-12-07"
+                },
+                "employer": {
+                    "value": "CLEANPRO FACILITIES PTE LTD"
+                },
+                "amount": {
+                    "value": 1837.5
+                },
+                "month": {
+                    "value": "2021-12"
+                }
+            },
+            {
+                "date": {
+                    "value": "2022-01-07"
+                },
+                "employer": {
+                    "value": "CLEANPRO FACILITIES PTE LTD"
+                },
+                "amount": {
+                    "value": 1837.5
+                },
+                "month": {
+                    "value": "2022-01"
+                }
+            },
+            {
+                "date": {
+                    "value": "2022-02-07"
+                },
+                "employer": {
+                    "value": "CLEANPRO FACILITIES PTE LTD"
+                },
+                "amount": {
+                    "value": 3675
+                },
+                "month": {
+                    "value": "2022-02"
+                }
+            },
+            {
+                "date": {
+                    "value": "2022-03-07"
+                },
+                "employer": {
+                    "value": "CLEANPRO FACILITIES PTE LTD"
+                },
+                "amount": {
+                    "value": 1837.5
+                },
+                "month": {
+                    "value": "2022-03"
+                }
+            },
+            {
+                "date": {
+                    "value": "2022-04-07"
+                },
+                "employer": {
+                    "value": "CLEANPRO FACILITIES PTE LTD"
+                },
+                "amount": {
+                    "value": 1837.5
+                },
+                "month": {
+                    "value": "2022-04"
+                }
+            },
+            {
+                "date": {
+                    "value": "2022-05-07"
+                },
+                "employer": {
+                    "value": "CLEANPRO FACILITIES PTE LTD"
+                },
+                "amount": {
+                    "value": 1837.5
+                },
+                "month": {
+                    "value": "2022-05"
+                }
+            },
+            {
+                "date": {
+                    "value": "2022-06-07"
+                },
+                "employer": {
+                    "value": "CLEANPRO FACILITIES PTE LTD"
+                },
+                "amount": {
+                    "value": 5512.5
+                },
+                "month": {
+                    "value": "2022-06"
+                }
+            },
+            {
+                "date": {
+                    "value": "2022-07-07"
+                },
+                "employer": {
+                    "value": "CLEANPRO FACILITIES PTE LTD"
+                },
+                "amount": {
+                    "value": 1988
+                },
+                "month": {
+                    "value": "2022-07"
+                }
+            },
+            {
+                "date": {
+                    "value": "2022-08-07"
+                },
+                "employer": {
+                    "value": "CLEANPRO FACILITIES PTE LTD"
+                },
+                "amount": {
+                    "value": 1988
+                },
+                "month": {
+                    "value": "2022-08"
+                }
+            },
+            {
+                "date": {
+                    "value": "2022-09-07"
+                },
+                "employer": {
+                    "value": "CLEANPRO FACILITIES PTE LTD"
+                },
+                "amount": {
+                    "value": 1988
+                },
+                "month": {
+                    "value": "2022-09"
+                }
+            },
+            {
+                "date": {
+                    "value": "2022-10-07"
+                },
+                "employer": {
+                    "value": "CLEANPRO FACILITIES PTE LTD"
+                },
+                "amount": {
+                    "value": 1988
+                },
+                "month": {
+                    "value": "2022-10"
+                }
+            },
+            {
+                "date": {
+                    "value": "2022-11-07"
+                },
+                "employer": {
+                    "value": "CLEANPRO FACILITIES PTE LTD"
+                },
+                "amount": {
+                    "value": 1988
+                },
+                "month": {
+                    "value": "2022-11"
+                }
+            },
+            {
+                "date": {
+                    "value": "2022-12-07"
+                },
+                "employer": {
+                    "value": "CLEANPRO FACILITIES PTE LTD"
+                },
+                "amount": {
+                    "value": 1988
+                },
+                "month": {
+                    "value": "2022-12"
+                }
+            },
+            {
+                "date": {
+                    "value": "2023-01-07"
+                },
+                "employer": {
+                    "value": "CLEANPRO FACILITIES PTE LTD"
+                },
+                "amount": {
+                    "value": 1988
+                },
+                "month": {
+                    "value": "2023-01"
+                }
+            },
+            {
+                "date": {
+                    "value": "2023-02-07"
+                },
+                "employer": {
+                    "value": "CLEANPRO FACILITIES PTE LTD"
+                },
+                "amount": {
+                    "value": 3975
+                },
+                "month": {
+                    "value": "2023-02"
+                }
+            }
+        ],
+        "classification": "C"
+    },
+    "gstvoucher": {
+        "gstregular": {
+            "value": 0
+        },
+        "year": {
+            "value": ""
+        },
+        "lastupdated": "2024-04-24",
+        "exclusion": {
+            "value": ""
+        },
+        "gstmedisave": {
+            "value": 0
+        },
+        "gstspecial": {
+            "value": 0
+        },
+        "source": "1",
+        "classification": "C",
+        "signup": {
+            "value": ""
+        }
+    },
+    "email": {
+        "lastupdated": "2024-04-24",
+        "source": "4",
+        "classification": "C",
+        "value": "myinfotesting@gmail.com"
+    },
+    "noahistory-basic": {
+        "noas": [
+            {
+                "yearofassessment": {
+                    "value": "2023"
+                },
+                "amount": {
+                    "value": 84431
+                }
+            },
+            {
+                "yearofassessment": {
+                    "value": "2022"
+                },
+                "amount": {
+                    "value": 74200
+                }
+            }
+        ],
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C"
+    },
+    "birthcountry": {
+        "lastupdated": "2024-04-24",
+        "code": "SG",
+        "source": "1",
+        "classification": "C",
+        "desc": "SINGAPORE"
+    },
+    "cpflife": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "race": {
+        "lastupdated": "2024-04-24",
+        "code": "SK",
+        "source": "1",
+        "classification": "C",
+        "desc": "SIKH"
+    },
+    "silversupport": {
+        "lastupdated": "2024-04-24",
+        "eligibility": {
+            "value": ""
+        },
+        "amount": {
+            "value": 0
+        },
+        "source": "1",
+        "classification": "C",
+        "year": {
+            "value": ""
+        }
+    },
+    "sex": {
+        "lastupdated": "2024-04-24",
+        "code": "M",
+        "source": "1",
+        "classification": "C",
+        "desc": "MALE"
+    },
+    "countryofmarriage": {
+        "lastupdated": "2024-04-24",
+        "code": "",
+        "source": "1",
+        "classification": "C",
+        "desc": ""
+    },
+    "hdbtype": {
+        "lastupdated": "2024-04-24",
+        "code": "114",
+        "source": "1",
+        "classification": "C",
+        "desc": "4-ROOM FLAT (HDB)"
+    },
+    "employmentsector": {
+        "lastupdated": "2024-04-24",
+        "source": "3",
+        "classification": "C",
+        "value": ""
+    },
+    "marriagedate": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": ""
+    },
+    "employment": {
+        "lastupdated": "2024-04-24",
+        "source": "2",
+        "classification": "C",
+        "value": ""
+    },
+    "hdbownership": [],
+    "marital": {
+        "lastupdated": "2024-04-24",
+        "code": "1",
+        "source": "1",
+        "classification": "C",
+        "desc": "SINGLE"
+    },
+    "cpfhomeprotectionscheme": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "childrenbirthrecords": [],
+    "drivinglicence": {
+        "revocation": {
+            "startdate": {
+                "value": ""
+            },
+            "enddate": {
+                "value": ""
+            }
+        },
+        "totaldemeritpoints": {
+            "value": 0
+        },
+        "disqualification": {
+            "startdate": {
+                "value": ""
+            },
+            "enddate": {
+                "value": ""
+            }
+        },
+        "qdl": {
+            "expirydate": {
+                "value": ""
+            },
+            "validity": {
+                "code": "",
+                "desc": ""
+            },
+            "classes": []
+        },
+        "lastupdated": "2024-04-24",
+        "pdl": {
+            "expirydate": {
+                "value": "2019-03-21"
+            },
+            "validity": {
+                "code": "V",
+                "desc": "VALID"
+            },
+            "classes": [
+                {
+                    "class": {
+                        "value": "3"
+                    }
+                }
+            ]
+        },
+        "source": "1",
+        "classification": "C",
+        "comstatus": {
+            "code": "",
+            "desc": ""
+        },
+        "photocardserialno": {
+            "value": ""
+        },
+        "suspension": {
+            "startdate": {
+                "value": ""
+            },
+            "enddate": {
+                "value": ""
+            }
+        }
+    },
+    "secondaryrace": {
+        "lastupdated": "2024-04-24",
+        "code": "",
+        "source": "1",
+        "classification": "C",
+        "desc": ""
+    }
+}

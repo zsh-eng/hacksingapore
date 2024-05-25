@@ -1,0 +1,1376 @@
+{
+    "edulevel": {
+        "lastupdated": "2024-04-24",
+        "code": "",
+        "source": "2",
+        "classification": "C",
+        "desc": ""
+    },
+    "dialect": {
+        "lastupdated": "2024-04-24",
+        "code": "HK",
+        "source": "1",
+        "classification": "C",
+        "desc": "HOKKIEN"
+    },
+    "occupation": {
+        "lastupdated": "2024-04-24",
+        "source": "2",
+        "classification": "C",
+        "value": ""
+    },
+    "ltavocationallicences": {
+        "tdvl": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        },
+        "odvl": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        },
+        "bavl": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        },
+        "pdvl": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        },
+        "bdvl": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        }
+    },
+    "mobileno": {
+        "lastupdated": "2024-04-24",
+        "source": "4",
+        "classification": "C",
+        "areacode": {
+            "value": "65"
+        },
+        "prefix": {
+            "value": "+"
+        },
+        "nbr": {
+            "value": "97399245"
+        }
+    },
+    "uuid": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "952b0342-0649-a6fe-245b-87cfcc3d38da"
+    },
+    "mailadd": {
+        "country": {
+            "code": "",
+            "desc": ""
+        },
+        "unit": {
+            "value": ""
+        },
+        "street": {
+            "value": ""
+        },
+        "lastupdated": "2024-04-24",
+        "block": {
+            "value": ""
+        },
+        "source": "2",
+        "postal": {
+            "value": ""
+        },
+        "classification": "C",
+        "floor": {
+            "value": ""
+        },
+        "type": "SG",
+        "building": {
+            "value": ""
+        }
+    },
+    "marriedname": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": ""
+    },
+    "sponsoredchildrenrecords": [],
+    "academicqualifications": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "certificates": [],
+        "transcripts": [
+            {
+                "name": {
+                    "value": "SINGAPORE-CAMBRIDGE GENERAL CERTIFICATE OF EDUCATION ADVANCED LEVEL"
+                },
+                "results": [
+                    {
+                        "subgrade": {
+                            "value": ""
+                        },
+                        "level": {
+                            "value": "A"
+                        },
+                        "subject": {
+                            "value": "General Paper"
+                        },
+                        "subsubject": {
+                            "value": ""
+                        },
+                        "grade": {
+                            "value": "B"
+                        }
+                    },
+                    {
+                        "subgrade": {
+                            "value": "One"
+                        },
+                        "level": {
+                            "value": "A"
+                        },
+                        "subject": {
+                            "value": "Mathematics"
+                        },
+                        "subsubject": {
+                            "value": "SPECIAL"
+                        },
+                        "grade": {
+                            "value": "A"
+                        }
+                    },
+                    {
+                        "subgrade": {
+                            "value": ""
+                        },
+                        "level": {
+                            "value": "A"
+                        },
+                        "subject": {
+                            "value": "Physics"
+                        },
+                        "subsubject": {
+                            "value": ""
+                        },
+                        "grade": {
+                            "value": "A"
+                        }
+                    },
+                    {
+                        "subgrade": {
+                            "value": ""
+                        },
+                        "level": {
+                            "value": "A"
+                        },
+                        "subject": {
+                            "value": "Chemistry"
+                        },
+                        "subsubject": {
+                            "value": ""
+                        },
+                        "grade": {
+                            "value": "B"
+                        }
+                    },
+                    {
+                        "subgrade": {
+                            "value": ""
+                        },
+                        "level": {
+                            "value": "A"
+                        },
+                        "subject": {
+                            "value": "Chinese"
+                        },
+                        "subsubject": {
+                            "value": ""
+                        },
+                        "grade": {
+                            "value": "A"
+                        }
+                    }
+                ],
+                "yearattained": {
+                    "value": "2019"
+                },
+                "explanatorynotes": {
+                    "value": ""
+                }
+            }
+        ]
+    },
+    "divorcedate": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "2015-01-01"
+    },
+    "marriagecertno": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "128990"
+    },
+    "noahistory": {
+        "noas": [
+            {
+                "amount": {
+                    "value": 214500
+                },
+                "trade": {
+                    "value": 0
+                },
+                "interest": {
+                    "value": 32000
+                },
+                "yearofassessment": {
+                    "value": "2023"
+                },
+                "taxclearance": {
+                    "value": "N"
+                },
+                "employment": {
+                    "value": 182500
+                },
+                "rent": {
+                    "value": 0
+                },
+                "category": {
+                    "value": "ORIGINAL"
+                }
+            },
+            {
+                "amount": {
+                    "value": 202500
+                },
+                "trade": {
+                    "value": 0
+                },
+                "interest": {
+                    "value": 30000
+                },
+                "yearofassessment": {
+                    "value": "2022"
+                },
+                "taxclearance": {
+                    "value": "N"
+                },
+                "employment": {
+                    "value": 172500
+                },
+                "rent": {
+                    "value": 0
+                },
+                "category": {
+                    "value": "ORIGINAL"
+                }
+            }
+        ],
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C"
+    },
+    "ownerprivate": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": false
+    },
+    "cpfdependantprotectionscheme": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "cpfmedishieldlife": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "cpfemployers": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "history": [
+            {
+                "month": {
+                    "value": "2021-12"
+                },
+                "employer": {
+                    "value": "HEALTH CARE PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2022-01"
+                },
+                "employer": {
+                    "value": "HEALTH CARE PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2022-02"
+                },
+                "employer": {
+                    "value": "HEALTH CARE PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2022-03"
+                },
+                "employer": {
+                    "value": "HEALTH CARE PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2022-04"
+                },
+                "employer": {
+                    "value": "HEALTH CARE PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2022-05"
+                },
+                "employer": {
+                    "value": "HEALTH CARE PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2022-06"
+                },
+                "employer": {
+                    "value": "HEALTH CARE PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2022-07"
+                },
+                "employer": {
+                    "value": "HEALTH CARE PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2022-08"
+                },
+                "employer": {
+                    "value": "HEALTH CARE PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2022-09"
+                },
+                "employer": {
+                    "value": "HEALTH CARE PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2022-10"
+                },
+                "employer": {
+                    "value": "HEALTH CARE PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2022-11"
+                },
+                "employer": {
+                    "value": "HEALTH CARE PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2022-12"
+                },
+                "employer": {
+                    "value": "HEALTH CARE PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2023-01"
+                },
+                "employer": {
+                    "value": "HEALTH CARE PTE LTD"
+                }
+            },
+            {
+                "month": {
+                    "value": "2023-02"
+                },
+                "employer": {
+                    "value": "HEALTH CARE PTE LTD"
+                }
+            }
+        ],
+        "classification": "C"
+    },
+    "housingtype": {
+        "lastupdated": "2024-04-24",
+        "code": "",
+        "source": "1",
+        "classification": "C",
+        "desc": ""
+    },
+    "passexpirydate": {
+        "lastupdated": "2024-04-24",
+        "source": "3",
+        "classification": "C",
+        "value": ""
+    },
+    "homeno": {
+        "lastupdated": "2024-04-24",
+        "source": "2",
+        "classification": "C",
+        "areacode": {
+            "value": ""
+        },
+        "prefix": {
+            "value": ""
+        },
+        "nbr": {
+            "value": ""
+        }
+    },
+    "residentialstatus": {
+        "lastupdated": "2024-04-24",
+        "code": "P",
+        "source": "1",
+        "classification": "C",
+        "desc": "PR"
+    },
+    "cpfbalances": {
+        "oa": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "value": 227700
+        },
+        "ma": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "value": 79200
+        },
+        "sa": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "value": 59400
+        },
+        "ra": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        }
+    },
+    "passportnumber": {
+        "lastupdated": "2024-04-24",
+        "source": "2",
+        "classification": "C",
+        "value": ""
+    },
+    "schoolname": {
+        "lastupdated": "2024-04-24",
+        "code": "",
+        "source": "2",
+        "classification": "C",
+        "desc": ""
+    },
+    "hanyupinyinaliasname": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": ""
+    },
+    "aliasname": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "JACKSON LIM YONG XIANG"
+    },
+    "passstatus": {
+        "lastupdated": "2024-04-24",
+        "source": "3",
+        "classification": "C",
+        "value": ""
+    },
+    "nationality": {
+        "lastupdated": "2024-04-24",
+        "code": "GC",
+        "source": "1",
+        "classification": "C",
+        "desc": "BRITISH OVERSEAS TERRITORIES CITIZEN"
+    },
+    "dob": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "1980-10-06"
+    },
+    "pioneergen": {
+        "lastupdated": "2024-04-24",
+        "eligibility": {
+            "value": false
+        },
+        "source": "1",
+        "classification": "C"
+    },
+    "name": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "LIM YONG XIANG"
+    },
+    "cpfhousingwithdrawal": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "noa": {
+        "amount": {
+            "value": 214500
+        },
+        "trade": {
+            "value": 0
+        },
+        "interest": {
+            "value": 32000
+        },
+        "yearofassessment": {
+            "value": "2023"
+        },
+        "taxclearance": {
+            "value": "N"
+        },
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "employment": {
+            "value": 182500
+        },
+        "classification": "C",
+        "rent": {
+            "value": 0
+        },
+        "category": {
+            "value": "ORIGINAL"
+        }
+    },
+    "noa-basic": {
+        "yearofassessment": {
+            "value": "2023"
+        },
+        "lastupdated": "2024-04-24",
+        "amount": {
+            "value": 214500
+        },
+        "source": "1",
+        "classification": "C"
+    },
+    "passtype": {
+        "lastupdated": "2024-04-24",
+        "code": "",
+        "source": "3",
+        "classification": "C",
+        "desc": ""
+    },
+    "cpfinvestmentscheme": {
+        "oainvestmentamountavailable": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "value": ""
+        },
+        "sainvestmentamountavailable": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "value": ""
+        },
+        "sdsnetshareholdingqty": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        },
+        "account": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        },
+        "saqparticipationstatus": {
+            "lastupdated": "2024-04-24",
+            "source": "1",
+            "classification": "C",
+            "unavailable": true
+        }
+    },
+    "regadd": {
+        "country": {
+            "code": "SG",
+            "desc": "SINGAPORE"
+        },
+        "unit": {
+            "value": "22"
+        },
+        "street": {
+            "value": "LORONG 1 TOA PAYOH"
+        },
+        "lastupdated": "2024-04-24",
+        "block": {
+            "value": "123"
+        },
+        "source": "1",
+        "postal": {
+            "value": "310123"
+        },
+        "classification": "C",
+        "floor": {
+            "value": "12"
+        },
+        "type": "SG",
+        "building": {
+            "value": "TOA PAYOH VIEW"
+        }
+    },
+    "vehicles": [
+        {
+            "roadtaxexpirydate": {
+                "value": "2019-05-22"
+            },
+            "engineno": {
+                "value": "L15B4531339"
+            },
+            "attachment3": {
+                "value": ""
+            },
+            "effectiveownership": {
+                "value": "2016-11-23T10:02:00+08:00"
+            },
+            "scheme": {
+                "value": ""
+            },
+            "powerrate": {
+                "value": 0
+            },
+            "source": "1",
+            "primarycolour": {
+                "value": "BLACK"
+            },
+            "type": {
+                "value": "Station Wagon/Jeep/Land Rover"
+            },
+            "vehicleno": {
+                "value": "SLH9299L"
+            },
+            "coeexpirydate": {
+                "value": "2026-11-22"
+            },
+            "chassisno": {
+                "value": "YHAKLP9980JT201120"
+            },
+            "noxemission": {
+                "value": 0
+            },
+            "model": {
+                "value": "HRV 1.5 DX CVT"
+            },
+            "openmarketvalue": {
+                "value": 0
+            },
+            "coemission": {
+                "value": 0
+            },
+            "attachment2": {
+                "value": ""
+            },
+            "attachment1": {
+                "value": "No Attachment"
+            },
+            "make": {
+                "value": "HONDA"
+            },
+            "pmemission": {
+                "value": 0
+            },
+            "originalregistrationdate": {
+                "value": "2016-11-23"
+            },
+            "yearofmanufacture": {
+                "value": "2016"
+            },
+            "vpc": {
+                "value": ""
+            },
+            "enginecapacity": {
+                "value": 1496
+            },
+            "classification": "C",
+            "nooftransfers": {
+                "value": 0
+            },
+            "propellant": {
+                "value": "Petrol"
+            },
+            "co2emission": {
+                "value": 129
+            },
+            "motorno": {
+                "value": ""
+            },
+            "minimumparfbenefit": {
+                "value": 8379
+            },
+            "thcemission": {
+                "value": 0.198765
+            },
+            "firstregistrationdate": {
+                "value": "2016-11-23"
+            },
+            "lastupdated": "2024-04-24",
+            "maximumunladenweight": {
+                "value": 1185
+            },
+            "coecategory": {
+                "value": "A - CAR UP TO 1600CC & 97KW (130BHP)"
+            },
+            "maximumladenweight": {
+                "value": 1760
+            },
+            "secondarycolour": {
+                "value": ""
+            },
+            "iulabelno": {
+                "value": "1127061595"
+            },
+            "quotapremium": {
+                "value": 509.91
+            },
+            "status": {
+                "code": "1",
+                "desc": "LIVE"
+            }
+        }
+    ],
+    "billadd": {
+        "country": {
+            "code": "",
+            "desc": ""
+        },
+        "unit": {
+            "value": ""
+        },
+        "street": {
+            "value": ""
+        },
+        "lastupdated": "2024-04-24",
+        "block": {
+            "value": ""
+        },
+        "source": "2",
+        "postal": {
+            "value": ""
+        },
+        "classification": "C",
+        "floor": {
+            "value": ""
+        },
+        "type": "SG",
+        "building": {
+            "value": ""
+        }
+    },
+    "hanyupinyinname": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "LIN YONG XIANG"
+    },
+    "passportexpirydate": {
+        "lastupdated": "2024-04-24",
+        "source": "2",
+        "classification": "C",
+        "value": ""
+    },
+    "cpfrstuselftopupamount": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "uinfin": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "S9812379B"
+    },
+    "gradyear": {
+        "lastupdated": "2024-04-24",
+        "source": "2",
+        "classification": "C",
+        "value": ""
+    },
+    "vocationallicences": [],
+    "cpfrstucurrentyeartaxrelief": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "householdincome": {
+        "lastupdated": "2024-04-24",
+        "high": {
+            "value": 0
+        },
+        "source": "2",
+        "classification": "C",
+        "low": {
+            "value": 0
+        }
+    },
+    "partialuinfin": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "*****379B"
+    },
+    "merdekagen": {
+        "lastupdated": "2024-04-24",
+        "eligibility": {
+            "value": false
+        },
+        "source": "1",
+        "classification": "C"
+    },
+    "cpfmonthlypayouts": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "cpfcontributions": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "history": [
+            {
+                "date": {
+                    "value": "2021-12-07"
+                },
+                "employer": {
+                    "value": "HEALTH CARE PTE LTD"
+                },
+                "amount": {
+                    "value": 3750
+                },
+                "month": {
+                    "value": "2021-12"
+                }
+            },
+            {
+                "date": {
+                    "value": "2022-01-07"
+                },
+                "employer": {
+                    "value": "HEALTH CARE PTE LTD"
+                },
+                "amount": {
+                    "value": 3750
+                },
+                "month": {
+                    "value": "2022-01"
+                }
+            },
+            {
+                "date": {
+                    "value": "2022-02-07"
+                },
+                "employer": {
+                    "value": "HEALTH CARE PTE LTD"
+                },
+                "amount": {
+                    "value": 9375
+                },
+                "month": {
+                    "value": "2022-02"
+                }
+            },
+            {
+                "date": {
+                    "value": "2022-03-07"
+                },
+                "employer": {
+                    "value": "HEALTH CARE PTE LTD"
+                },
+                "amount": {
+                    "value": 3750
+                },
+                "month": {
+                    "value": "2022-03"
+                }
+            },
+            {
+                "date": {
+                    "value": "2022-04-07"
+                },
+                "employer": {
+                    "value": "HEALTH CARE PTE LTD"
+                },
+                "amount": {
+                    "value": 4687.5
+                },
+                "month": {
+                    "value": "2022-04"
+                }
+            },
+            {
+                "date": {
+                    "value": "2022-05-07"
+                },
+                "employer": {
+                    "value": "HEALTH CARE PTE LTD"
+                },
+                "amount": {
+                    "value": 4687.5
+                },
+                "month": {
+                    "value": "2022-05"
+                }
+            },
+            {
+                "date": {
+                    "value": "2022-06-07"
+                },
+                "employer": {
+                    "value": "HEALTH CARE PTE LTD"
+                },
+                "amount": {
+                    "value": 15000
+                },
+                "month": {
+                    "value": "2022-06"
+                }
+            },
+            {
+                "date": {
+                    "value": "2022-07-07"
+                },
+                "employer": {
+                    "value": "HEALTH CARE PTE LTD"
+                },
+                "amount": {
+                    "value": 4687.5
+                },
+                "month": {
+                    "value": "2022-07"
+                }
+            },
+            {
+                "date": {
+                    "value": "2022-08-07"
+                },
+                "employer": {
+                    "value": "HEALTH CARE PTE LTD"
+                },
+                "amount": {
+                    "value": 4687.5
+                },
+                "month": {
+                    "value": "2022-08"
+                }
+            },
+            {
+                "date": {
+                    "value": "2022-09-07"
+                },
+                "employer": {
+                    "value": "HEALTH CARE PTE LTD"
+                },
+                "amount": {
+                    "value": 4687.5
+                },
+                "month": {
+                    "value": "2022-09"
+                }
+            },
+            {
+                "date": {
+                    "value": "2022-10-07"
+                },
+                "employer": {
+                    "value": "HEALTH CARE PTE LTD"
+                },
+                "amount": {
+                    "value": 4687.5
+                },
+                "month": {
+                    "value": "2022-10"
+                }
+            },
+            {
+                "date": {
+                    "value": "2022-11-07"
+                },
+                "employer": {
+                    "value": "HEALTH CARE PTE LTD"
+                },
+                "amount": {
+                    "value": 4687.5
+                },
+                "month": {
+                    "value": "2022-11"
+                }
+            },
+            {
+                "date": {
+                    "value": "2022-12-07"
+                },
+                "employer": {
+                    "value": "HEALTH CARE PTE LTD"
+                },
+                "amount": {
+                    "value": 4687.5
+                },
+                "month": {
+                    "value": "2022-12"
+                }
+            },
+            {
+                "date": {
+                    "value": "2023-01-07"
+                },
+                "employer": {
+                    "value": "HEALTH CARE PTE LTD"
+                },
+                "amount": {
+                    "value": 4687.5
+                },
+                "month": {
+                    "value": "2023-01"
+                }
+            },
+            {
+                "date": {
+                    "value": "2023-02-07"
+                },
+                "employer": {
+                    "value": "HEALTH CARE PTE LTD"
+                },
+                "amount": {
+                    "value": 9375
+                },
+                "month": {
+                    "value": "2023-02"
+                }
+            }
+        ],
+        "classification": "C"
+    },
+    "gstvoucher": {
+        "gstregular": {
+            "value": 0
+        },
+        "year": {
+            "value": ""
+        },
+        "lastupdated": "2024-04-24",
+        "exclusion": {
+            "value": ""
+        },
+        "gstmedisave": {
+            "value": 0
+        },
+        "gstspecial": {
+            "value": 0
+        },
+        "source": "1",
+        "classification": "C",
+        "signup": {
+            "value": ""
+        }
+    },
+    "email": {
+        "lastupdated": "2024-04-24",
+        "source": "4",
+        "classification": "C",
+        "value": "myinfotesting@gmail.com"
+    },
+    "noahistory-basic": {
+        "noas": [
+            {
+                "yearofassessment": {
+                    "value": "2023"
+                },
+                "amount": {
+                    "value": 214500
+                }
+            },
+            {
+                "yearofassessment": {
+                    "value": "2022"
+                },
+                "amount": {
+                    "value": 202500
+                }
+            }
+        ],
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C"
+    },
+    "birthcountry": {
+        "lastupdated": "2024-04-24",
+        "code": "VG",
+        "source": "1",
+        "classification": "C",
+        "desc": "BRITISH VIRGIN ISLANDS"
+    },
+    "cpflife": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "race": {
+        "lastupdated": "2024-04-24",
+        "code": "CN",
+        "source": "1",
+        "classification": "C",
+        "desc": "CHINESE"
+    },
+    "silversupport": {
+        "lastupdated": "2024-04-24",
+        "eligibility": {
+            "value": ""
+        },
+        "amount": {
+            "value": 0
+        },
+        "source": "1",
+        "classification": "C",
+        "year": {
+            "value": ""
+        }
+    },
+    "sex": {
+        "lastupdated": "2024-04-24",
+        "code": "M",
+        "source": "1",
+        "classification": "C",
+        "desc": "MALE"
+    },
+    "countryofmarriage": {
+        "lastupdated": "2024-04-24",
+        "code": "SG",
+        "source": "1",
+        "classification": "C",
+        "desc": "SINGAPORE"
+    },
+    "hdbtype": {
+        "lastupdated": "2024-04-24",
+        "code": "113",
+        "source": "1",
+        "classification": "C",
+        "desc": "3-ROOM FLAT (HDB)"
+    },
+    "employmentsector": {
+        "lastupdated": "2024-04-24",
+        "source": "3",
+        "classification": "C",
+        "value": ""
+    },
+    "marriagedate": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "value": "2011-09-01"
+    },
+    "employment": {
+        "lastupdated": "2024-04-24",
+        "source": "2",
+        "classification": "C",
+        "value": ""
+    },
+    "hdbownership": [
+        {
+            "termoflease": {
+                "value": 99
+            },
+            "dateofpurchase": {
+                "value": "2018-11-15"
+            },
+            "leasecommencementdate": {
+                "value": "2019-01-01"
+            },
+            "address": {
+                "country": {
+                    "code": "SG",
+                    "desc": "SINGAPORE"
+                },
+                "unit": {
+                    "value": "22"
+                },
+                "street": {
+                    "value": "LORONG 1 TOA PAYOH"
+                },
+                "block": {
+                    "value": "123"
+                },
+                "postal": {
+                    "value": "310123"
+                },
+                "type": "SG",
+                "floor": {
+                    "value": "12"
+                },
+                "building": {
+                    "value": "TOA PAYOH VIEW"
+                }
+            },
+            "balanceloanrepayment": {
+                "years": {
+                    "value": 25
+                },
+                "months": {
+                    "value": 0
+                }
+            },
+            "originalloanrepayment": {
+                "value": 30
+            },
+            "hdbtype": {
+                "code": "113",
+                "desc": "3-ROOM FLAT (HDB)"
+            },
+            "source": "1",
+            "classification": "C",
+            "purchaseprice": {
+                "value": "800,000.00"
+            },
+            "monthlyloaninstalment": {
+                "value": 2000
+            },
+            "outstandingloanbalance": {
+                "value": 600000
+            },
+            "outstandinginstalment": {
+                "value": "2,000.00"
+            },
+            "lastupdated": "2024-04-24",
+            "noofowners": {
+                "value": 1
+            },
+            "dateofownershiptransfer": {
+                "value": ""
+            },
+            "loangranted": {
+                "value": 750000
+            }
+        }
+    ],
+    "marital": {
+        "lastupdated": "2024-04-24",
+        "code": "5",
+        "source": "1",
+        "classification": "C",
+        "desc": "DIVORCED"
+    },
+    "cpfhomeprotectionscheme": {
+        "lastupdated": "2024-04-24",
+        "source": "1",
+        "classification": "C",
+        "unavailable": true
+    },
+    "childrenbirthrecords": [],
+    "drivinglicence": {
+        "revocation": {
+            "startdate": {
+                "value": ""
+            },
+            "enddate": {
+                "value": ""
+            }
+        },
+        "totaldemeritpoints": {
+            "value": 0
+        },
+        "disqualification": {
+            "startdate": {
+                "value": ""
+            },
+            "enddate": {
+                "value": ""
+            }
+        },
+        "qdl": {
+            "expirydate": {
+                "value": ""
+            },
+            "validity": {
+                "code": "",
+                "desc": ""
+            },
+            "classes": []
+        },
+        "lastupdated": "2024-04-24",
+        "pdl": {
+            "expirydate": {
+                "value": ""
+            },
+            "validity": {
+                "code": "",
+                "desc": ""
+            },
+            "classes": []
+        },
+        "source": "1",
+        "classification": "C",
+        "comstatus": {
+            "code": "",
+            "desc": ""
+        },
+        "photocardserialno": {
+            "value": ""
+        },
+        "suspension": {
+            "startdate": {
+                "value": ""
+            },
+            "enddate": {
+                "value": ""
+            }
+        }
+    },
+    "secondaryrace": {
+        "lastupdated": "2024-04-24",
+        "code": "",
+        "source": "1",
+        "classification": "C",
+        "desc": ""
+    }
+}
