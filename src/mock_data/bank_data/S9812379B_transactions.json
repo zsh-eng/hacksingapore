@@ -1,0 +1,602 @@
+[
+    {
+        "date_time": "2024-04-01 11:06:40",
+        "transaction_type": "Retail",
+        "amount": -1598.23,
+        "place": "Angelhack"
+    },
+    {
+        "date_time": "2024-04-01 12:24:50",
+        "transaction_type": "Banking",
+        "amount": -1589.84,
+        "place": "DBS"
+    },
+    {
+        "date_time": "2024-04-03 04:31:55",
+        "transaction_type": "Banking",
+        "amount": -1439.94,
+        "place": "DBS"
+    },
+    {
+        "date_time": "2024-04-03 09:21:31",
+        "transaction_type": "Banking",
+        "amount": -219.47,
+        "place": "DBS"
+    },
+    {
+        "date_time": "2024-04-03 10:35:17",
+        "transaction_type": "Food",
+        "amount": -719.7,
+        "place": "Mcdonalds"
+    },
+    {
+        "date_time": "2024-04-04 15:41:56",
+        "transaction_type": "Entertainment",
+        "amount": -1502.21,
+        "place": "Cathay Cineplexes"
+    },
+    {
+        "date_time": "2024-04-07 12:28:55",
+        "transaction_type": "Food",
+        "amount": -1517.92,
+        "place": "KFC"
+    },
+    {
+        "date_time": "2024-04-08 09:37:17",
+        "transaction_type": "Food",
+        "amount": -645.65,
+        "place": "Bangkok Street Mookata"
+    },
+    {
+        "date_time": "2024-04-08 13:46:46",
+        "transaction_type": "Banking",
+        "amount": 902.72,
+        "place": "DBS"
+    },
+    {
+        "date_time": "2024-04-09 13:35:09",
+        "transaction_type": "Retail",
+        "amount": -1102.9,
+        "place": "Cold Storage"
+    },
+    {
+        "date_time": "2024-04-09 22:23:16",
+        "transaction_type": "Services",
+        "amount": -1176.88,
+        "place": "Wui Hong's Upz Carwash Service"
+    },
+    {
+        "date_time": "2024-04-10 02:58:46",
+        "transaction_type": "Banking",
+        "amount": -1078.16,
+        "place": "DBS"
+    },
+    {
+        "date_time": "2024-04-10 09:43:10",
+        "transaction_type": "Transport",
+        "amount": -1564.48,
+        "place": "Singapore Airlines"
+    },
+    {
+        "date_time": "2024-04-11 13:22:19",
+        "transaction_type": "Retail",
+        "amount": -313.45,
+        "place": "Kiddy Palace"
+    },
+    {
+        "date_time": "2024-04-11 18:34:20",
+        "transaction_type": "Services",
+        "amount": -186.81,
+        "place": "Sim Lim PC Repair"
+    },
+    {
+        "date_time": "2024-04-12 01:32:57",
+        "transaction_type": "Retail",
+        "amount": -810.56,
+        "place": "Kiddy Palace"
+    },
+    {
+        "date_time": "2024-04-12 09:48:56",
+        "transaction_type": "Services",
+        "amount": -587.08,
+        "place": "Wui Hong's Upz Carwash Service"
+    },
+    {
+        "date_time": "2024-04-13 01:17:32",
+        "transaction_type": "Retail",
+        "amount": -1563.46,
+        "place": "Kiddy Palace"
+    },
+    {
+        "date_time": "2024-04-13 12:40:10",
+        "transaction_type": "Services",
+        "amount": -1755.43,
+        "place": "Bob's Bicycle Repair"
+    },
+    {
+        "date_time": "2024-04-14 08:39:08",
+        "transaction_type": "Retail",
+        "amount": -242.04,
+        "place": "Cold Storage"
+    },
+    {
+        "date_time": "2024-04-14 20:12:24",
+        "transaction_type": "Food",
+        "amount": -959.62,
+        "place": "Hawker Centre"
+    },
+    {
+        "date_time": "2024-04-15 08:02:18",
+        "transaction_type": "Services",
+        "amount": -328.34,
+        "place": "Tan Tailor and Stitching"
+    },
+    {
+        "date_time": "2024-04-15 19:39:48",
+        "transaction_type": "Banking",
+        "amount": 965.84,
+        "place": "DBS"
+    },
+    {
+        "date_time": "2024-04-16 03:42:58",
+        "transaction_type": "Food",
+        "amount": -273.69,
+        "place": "KFC"
+    },
+    {
+        "date_time": "2024-04-16 16:22:16",
+        "transaction_type": "Transport",
+        "amount": -1414.29,
+        "place": "Singapore Airlines"
+    },
+    {
+        "date_time": "2024-04-16 22:58:35",
+        "transaction_type": "Entertainment",
+        "amount": -76.95,
+        "place": "Zhi Sheng Bowling Joint"
+    },
+    {
+        "date_time": "2024-04-17 00:00:03",
+        "transaction_type": "Services",
+        "amount": -442.92,
+        "place": "Bob's Bicycle Repair"
+    },
+    {
+        "date_time": "2024-04-17 03:11:54",
+        "transaction_type": "Entertainment",
+        "amount": -241.66,
+        "place": "Cathay Cineplexes"
+    },
+    {
+        "date_time": "2024-04-17 06:10:25",
+        "transaction_type": "Entertainment",
+        "amount": -1878.9,
+        "place": "Zhi Sheng Bowling Joint"
+    },
+    {
+        "date_time": "2024-04-17 20:16:20",
+        "transaction_type": "Banking",
+        "amount": -1720.1,
+        "place": "DBS"
+    },
+    {
+        "date_time": "2024-04-18 09:06:27",
+        "transaction_type": "Services",
+        "amount": -1236.01,
+        "place": "Wui Hong's Upz Carwash Service"
+    },
+    {
+        "date_time": "2024-04-20 08:05:16",
+        "transaction_type": "Food",
+        "amount": -109.14,
+        "place": "Hawker Centre"
+    },
+    {
+        "date_time": "2024-04-21 07:01:32",
+        "transaction_type": "Banking",
+        "amount": 1324.58,
+        "place": "DBS"
+    },
+    {
+        "date_time": "2024-04-21 08:14:09",
+        "transaction_type": "Entertainment",
+        "amount": -320.69,
+        "place": "Zhi Sheng Bowling Joint"
+    },
+    {
+        "date_time": "2024-04-21 09:42:14",
+        "transaction_type": "Services",
+        "amount": -518.65,
+        "place": "Tan Tailor and Stitching"
+    },
+    {
+        "date_time": "2024-04-21 20:31:14",
+        "transaction_type": "Transport",
+        "amount": -373.28,
+        "place": "SMRT transit"
+    },
+    {
+        "date_time": "2024-04-22 06:34:17",
+        "transaction_type": "Retail",
+        "amount": -401.4,
+        "place": "Cold Storage"
+    },
+    {
+        "date_time": "2024-04-22 16:36:46",
+        "transaction_type": "Banking",
+        "amount": 1652.9,
+        "place": "DBS"
+    },
+    {
+        "date_time": "2024-04-22 19:53:09",
+        "transaction_type": "Food",
+        "amount": -1873.89,
+        "place": "Bangkok Street Mookata"
+    },
+    {
+        "date_time": "2024-04-23 16:04:04",
+        "transaction_type": "Entertainment",
+        "amount": -291.42,
+        "place": "Hong Prawning"
+    },
+    {
+        "date_time": "2024-04-26 05:32:11",
+        "transaction_type": "Services",
+        "amount": -1436.17,
+        "place": "Tan Tailor and Stitching"
+    },
+    {
+        "date_time": "2024-04-26 20:10:48",
+        "transaction_type": "Retail",
+        "amount": -291.63,
+        "place": "Kiddy Palace"
+    },
+    {
+        "date_time": "2024-04-27 05:42:19",
+        "transaction_type": "Entertainment",
+        "amount": -127.71,
+        "place": "Hong Prawning"
+    },
+    {
+        "date_time": "2024-04-27 06:14:46",
+        "transaction_type": "Banking",
+        "amount": 1266.43,
+        "place": "DBS"
+    },
+    {
+        "date_time": "2024-04-27 12:01:21",
+        "transaction_type": "Food",
+        "amount": -1440.64,
+        "place": "Bangkok Street Mookata"
+    },
+    {
+        "date_time": "2024-04-27 19:51:16",
+        "transaction_type": "Banking",
+        "amount": 1604.38,
+        "place": "DBS"
+    },
+    {
+        "date_time": "2024-04-28 03:57:40",
+        "transaction_type": "Food",
+        "amount": -759.58,
+        "place": "Bangkok Street Mookata"
+    },
+    {
+        "date_time": "2024-04-28 13:13:56",
+        "transaction_type": "Retail",
+        "amount": -22.78,
+        "place": "NTUC Fairprice"
+    },
+    {
+        "date_time": "2024-04-29 04:46:01",
+        "transaction_type": "Entertainment",
+        "amount": -1956.82,
+        "place": "Zhi Sheng Bowling Joint"
+    },
+    {
+        "date_time": "2024-04-29 15:50:30",
+        "transaction_type": "Retail",
+        "amount": -1435.75,
+        "place": "Angelhack"
+    },
+    {
+        "date_time": "2024-04-29 18:14:06",
+        "transaction_type": "Banking",
+        "amount": 979.69,
+        "place": "DBS"
+    },
+    {
+        "date_time": "2024-04-30 19:47:08",
+        "transaction_type": "Retail",
+        "amount": -1893.52,
+        "place": "Popular Bookstore"
+    },
+    {
+        "date_time": "2024-05-01 17:57:09",
+        "transaction_type": "Banking",
+        "amount": -397.81,
+        "place": "DBS"
+    },
+    {
+        "date_time": "2024-05-02 19:10:17",
+        "transaction_type": "Food",
+        "amount": -852.4,
+        "place": "KFC"
+    },
+    {
+        "date_time": "2024-05-03 02:17:09",
+        "transaction_type": "Entertainment",
+        "amount": -1417.56,
+        "place": "Teo Heng KTV"
+    },
+    {
+        "date_time": "2024-05-03 10:00:59",
+        "transaction_type": "Entertainment",
+        "amount": -769.19,
+        "place": "Hong Prawning"
+    },
+    {
+        "date_time": "2024-05-04 08:37:03",
+        "transaction_type": "Transport",
+        "amount": -445.28,
+        "place": "SMRT transit"
+    },
+    {
+        "date_time": "2024-05-04 15:44:56",
+        "transaction_type": "Banking",
+        "amount": -1781.88,
+        "place": "DBS"
+    },
+    {
+        "date_time": "2024-05-05 02:41:15",
+        "transaction_type": "Entertainment",
+        "amount": -1271.33,
+        "place": "Teo Heng KTV"
+    },
+    {
+        "date_time": "2024-05-05 20:38:23",
+        "transaction_type": "Banking",
+        "amount": 642.79,
+        "place": "DBS"
+    },
+    {
+        "date_time": "2024-05-05 21:20:22",
+        "transaction_type": "Entertainment",
+        "amount": -1026.85,
+        "place": "Zhi Sheng Bowling Joint"
+    },
+    {
+        "date_time": "2024-05-07 16:01:39",
+        "transaction_type": "Transport",
+        "amount": -631.61,
+        "place": "Singapore Airlines"
+    },
+    {
+        "date_time": "2024-05-07 22:33:16",
+        "transaction_type": "Retail",
+        "amount": -1112.94,
+        "place": "Angelhack"
+    },
+    {
+        "date_time": "2024-05-08 06:51:07",
+        "transaction_type": "Food",
+        "amount": -1250.2,
+        "place": "Hawker Centre"
+    },
+    {
+        "date_time": "2024-05-08 11:59:07",
+        "transaction_type": "Retail",
+        "amount": -172.71,
+        "place": "Cold Storage"
+    },
+    {
+        "date_time": "2024-05-08 19:16:53",
+        "transaction_type": "Transport",
+        "amount": -781.67,
+        "place": "SMRT transit"
+    },
+    {
+        "date_time": "2024-05-10 09:50:43",
+        "transaction_type": "Banking",
+        "amount": 807.49,
+        "place": "DBS"
+    },
+    {
+        "date_time": "2024-05-13 01:27:26",
+        "transaction_type": "Services",
+        "amount": -1190.56,
+        "place": "Sim Lim PC Repair"
+    },
+    {
+        "date_time": "2024-05-13 08:53:32",
+        "transaction_type": "Transport",
+        "amount": -85.67,
+        "place": "Singapore Airlines"
+    },
+    {
+        "date_time": "2024-05-13 22:50:13",
+        "transaction_type": "Retail",
+        "amount": -1323.14,
+        "place": "NTUC Fairprice"
+    },
+    {
+        "date_time": "2024-05-14 07:02:24",
+        "transaction_type": "Food",
+        "amount": -535.89,
+        "place": "Mcdonalds"
+    },
+    {
+        "date_time": "2024-05-14 14:29:00",
+        "transaction_type": "Food",
+        "amount": -1950.25,
+        "place": "Mcdonalds"
+    },
+    {
+        "date_time": "2024-05-16 03:26:08",
+        "transaction_type": "Entertainment",
+        "amount": -1370.44,
+        "place": "Cathay Cineplexes"
+    },
+    {
+        "date_time": "2024-05-16 03:59:38",
+        "transaction_type": "Banking",
+        "amount": -1501.1,
+        "place": "DBS"
+    },
+    {
+        "date_time": "2024-05-17 07:22:24",
+        "transaction_type": "Banking",
+        "amount": -579.61,
+        "place": "DBS"
+    },
+    {
+        "date_time": "2024-05-17 11:27:37",
+        "transaction_type": "Services",
+        "amount": -985.61,
+        "place": "Sim Lim PC Repair"
+    },
+    {
+        "date_time": "2024-05-17 20:06:28",
+        "transaction_type": "Services",
+        "amount": -712.79,
+        "place": "Bob's Bicycle Repair"
+    },
+    {
+        "date_time": "2024-05-18 08:20:06",
+        "transaction_type": "Food",
+        "amount": -1597.89,
+        "place": "Bangkok Street Mookata"
+    },
+    {
+        "date_time": "2024-05-19 02:29:45",
+        "transaction_type": "Retail",
+        "amount": -1980.8,
+        "place": "NTUC Fairprice"
+    },
+    {
+        "date_time": "2024-05-21 19:52:02",
+        "transaction_type": "Banking",
+        "amount": 1496.48,
+        "place": "DBS"
+    },
+    {
+        "date_time": "2024-05-21 21:57:51",
+        "transaction_type": "Banking",
+        "amount": -1797.02,
+        "place": "DBS"
+    },
+    {
+        "date_time": "2024-05-22 07:40:27",
+        "transaction_type": "Services",
+        "amount": -573.63,
+        "place": "Tan Tailor and Stitching"
+    },
+    {
+        "date_time": "2024-05-22 08:24:44",
+        "transaction_type": "Entertainment",
+        "amount": -290.27,
+        "place": "Cathay Cineplexes"
+    },
+    {
+        "date_time": "2024-05-23 11:14:27",
+        "transaction_type": "Food",
+        "amount": -21.03,
+        "place": "Hawker Centre"
+    },
+    {
+        "date_time": "2024-05-23 17:48:17",
+        "transaction_type": "Banking",
+        "amount": -1788.9,
+        "place": "DBS"
+    },
+    {
+        "date_time": "2024-05-25 02:18:03",
+        "transaction_type": "Retail",
+        "amount": -708.9,
+        "place": "Kiddy Palace"
+    },
+    {
+        "date_time": "2024-05-25 17:13:33",
+        "transaction_type": "Banking",
+        "amount": -1925.55,
+        "place": "DBS"
+    },
+    {
+        "date_time": "2024-05-25 23:17:07",
+        "transaction_type": "Food",
+        "amount": -1293.45,
+        "place": "Bangkok Street Mookata"
+    },
+    {
+        "date_time": "2024-05-27 04:16:43",
+        "transaction_type": "Banking",
+        "amount": -551.25,
+        "place": "DBS"
+    },
+    {
+        "date_time": "2024-05-28 03:01:58",
+        "transaction_type": "Transport",
+        "amount": -1186.95,
+        "place": "SMRT transit"
+    },
+    {
+        "date_time": "2024-05-28 05:24:16",
+        "transaction_type": "Food",
+        "amount": -1071.03,
+        "place": "Koi"
+    },
+    {
+        "date_time": "2024-05-28 05:44:51",
+        "transaction_type": "Retail",
+        "amount": -15.41,
+        "place": "Love Bonito"
+    },
+    {
+        "date_time": "2024-05-28 06:59:02",
+        "transaction_type": "Services",
+        "amount": -1754.01,
+        "place": "Bob's Bicycle Repair"
+    },
+    {
+        "date_time": "2024-05-29 06:23:31",
+        "transaction_type": "Transport",
+        "amount": -1782.86,
+        "place": "Air Asia"
+    },
+    {
+        "date_time": "2024-05-29 20:50:54",
+        "transaction_type": "Food",
+        "amount": -497.47,
+        "place": "Bangkok Street Mookata"
+    },
+    {
+        "date_time": "2024-05-30 20:48:12",
+        "transaction_type": "Retail",
+        "amount": -608.03,
+        "place": "Angelhack"
+    },
+    {
+        "date_time": "2024-05-30 22:07:40",
+        "transaction_type": "Banking",
+        "amount": 1079.43,
+        "place": "DBS"
+    },
+    {
+        "date_time": "2024-05-31 03:14:19",
+        "transaction_type": "Food",
+        "amount": -910.28,
+        "place": "Bangkok Street Mookata"
+    },
+    {
+        "date_time": "2024-05-31 08:00:05",
+        "transaction_type": "Transport",
+        "amount": -1526.16,
+        "place": "Air Asia"
+    },
+    {
+        "date_time": "2024-05-31 14:43:50",
+        "transaction_type": "Transport",
+        "amount": -833.81,
+        "place": "Air Asia"
+    }
+]
