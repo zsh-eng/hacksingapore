@@ -8,15 +8,17 @@
 
 import { Inter } from "next/font/google";
 import DashboardCard from "@/components/ui/dashboard_card";
+import Navbar from "@/components/ui/navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
     return (
         <main
-            className={`flex min-h-screen flex-col items-center justify-center p-24 ${inter.className}`}
+            className={`flex min-h-screen flex-col bg-slate-500 items-center justify-center p-24 ${inter.className}`}
         >
-            <div className="flex gap-10">
+            <Navbar />
+            <div className="flex flex-wrap gap-10 justify-center lg:grid-rows-2">
               <DashboardCard title="Feature 1" href="/feature_1"/>
               <DashboardCard title="Feature 2" href="/feature_2"/>
               <DashboardCard title="Feature 3" href="/feature_3"/>
