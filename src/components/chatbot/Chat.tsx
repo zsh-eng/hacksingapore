@@ -1,6 +1,7 @@
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Separator } from '@/components/ui/separator';
 import { cn } from '@/lib/utils';
+import OpenAI from 'openai';
 
 type Role = 'user' | 'assistant';
 
@@ -84,4 +85,19 @@ export function ChatbotMessageList({ messages }: ChatbotMessageListProps) {
       })}
     </div>
   );
+}
+
+const messages: Message[] = [
+  {
+    message: 'hello there',
+    role: 'user',
+  },
+  {
+    message: 'nice to meet you',
+    role: 'assistant',
+  },
+];
+
+export function Chatbot() {
+  return <ChatbotMessageList messages={messages} />;
 }
