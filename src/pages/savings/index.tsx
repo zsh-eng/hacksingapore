@@ -31,7 +31,6 @@ export default function feature_1() {
         <main
             className={`flex min-h-screen flex-col items-center bg-slate-500 justify-center ${inter.className}`}
         >
-            <Navbar />
             <div className="flex">
                 <div className="flex flex-col justify-center items-start gap-8">
                     {data.slice(1, 3).map((item, index) => (

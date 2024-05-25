@@ -33,7 +33,7 @@ const DashboardCard: React.FC<props> = ({ title, href, children }) => {
             onClick={handleClick}
         >
             <CardContent>{children}</CardContent>
-            <CardTitle className="cursor-pointer">{title}</CardTitle>
+            <CardTitle className="cursor-pointer text-center">{title}</CardTitle>
         </Card>
     );
 };

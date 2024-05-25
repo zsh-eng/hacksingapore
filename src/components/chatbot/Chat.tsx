@@ -311,6 +311,7 @@ ${sources.map((source) => `${source.metadata}\n${source.pageContent}`)}
         setIsChatOpen(!isChatOpen);
     };
 
+    // mik shrunk the chatbot to fit into the page (line 148) and added a button to toggle the chatbot
     return (
         <div
             className={`fixed top-4 right-4 flex flex-row bg-white rounded-md p-2 overflow-hidden transform ${
@@ -318,7 +319,7 @@ ${sources.map((source) => `${source.metadata}\n${source.pageContent}`)}
             } transition duration-700 ease-in-out`}
         >
             <Button className="mr-2" onClick={toggleChat}>
-                <IoIosChatboxes />
+            <IoIosChatboxes />
             </Button>
             <Card>
                 <CardHeader>

@@ -8,8 +8,8 @@ import { Inter } from "next/font/google";
 import DashboardCard from "@/components/ui/dashboard_card";
 import Navbar from "@/components/ui/navbar";
 import { TbPigMoney } from "react-icons/tb";
-import { IoIosChatboxes } from "react-icons/io";
 import { FaQuestion } from "react-icons/fa";
+import { AiOutlineStock } from "react-icons/ai";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,8 +25,8 @@ export default function Home() {
                     <DashboardCard title="Your Savings" href="/savings">
                         <TbPigMoney size={60}/>
                     </DashboardCard>
-                    <DashboardCard title="Chat" href="/chat" >
-                        <IoIosChatboxes size={60}/>
+                    <DashboardCard title="Grow Your Money" href="/invest" >
+                        <AiOutlineStock size={60}/>
                     </DashboardCard>
                     <DashboardCard title="Feature 3" href="/feature_3" >
                         <FaQuestion size={60}/>

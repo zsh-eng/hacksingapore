@@ -11,6 +11,7 @@ import { FaQuestion } from "react-icons/fa";
 interface props {
     title: string;
     balance: number;
+    className?: string;
 }
 
 const BalanceCard: React.FC<props> = ({title, balance}) => {
