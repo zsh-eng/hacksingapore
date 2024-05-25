@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "./button";
 import { useState } from "react";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 export default function Navbar() {
     const [isNavbarOpen, setIsNavbarOpen] = useState(false);
@@ -10,12 +11,12 @@ export default function Navbar() {
     };
 
     return (
-        <div className={`bg-slate-800 w-64 h-screen hidden overflow-hidden lg:flex flex-col justify-between absolute left-0 z-50 transform ${isNavbarOpen ? 'translate-x-0' : '-translate-x-44'} transition-transform duration-300 ease-in-out`}>
+        <div className={`bg-slate-800 w-64 h-screen hidden overflow-hidden lg:flex flex-col justify-between absolute left-0 z-50 transform ${isNavbarOpen ? 'translate-x-0' : '-translate-x-48'} transition-transform duration-300 ease-in-out`}>
             <nav className=" text-gray-300 relative flex flex-col justify-between h-full">
                 <div className="p-2">
-                    <div className="flex flex-row justify-end">
+                    <div className="flex flex-row justify-end -mr-0.25">
                         <Button onClick={toggleNavbar}>
-                            {isNavbarOpen ? 'Close' : 'Open'}
+                            {isNavbarOpen ? <FaArrowLeft /> : <FaArrowRight />}
                         </Button>
                     </div>
                     <div className="flex flex-col gap-4 items-start">
