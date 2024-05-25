@@ -14,3 +14,13 @@ export async function completion(messages: Message[]) {
 
   return chatCompletion;
 }
+
+export type Metadata = {
+  title: string;
+  link: string;
+};
+
+export type Source = {
+  content: string;
+  metadata: Metadata;
+};

@@ -4,8 +4,8 @@ import { Separator } from '@/components/ui/separator';
 import { Textarea } from '@/components/ui/textarea';
 import { cn } from '@/lib/utils';
 import { Fragment, useState } from 'react';
-import { Loader2, LoaderCircle, SendHorizonal } from 'lucide-react';
-import { completion } from '@/lib/ai';
+import { Loader2, LoaderCircle, Phone, SendHorizonal } from 'lucide-react';
+import { Source, completion } from '@/lib/ai';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 type Role = 'user' | 'assistant';
@@ -59,10 +59,18 @@ export function ChatbotMessage({
   );
 }
 
-export type Message = {
+export type UserMessage = {
   content: string;
-  role: Role;
+  role: 'user';
 };
+
+export type AssistantMessage = {
+  content: string;
+  role: 'assistant';
+  sources?: Source[];
+};
+
+export type Message = UserMessage | AssistantMessage;
 
 type ChatbotMessageListProps = {
   messages: Message[];
@@ -135,6 +143,10 @@ export function Chatbot() {
     }
   };
 
+  const callBackend = async () => {
+    fetch('/api/search');
+  };
+
   return (
     <Card>
       <CardHeader>
@@ -162,6 +174,10 @@ export function Chatbot() {
           ) : (
             <SendHorizonal className='h-4 w-4 ml-2 text-cyan-700 group-hover:translate-x-1 transition-all' />
           )}
+        </Button>
+        <Button variant='outline' onClick={callBackend}>
+          <Phone className='h-4 w-4 mr-2' />
+          Call backend
         </Button>
       </CardContent>
     </Card>
