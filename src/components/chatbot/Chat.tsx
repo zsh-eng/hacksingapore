@@ -10,9 +10,9 @@ import {
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Separator } from '@/components/ui/separator';
 import { Textarea } from '@/components/ui/textarea';
-import { Source, completion, openai } from '@/lib/ai';
+import { Source, openai } from '@/lib/ai';
 import { cn } from '@/lib/utils';
-import { ExternalLink, Loader2, SendHorizonal } from 'lucide-react';
+import { ArrowRight, ExternalLink, Loader2, SendHorizonal } from 'lucide-react';
 import { Fragment, useState } from 'react';
 import { Remark } from 'react-remark';
 
@@ -192,6 +192,42 @@ const initialMessages: Message[] = [
   },
 ];
 
+function QuestionShortcuts({
+  onClick,
+}: {
+  onClick?: (question: string) => void;
+}) {
+  const questions = [
+    'What can I invest in with my CPF Savings?',
+    'How does MediShield Life work?',
+    'What are the different kinds of CPF accounts?',
+  ];
+
+  const handleClicked = (question: string) => {
+    if (!onClick) {
+      return;
+    }
+    onClick(question);
+  };
+
+  return (
+    <div className='grid grid-cols-3 w-[640px] gap-1'>
+      {questions.map((question) => (
+        <Card
+          key={question}
+          className='px-2 py-2 italic flex gap-2 items-center text-muted-foreground hover:bg-muted transition-all cursor-pointer'
+          onClick={() => handleClicked(question)}
+        >
+          <div>{question}</div>
+          <div>
+            <ArrowRight className='h-4 w-4' />
+          </div>
+        </Card>
+      ))}
+    </div>
+  );
+}
+
 export function Chatbot() {
   const [messages, setMessages] = useState<Message[]>(initialMessages);
   const [input, setInput] = useState('');
@@ -199,6 +235,7 @@ export function Chatbot() {
   const [streamingMessage, setStreamingMessage] = useState('');
 
   const disabled = loading || !input;
+  const isFirstMessage = messages.length <= 1;
 
   const handleKeyUp = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
     const isSend = e.key === 'Enter' && (e.metaKey || e.ctrlKey);
@@ -209,10 +246,11 @@ export function Chatbot() {
     handleSend();
   };
 
-  const handleSend = async () => {
+  const handleSend = async (manualInput?: string) => {
     setLoading(true);
+    const content = manualInput ?? input;
     const userMessage: UserMessage = {
-      content: input,
+      content: content,
       role: 'user',
     };
     setMessages([...messages, userMessage]);
@@ -220,7 +258,12 @@ export function Chatbot() {
     try {
       const sources = await callBackend(input);
       // TODO: replace wth actual metadata
-      const updatedContent = `User's Question: ${input}
+      const updatedContent = `
+Answer the user's question using information from the relevant sources.
+Keep your response clear and concise.
+
+User's Question: ${content}
+
 Relevant Sources:
 ${sources.map((source) => `${source.metadata}\n${source.pageContent}`)}
 `;
@@ -282,6 +325,13 @@ ${sources.map((source) => `${source.metadata}\n${source.pageContent}`)}
           loading={loading}
           loadingMessage={streamingMessage}
         />
+        {isFirstMessage && (
+          <QuestionShortcuts
+            onClick={(question) => {
+              handleSend(question);
+            }}
+          />
+        )}
         <Textarea
           className='text-md mt-4'
           placeholder='Type a message... (⌘ ↵ to send)'
@@ -294,7 +344,7 @@ ${sources.map((source) => `${source.metadata}\n${source.pageContent}`)}
           variant='secondary'
           className='group'
           disabled={disabled}
-          onClick={handleSend}
+          onClick={() => handleSend()}
         >
           Send
           {loading ? (
