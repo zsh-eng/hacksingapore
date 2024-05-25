@@ -12,7 +12,7 @@ import { Separator } from '@/components/ui/separator';
 import { Textarea } from '@/components/ui/textarea';
 import { Source, completion } from '@/lib/ai';
 import { cn } from '@/lib/utils';
-import { ExternalLink, Loader2, Phone, SendHorizonal } from 'lucide-react';
+import { ExternalLink, Loader2, SendHorizonal } from 'lucide-react';
 import { Fragment, useState } from 'react';
 
 type Role = 'user' | 'assistant';
