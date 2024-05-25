@@ -1,10 +1,6 @@
-import { run, vectorSearch } from '@/server/search';
+import { vectorSearch } from '@/server/search';
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { z } from 'zod';
-
-type Data = {
-  name: string;
-};
 
 const inputSchema = z.object({
   query: z.string(),

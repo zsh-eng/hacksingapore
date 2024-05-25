@@ -27,14 +27,14 @@ type SourceCardProps = {
 };
 
 function SourceCard({ source }: SourceCardProps) {
-  const { title, link } = source.metadata;
+  const { type, link } = source.metadata;
   const preview = source.pageContent.slice(0, 20) + '...';
   return (
     <a href={link} target='_blank' rel='noopener noreferrer'>
       <Card className='hover:bg-muted transition-all cursor-pointer mt-2 rounded-none'>
         <CardHeader className='px-4 py-2'>
           <div className='flex justify-between items-start'>
-            <CardTitle className='text-md'>{title}</CardTitle>
+            <CardTitle className='text-md'>{type.toUpperCase()}</CardTitle>
             <ExternalLink className='h-4 w-4 mt-1 text-blue-700' />
           </div>
           <CardDescription className='text-sm'>{preview}</CardDescription>
@@ -47,7 +47,7 @@ function SourceCard({ source }: SourceCardProps) {
 function AssistantAvatar() {
   return (
     <Avatar className='w-8 h-8 mt-1'>
-      <AvatarImage src='https://github.com/shadcn.png' />
+      <AvatarImage src='https://cdn-icons-png.flaticon.com/512/1448/1448779.png' />
       <AvatarFallback>BOT</AvatarFallback>
     </Avatar>
   );
@@ -183,7 +183,7 @@ const initialMessages: Message[] = [
       {
         pageContent: 'Lorem ipsum',
         metadata: {
-          title: 'Lorem Ipsum worldk',
+          type: 'dbs',
           link: 'https://www.mymoneysense.gov.sg/buying-a-house/purchase-guide/my-first-house',
         },
       },
