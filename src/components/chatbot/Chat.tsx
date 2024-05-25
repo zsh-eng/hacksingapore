@@ -1,4 +1,5 @@
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Separator } from '@/components/ui/separator';
 import { cn } from '@/lib/utils';
 
 type Role = 'user' | 'assistant';
@@ -10,7 +11,7 @@ type ChatbotMessageProps = {
 
 function AssistantAvatar() {
   return (
-    <Avatar className='w-8 h-8 mt-'>
+    <Avatar className='w-8 h-8 mt-1'>
       <AvatarImage src='https://github.com/shadcn.png' />
       <AvatarFallback>BOT</AvatarFallback>
     </Avatar>
@@ -40,7 +41,7 @@ export function ChatbotMessage({
   return (
     <div
       className={cn(
-        'flex gap-4 items-start w-96 px-2 py-4',
+        'flex gap-4 items-start w-96 px-4 py-2',
         role === 'assistant' && 'bg-muted'
       )}
     >
@@ -48,6 +49,7 @@ export function ChatbotMessage({
       <div>
         <p className='text-wrap w-96'>{message}</p>
       </div>
+      <Separator />
     </div>
   );
 }
