@@ -14,11 +14,11 @@ import BalanceCard from "@/components/ui/balance_card";
 
 // user IC: S6005053H
 const data = [
-    ["Account", "Balance"],
-    ["Ordinary", 49602.38],
-    ["Medical", 17253],
-    ["Special", 12939.75],
-    ["Retirement", 34265.64],
+    ["Account", "Balance", "Description"],
+    ["Ordinary Account", 49602.38, "Used for housing, insurance, and education. Can be used for investment."],
+    ["Medical Account", 17253, "Used for hospitalization fees and approved medical insurance."],
+    ["Special Account", 12939.75, "Used for old age. Can invest in retirement-related financial products."],
+    ["Retirement Account", 34265.64, "For retirement, created when you turn 55 years old, putting the Ordinary and Special accounts together."],
 ];
 
 export const options = {
@@ -38,6 +38,7 @@ export default function feature_1() {
                             key={index}
                             title={String(item[0])}
                             balance={Number(item[1])}
+                            description={String(item[2])}
                         />
                     ))}
                 </div>
@@ -56,6 +57,7 @@ export default function feature_1() {
                             key={index}
                             title={String(item[0])}
                             balance={Number(item[1])}
+                            description={String(item[2])}
                         />
                     ))}
                 </div>
