@@ -1,6 +1,13 @@
 import { Separator } from '@/components/ui/separator';
 import { cn } from '@/lib/utils';
-import { CircleHelp, Info, LineChart, PiggyBank, User } from 'lucide-react';
+import {
+  CircleHelp,
+  DollarSign,
+  Info,
+  LineChart,
+  PiggyBank,
+  User,
+} from 'lucide-react';
 import Link from 'next/link';
 import { useState } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
@@ -67,7 +74,7 @@ export default function Navbar() {
         isNavbarOpen ? 'translate-x-0' : '-translate-x-48'
       )}
     >
-      <nav className=' text-gray-300 relative flex flex-col justify-between h-full'>
+      <nav className=' text-gray-300 relative flex flex-col justify-between h-screen pb-6'>
         <div className='p-2'>
           <div className='flex flex-row justify-end -mr-0.25'>
             <Button onClick={toggleNavbar}>
@@ -86,6 +93,12 @@ export default function Navbar() {
               icon={LineChart}
               href='/invest'
               label='Investments'
+              small={!isNavbarOpen}
+            />
+            <NavItem
+              icon={DollarSign}
+              href='/transactions'
+              label='Spending'
               small={!isNavbarOpen}
             />
           </div>
@@ -117,6 +130,26 @@ export default function Navbar() {
               small={!isNavbarOpen}
             />
           </div>
+        </div>
+
+        <div
+          className={cn(
+            'flex mt-auto ml-4 items-end mr-4 transition cursor-pointer',
+            !isNavbarOpen && 'justify-end'
+          )}
+        >
+          <Link legacyBehavior href='/'>
+            <img
+              src='https://cdn-icons-png.flaticon.com/512/5105/5105602.png'
+              className='h-8 w-8'
+            />
+          </Link>
+
+          {isNavbarOpen && (
+            <h1 className='text-xl ml-4 font-bold'>
+              <Link href='/'>finclusion</Link>
+            </h1>
+          )}
         </div>
       </nav>
     </div>
