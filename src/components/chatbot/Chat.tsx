@@ -19,7 +19,15 @@ import {
   SendHorizonal,
   Sparkles,
 } from 'lucide-react';
-import { Fragment, useState } from 'react';
+import {
+  Fragment,
+  PropsWithChildren,
+  createContext,
+  useCallback,
+  useContext,
+  useEffect,
+  useState,
+} from 'react';
 import { Remark } from 'react-remark';
 
 type Role = 'user' | 'assistant';
@@ -250,8 +258,9 @@ function QuestionShortcuts({
 }
 
 export function Chatbot() {
+  const { isChatOpen, setIsChatOpen, input: initialInput } = useChatHistory();
   const [messages, setMessages] = useState<Message[]>(initialMessages);
-  const [input, setInput] = useState('');
+  const [input, setInput] = useState(initialInput);
   const [loading, setLoading] = useState(false);
   const [streamingMessage, setStreamingMessage] = useState('');
 
@@ -267,54 +276,57 @@ export function Chatbot() {
     handleSend();
   };
 
-  const handleSend = async (manualInput?: string) => {
-    setLoading(true);
-    const content = manualInput ?? input;
-    const userMessage: UserMessage = {
-      content: content,
-      role: 'user',
-    };
-    setMessages([...messages, userMessage]);
+  const handleSend = useCallback(
+    async (manualInput?: string) => {
+      setLoading(true);
+      const content = manualInput ?? input;
+      const userMessage: UserMessage = {
+        content: content,
+        role: 'user',
+      };
+      setMessages([...messages, userMessage]);
 
-    try {
-      const sources = await callBackend(content);
-      // TODO: replace wth actual metadata
-      const updatedContent = `User's Question: ${content}
+      try {
+        const sources = await callBackend(content);
+        // TODO: replace wth actual metadata
+        const updatedContent = `User's Question: ${content}
 Relevant Sources:
 ${sources.map((source) => `${source.metadata}\n${source.pageContent}`)}
 `;
-      const userMessageWithSources: Message = {
-        content: updatedContent,
-        role: 'user',
-      };
+        const userMessageWithSources: Message = {
+          content: updatedContent,
+          role: 'user',
+        };
 
-      let message = '';
+        let message = '';
 
-      const stream = await openai.chat.completions.create({
-        messages: [...messages, userMessageWithSources],
-        model: 'gpt-4o',
-        stream: true,
-      });
+        const stream = await openai.chat.completions.create({
+          messages: [...messages, userMessageWithSources],
+          model: 'gpt-4o',
+          stream: true,
+        });
 
-      for await (const chunk of stream) {
-        message += chunk.choices[0].delta.content ?? '';
-        setStreamingMessage(message);
+        for await (const chunk of stream) {
+          message += chunk.choices[0].delta.content ?? '';
+          setStreamingMessage(message);
+        }
+
+        setStreamingMessage((m) => '');
+        setMessages((messages) => [
+          ...messages,
+          {
+            content: message,
+            sources,
+            role: 'assistant',
+          },
+        ]);
+        setInput('');
+      } finally {
+        setLoading(false);
       }
-
-      setStreamingMessage((m) => '');
-      setMessages((messages) => [
-        ...messages,
-        {
-          content: message,
-          sources,
-          role: 'assistant',
-        },
-      ]);
-      setInput('');
-    } finally {
-      setLoading(false);
-    }
-  };
+    },
+    [input, messages]
+  );
 
   const callBackend = async (query: string): Promise<Source[]> => {
     if (!query) return [];
@@ -330,12 +342,12 @@ ${sources.map((source) => `${source.metadata}\n${source.pageContent}`)}
     return results;
   };
 
-  // code below handles the toggling of the chatbot
-  const [isChatOpen, setIsChatOpen] = useState(false);
-
   const toggleChat = () => {
     setIsChatOpen(!isChatOpen);
   };
+  useEffect(() => {
+    initialInput && handleSend(initialInput);
+  }, [initialInput]);
 
   return (
     <div
@@ -387,5 +399,41 @@ ${sources.map((source) => `${source.metadata}\n${source.pageContent}`)}
         </CardContent>
       </Card>
     </div>
+  );
+}
+
+type ChatHistory = {
+  isChatOpen: boolean;
+  setIsChatOpen: (isOpen: boolean) => void;
+  input: string;
+  setInput: (input: string) => void;
+};
+
+const ChatHistoryContext = createContext<ChatHistory | undefined>(undefined);
+
+export function useChatHistory() {
+  const context = useContext(ChatHistoryContext);
+  if (!context) {
+    throw new Error('useChatHistory must be used within a ChatHistoryProvider');
+  }
+
+  return context;
+}
+
+export function ChatHistoryProvider({ children }: PropsWithChildren) {
+  const [isChatOpen, setIsChatOpen] = useState(false);
+  const [input, setInput] = useState('');
+
+  return (
+    <ChatHistoryContext.Provider
+      value={{
+        isChatOpen,
+        setIsChatOpen,
+        input,
+        setInput,
+      }}
+    >
+      {children}
+    </ChatHistoryContext.Provider>
   );
 }

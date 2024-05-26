@@ -1,18 +1,18 @@
-import Navbar from "./navbar";
-import { Chatbot } from '@/components/chatbot/Chat';
+import Navbar from './navbar';
+import { Chatbot, ChatHistoryProvider } from '@/components/chatbot/Chat';
 
 interface props {
-    children: any;
+  children: any;
 }
 
-const Layout: React.FC<props> = ({children}) => {
-    return (
-        <>
-            <Navbar />
-                <main>{children}</main>
-            <Chatbot />
-        </>
-    )
-}
+const Layout: React.FC<props> = ({ children }) => {
+  return (
+    <ChatHistoryProvider>
+      <Navbar />
+      <main>{children}</main>
+      <Chatbot />
+    </ChatHistoryProvider>
+  );
+};
 
-export default Layout
+export default Layout;
