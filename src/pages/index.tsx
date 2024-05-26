@@ -4,35 +4,35 @@
  * navigate to where they want from there, then its one less layer of hierarchy for navigation also
  */
 
-import { Inter } from "next/font/google";
-import DashboardCard from "@/components/ui/dashboard_card";
-import Navbar from "@/components/ui/navbar";
-import { TbPigMoney } from "react-icons/tb";
-import { FaQuestion } from "react-icons/fa";
-import { AiOutlineStock } from "react-icons/ai";
+import DashboardCard from '@/components/ui/dashboard_card';
+import Navbar from '@/components/ui/navbar';
+import { DollarSign, LineChart, PiggyBank } from 'lucide-react';
+import { Inter } from 'next/font/google';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
-    return (
-        <main
-            className={`flex min-h-screen flex-col bg-slate-500 items-center justify-center p-24 ${inter.className}`}
-        >
-            <Navbar />
-            <div className="flex flex-col items-center justify-center space-y-16">
-                <h2 className="text-2xl text-slate-200 font-semibold ">What would you like to do today?</h2>
-                <div className="flex flex-wrap gap-10 justify-center lg:grid-rows-2">
-                    <DashboardCard title="Your Savings" href="/savings">
-                        <TbPigMoney size={60}/>
-                    </DashboardCard>
-                    <DashboardCard title="Grow Your Money" href="/invest" >
-                        <AiOutlineStock size={60}/>
-                    </DashboardCard>
-                    <DashboardCard title="Feature 3" href="/feature_3" >
-                        <FaQuestion size={60}/>
-                    </DashboardCard>
-                </div>
-            </div>
-        </main>
-    );
+  return (
+    <main
+      className={`flex min-h-screen flex-col items-center justify-center p-24 ${inter.className}`}
+    >
+      <Navbar />
+      <div className='flex flex-col items-center justify-start gap-y-16 h-full w-full'>
+        <h1 className='text-4xl text-primary font-semibold '>
+          What would you like to do today?
+        </h1>
+        <div className='flex flex-wrap gap-10 justify-center lg:grid-rows-2'>
+          <DashboardCard title='Savings' href='/savings'>
+            <PiggyBank className='h-16 w-16' />
+          </DashboardCard>
+          <DashboardCard title='Investments' href='/invest'>
+            <LineChart className='h-16 w-16' />
+          </DashboardCard>
+          <DashboardCard title='Spending' href='/invest'>
+            <DollarSign className='h-16 w-16' />
+          </DashboardCard>
+        </div>
+      </div>
+    </main>
+  );
 }
