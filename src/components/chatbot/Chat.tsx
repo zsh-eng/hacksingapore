@@ -16,6 +16,8 @@ import {
   ArrowRight,
   ExternalLink,
   Loader2,
+  MicIcon,
+  MicOff,
   SendHorizonal,
   Sparkles,
 } from 'lucide-react';
@@ -72,7 +74,7 @@ function AssistantAvatar() {
 function UserAvatar() {
   return (
     <Avatar className='w-8 h-8 mt-1'>
-      <AvatarImage src='https://avatars.githubusercontent.com/u/49238630?v=4' />
+      <AvatarImage src='https://media.istockphoto.com/id/1378157663/photo/portrait-of-japanese-senior-man.jpg?s=612x612&w=0&k=20&c=uhfZZlRsQqu-uVCITWzAWjuQJTktaQBzpHY3UNQ-DE8=' />
       <AvatarFallback>CN</AvatarFallback>
     </Avatar>
   );
@@ -349,6 +351,29 @@ ${sources.map((source) => `${source.metadata}\n${source.pageContent}`)}
     initialInput && handleSend(initialInput);
   }, [initialInput]);
 
+  const [isListening, setIsListening] = useState(false);
+
+  const recognition = new (window as any).webkitSpeechRecognition();
+  const onMicClick = () => {
+    setIsListening(true);
+
+    recognition.onresult = (event: any) => {
+      const result = event.results[0][0].transcript; // Use.transcript property to get the recognized speech
+      setInput(result); // Update the input state with the recognized speech
+    };
+
+    recognition.onspeechend = () => {
+      setIsListening(false);
+    };
+
+    recognition.start();
+  };
+
+  const onMicStop = () => {
+    setIsListening(false);
+    recognition.stop();
+  };
+
   return (
     <div
       className={`fixed top-4 right-4 h-9/10 flex flex-row bg-transparent rounded-md p-2 overflow-visible transform ${
@@ -383,19 +408,34 @@ ${sources.map((source) => `${source.metadata}\n${source.pageContent}`)}
             disabled={loading}
             value={input}
           />
-          <Button
-            variant='secondary'
-            className='group'
-            disabled={disabled}
-            onClick={() => handleSend()}
-          >
-            Send
-            {loading ? (
-              <Loader2 className='h-4 w-4 ml-2 transition-all animate-spin' />
-            ) : (
-              <SendHorizonal className='h-4 w-4 ml-2 text-cyan-700 group-hover:translate-x-1 transition-all' />
-            )}
-          </Button>
+          <div className='flex gap-4'>
+            <Button
+              variant='secondary'
+              className='group w-full'
+              disabled={disabled}
+              onClick={() => handleSend()}
+            >
+              Send
+              {loading ? (
+                <Loader2 className='h-4 w-4 ml-2 transition-all animate-spin' />
+              ) : (
+                <SendHorizonal className='h-4 w-4 ml-2 text-cyan-700 group-hover:translate-x-1 transition-all' />
+              )}
+            </Button>
+
+            <Button
+              className={cn('transition', isListening && 'bg-muted')}
+              size='icon'
+              variant='outline'
+              disabled={loading}
+            >
+              {isListening ? (
+                <MicOff className='h-6 w-6' onClick={onMicStop} />
+              ) : (
+                <MicIcon className='h-6 w-6' onClick={onMicClick} />
+              )}
+            </Button>
+          </div>
         </CardContent>
       </Card>
     </div>
