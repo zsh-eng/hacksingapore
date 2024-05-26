@@ -1,5 +1,5 @@
-import Navbar from './navbar';
 import { Chatbot, ChatHistoryProvider } from '@/components/chatbot/Chat';
+import Navbar from './navbar';
 
 interface props {
   children: any;

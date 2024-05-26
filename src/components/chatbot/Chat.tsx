@@ -28,6 +28,7 @@ import {
   useCallback,
   useContext,
   useEffect,
+  useRef,
   useState,
 } from 'react';
 import { Remark } from 'react-remark';
@@ -353,10 +354,11 @@ ${sources.map((source) => `${source.metadata}\n${source.pageContent}`)}
 
   const [isListening, setIsListening] = useState(false);
 
-  const recognition = new (window as any).webkitSpeechRecognition();
+  const recognitionRef = useRef<any>(null);
   const onMicClick = () => {
     setIsListening(true);
 
+    const recognition = recognitionRef.current;
     recognition.onresult = (event: any) => {
       const result = event.results[0][0].transcript; // Use.transcript property to get the recognized speech
       setInput(result); // Update the input state with the recognized speech
@@ -371,8 +373,13 @@ ${sources.map((source) => `${source.metadata}\n${source.pageContent}`)}
 
   const onMicStop = () => {
     setIsListening(false);
-    recognition.stop();
+    const recognition = recognitionRef.current;
+    recognition?.stop();
   };
+
+  useEffect(() => {
+    recognitionRef.current = new (window as any).webkitSpeechRecognition();
+  });
 
   return (
     <div
