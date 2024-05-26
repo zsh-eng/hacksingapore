@@ -12,9 +12,14 @@ import { Separator } from '@/components/ui/separator';
 import { Textarea } from '@/components/ui/textarea';
 import { Source, openai } from '@/lib/ai';
 import { cn } from '@/lib/utils';
-import { ArrowRight, ExternalLink, Loader2, SendHorizonal } from 'lucide-react';
+import {
+  ArrowRight,
+  ExternalLink,
+  Loader2,
+  SendHorizonal,
+  Sparkles,
+} from 'lucide-react';
 import { Fragment, useState } from 'react';
-import { IoIosChatboxes } from 'react-icons/io';
 import { Remark } from 'react-remark';
 
 type Role = 'user' | 'assistant';
@@ -334,12 +339,12 @@ ${sources.map((source) => `${source.metadata}\n${source.pageContent}`)}
 
   return (
     <div
-      className={`fixed top-4 right-4 h-9/10 flex flex-row bg-white rounded-md p-2 overflow-visible transform ${
-        isChatOpen ? 'translate-x-0' : 'translate-x-[44.5rem]'
+      className={`fixed top-4 right-4 h-9/10 flex flex-row bg-transparent rounded-md p-2 overflow-visible transform ${
+        isChatOpen ? 'translate-x-0' : 'translate-x-[44rem]'
       } transition duration-700 ease-in-out`}
     >
-      <Button className='mr-2' onClick={toggleChat}>
-        <IoIosChatboxes />
+      <Button className='mr-2' size={'icon'} onClick={toggleChat}>
+        <Sparkles className='h-6 w-6' />
       </Button>
       <Card>
         <CardHeader>
