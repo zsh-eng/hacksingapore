@@ -28,7 +28,7 @@ export default function Home() {
           <DashboardCard title='Investments' href='/invest'>
             <LineChart className='h-16 w-16' />
           </DashboardCard>
-          <DashboardCard title='Spending' href='/invest'>
+          <DashboardCard title='Spending' href='/transactions'>
             <DollarSign className='h-16 w-16' />
           </DashboardCard>
         </div>
