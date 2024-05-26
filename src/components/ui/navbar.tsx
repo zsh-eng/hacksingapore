@@ -1,6 +1,13 @@
 import { Separator } from '@/components/ui/separator';
 import { cn } from '@/lib/utils';
-import { CircleHelp, Info, LineChart, PiggyBank, User } from 'lucide-react';
+import {
+  CircleHelp,
+  DollarSign,
+  Info,
+  LineChart,
+  PiggyBank,
+  User,
+} from 'lucide-react';
 import Link from 'next/link';
 import { useState } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
@@ -86,6 +93,12 @@ export default function Navbar() {
               icon={LineChart}
               href='/invest'
               label='Investments'
+              small={!isNavbarOpen}
+            />
+            <NavItem
+              icon={DollarSign}
+              href='/transactions'
+              label='savings'
               small={!isNavbarOpen}
             />
           </div>
