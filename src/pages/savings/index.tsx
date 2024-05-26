@@ -6,34 +6,35 @@
  * TODO: find a better pie chart this one actually blows
  */
 
-import { Inter } from "next/font/google";
-const inter = Inter({ subsets: ["latin"] });
-import { Chart } from "react-google-charts";
-import BalanceCard from "@/components/ui/balance_card";
+import { Inter } from 'next/font/google';
+const inter = Inter({ subsets: ['latin'] });
+import { Chart } from 'react-google-charts';
+import BalanceCard from '@/components/ui/balance_card';
+import { useChatHistory } from '@/components/chatbot/Chat';
 
 // user IC: S6005053H
 const data = [
-    ["Account", "Balance", "Description"],
-    [
-        "Ordinary Account",
-        49602.38,
-        "Used for housing, insurance, and education. Can be used for investment.",
-    ],
-    [
-        "Medical Account",
-        17253,
-        "Used for hospitalization fees and approved medical insurance.",
-    ],
-    [
-        "Special Account",
-        12939.75,
-        "Used for old age. Can invest in retirement-related financial products.",
-    ],
-    [
-        "Retirement Account",
-        34265.64,
-        "For retirement, created when you turn 55 years old, putting the Ordinary and Special accounts together.",
-    ],
+  ['Account', 'Balance', 'Description'],
+  [
+    'Ordinary Account',
+    49602.38,
+    'Used for housing, insurance, and education. Can be used for investment.',
+  ],
+  [
+    'Medical Account',
+    17253,
+    'Used for hospitalization fees and approved medical insurance.',
+  ],
+  [
+    'Special Account',
+    12939.75,
+    'Used for old age. Can invest in retirement-related financial products.',
+  ],
+  [
+    'Retirement Account',
+    34265.64,
+    'For retirement, created when you turn 55 years old, putting the Ordinary and Special accounts together.',
+  ],
 ];
 
 export const options = {
