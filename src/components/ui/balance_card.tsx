@@ -46,7 +46,7 @@ const BalanceCard: React.FC<props> = ({ title, balance, onClick }) => {
       <CardContent>
         <span className='text-muted-background text-lg'>{balance}</span>
       </CardContent>
-      <h2 className='text-3xl font-semibold text-center'>{title}</h2>
+      <h2 className='text-2xl font-semibold text-center px-4'>{title}</h2>
 
       {isModalVisible && <InfoModal />}
     </Card>
@@ -56,7 +56,7 @@ const BalanceCard: React.FC<props> = ({ title, balance, onClick }) => {
 // modal component, mainly so that the user knows that an action can be taken on it (clicking for more info).
 const InfoModal = () => {
   return (
-    <div className='absolute top-4 right-4  text-background'>
+    <div className='absolute top-6 right-5  text-background'>
       <FaQuestion size={20} className='' />
     </div>
   );

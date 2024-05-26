@@ -3,14 +3,13 @@
  * this page displays an overview of the user's 4 CPF balances, along with a pie chart illustrating how the total CPF is allocated across them.
  * the user can hover over any of the cards and click on them for more info.
  * currently the pie chart does not serve any purpose other than a static display.
- * TODO: find a better pie chart this one actually blows
  */
 
+import { useChatHistory } from '@/components/chatbot/Chat';
+import SavingsPie from '@/components/savings-pie';
+import BalanceCard from '@/components/ui/balance_card';
 import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
-import { Chart } from 'react-google-charts';
-import BalanceCard from '@/components/ui/balance_card';
-import { useChatHistory } from '@/components/chatbot/Chat';
 
 // user IC: S6005053H
 const data = [
@@ -63,14 +62,8 @@ export default function SavingsPage() {
             />
           ))}
         </div>
-        <div className='bg-inherit flex items-center justify-center'>
-          <Chart
-            chartType='PieChart'
-            data={data}
-            options={options}
-            width={'100%'}
-            height={'500px'}
-          />
+        <div className='bg-inherit flex items-center justify-center h-[600px] w-[600px]'>
+          <SavingsPie />
         </div>
         <div className='flex flex-col justify-center items-start gap-8'>
           {data.slice(3, 5).map((item, index) => (
