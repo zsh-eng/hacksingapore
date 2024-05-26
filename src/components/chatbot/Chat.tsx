@@ -72,7 +72,7 @@ function AssistantAvatar() {
 function UserAvatar() {
   return (
     <Avatar className='w-8 h-8 mt-1'>
-      <AvatarImage src='https://avatars.githubusercontent.com/u/49238630?v=4' />
+      <AvatarImage src='https://media.istockphoto.com/id/1378157663/photo/portrait-of-japanese-senior-man.jpg?s=612x612&w=0&k=20&c=uhfZZlRsQqu-uVCITWzAWjuQJTktaQBzpHY3UNQ-DE8=' />
       <AvatarFallback>CN</AvatarFallback>
     </Avatar>
   );
