@@ -37,51 +37,54 @@ const data = [
 ];
 
 export const options = {
-    is3D: true,
-    backgroundColor: "transparent",
+  is3D: true,
+  backgroundColor: 'transparent',
 };
 
-export default function feature_1() {
-    return (
-        <main
-            className={`flex min-h-screen flex-col items-center bg-slate-500 justify-center ${inter.className}`}
-        >
-            <div className="flex">
-                <div className="flex flex-col justify-center items-start gap-8">
-                    {data.slice(1, 3).map((item, index) => (
-                        <BalanceCard
-                            key={index}
-                            title={String(item[0])}
-                            balance={Number(item[1])}
-                            description={String(item[2])}
-                        />
-                    ))}
-                </div>
-                <div className="flex flex-col justify-center items-center">
-                    <h2 className="text-2xl text-slate-200 font-semibold text-center mb-8">
-                        Your CPF Accounts
-                    </h2>
-                    <div className="bg-inherit flex items-center justify-center">
-                        <Chart
-                            chartType="PieChart"
-                            data={data}
-                            options={options}
-                            width={"100%"}
-                            height={"500px"}
-                        />
-                    </div>
-                </div>
-                <div className="flex flex-col justify-center items-start gap-8">
-                    {data.slice(3, 5).map((item, index) => (
-                        <BalanceCard
-                            key={index}
-                            title={String(item[0])}
-                            balance={Number(item[1])}
-                            description={String(item[2])}
-                        />
-                    ))}
-                </div>
-            </div>
-        </main>
-    );
+export default function SavingsPage() {
+  const { setInput, setIsChatOpen } = useChatHistory();
+
+  return (
+    <main
+      className={`flex min-h-screen flex-col items-center justify-center ${inter.className}`}
+    >
+      <div className='flex'>
+        <div className='flex flex-col justify-center items-start gap-8'>
+          {data.slice(1, 3).map((item, index) => (
+            <BalanceCard
+              key={index}
+              title={String(item[0])}
+              balance={Number(item[1])}
+              onClick={() => {
+                setInput(`What is a CPF ${item[0]} account?`);
+                setIsChatOpen(true);
+              }}
+            />
+          ))}
+        </div>
+        <div className='bg-inherit flex items-center justify-center'>
+          <Chart
+            chartType='PieChart'
+            data={data}
+            options={options}
+            width={'100%'}
+            height={'500px'}
+          />
+        </div>
+        <div className='flex flex-col justify-center items-start gap-8'>
+          {data.slice(3, 5).map((item, index) => (
+            <BalanceCard
+              key={index}
+              title={String(item[0])}
+              balance={Number(item[1])}
+              onClick={() => {
+                setInput(`What is a CPF ${item[0]} account?`);
+                setIsChatOpen(true);
+              }}
+            />
+          ))}
+        </div>
+      </div>
+    </main>
+  );
 }
