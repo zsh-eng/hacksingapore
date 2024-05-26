@@ -93,7 +93,7 @@ export default function Invest() {
                 </div>
                 <div className="w-full flex flex-col items-center">
                     <h2 className="text-2xl text-slate-200 font-semibold text-center mb-8">
-                        Investments
+                        All About Investments
                     </h2>
                     <div className="flex flex-row gap-x-10 mt-12">
                         {ordinaryAccount && (

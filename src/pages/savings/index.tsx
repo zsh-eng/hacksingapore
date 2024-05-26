@@ -14,10 +14,26 @@ import BalanceCard from "@/components/ui/balance_card";
 // user IC: S6005053H
 const data = [
     ["Account", "Balance", "Description"],
-    ["Ordinary Account", 49602.38, "Used for housing, insurance, and education. Can be used for investment."],
-    ["Medical Account", 17253, "Used for hospitalization fees and approved medical insurance."],
-    ["Special Account", 12939.75, "Used for old age. Can invest in retirement-related financial products."],
-    ["Retirement Account", 34265.64, "For retirement, created when you turn 55 years old, putting the Ordinary and Special accounts together."],
+    [
+        "Ordinary Account",
+        49602.38,
+        "Used for housing, insurance, and education. Can be used for investment.",
+    ],
+    [
+        "Medical Account",
+        17253,
+        "Used for hospitalization fees and approved medical insurance.",
+    ],
+    [
+        "Special Account",
+        12939.75,
+        "Used for old age. Can invest in retirement-related financial products.",
+    ],
+    [
+        "Retirement Account",
+        34265.64,
+        "For retirement, created when you turn 55 years old, putting the Ordinary and Special accounts together.",
+    ],
 ];
 
 export const options = {
@@ -41,14 +57,19 @@ export default function feature_1() {
                         />
                     ))}
                 </div>
-                <div className="bg-inherit flex items-center justify-center">
-                    <Chart
-                        chartType="PieChart"
-                        data={data}
-                        options={options}
-                        width={"100%"}
-                        height={"500px"}
-                    />
+                <div className="flex flex-col justify-center items-center">
+                    <h2 className="text-2xl text-slate-200 font-semibold text-center mb-8">
+                        Your CPF Accounts
+                    </h2>
+                    <div className="bg-inherit flex items-center justify-center">
+                        <Chart
+                            chartType="PieChart"
+                            data={data}
+                            options={options}
+                            width={"100%"}
+                            height={"500px"}
+                        />
+                    </div>
                 </div>
                 <div className="flex flex-col justify-center items-start gap-8">
                     {data.slice(3, 5).map((item, index) => (
