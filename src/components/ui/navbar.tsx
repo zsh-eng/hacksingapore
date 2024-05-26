@@ -1,10 +1,10 @@
+import { Separator } from '@/components/ui/separator';
+import { cn } from '@/lib/utils';
+import { CircleHelp, Info, LineChart, PiggyBank, User } from 'lucide-react';
 import Link from 'next/link';
-import { Button } from './button';
 import { useState } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
-import { cn } from '@/lib/utils';
-import { Info, User, CircleHelp, PiggyBank, DollarSign } from 'lucide-react';
-import { Separator } from '@/components/ui/separator';
+import { Button } from './button';
 
 type NavItemProps = {
   icon: React.FC<{ className?: string }>;
@@ -83,7 +83,7 @@ export default function Navbar() {
               small={!isNavbarOpen}
             />
             <NavItem
-              icon={DollarSign}
+              icon={LineChart}
               href='/invest'
               label='Investments'
               small={!isNavbarOpen}
