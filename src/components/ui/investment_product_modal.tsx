@@ -46,7 +46,7 @@ const InvestmentProductModal: React.FC<props> = ({
                 >
                     &times;
                 </Button>
-                <div>{productName}</div>
+                <div className="text-xl font-semibold">{productName}</div>
                 <div className="mt-4">{risk}</div>
                 <div className="mt-4">{description}</div>
             </div>

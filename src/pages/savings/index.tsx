@@ -8,7 +8,6 @@
 
 import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
-import Navbar from "@/components/ui/navbar";
 import { Chart } from "react-google-charts";
 import BalanceCard from "@/components/ui/balance_card";
 
