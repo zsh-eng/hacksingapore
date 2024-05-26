@@ -80,7 +80,7 @@ export default function Invest() {
 
     return (
         <main
-            className={`flex min-h-screen bg-slate-500 flex-col items-center justify-center p-12 ${inter.className}`}
+            className={`flex min-h-screen flex-col items-center justify-center p-12 ${inter.className}`}
         >
             {showAlert && <InvestmentAlert />}
             <div className="w-4/5 flex flex-row justify-around">
@@ -92,7 +92,7 @@ export default function Invest() {
                     ))}
                 </div>
                 <div className="w-full flex flex-col items-center">
-                    <h2 className="text-2xl text-slate-200 font-semibold text-center mb-8">
+                    <h2 className="text-2xl text-primary font-semibold text-center mb-8">
                         All About Investments
                     </h2>
                     <div className="flex flex-row gap-x-10 mt-12">

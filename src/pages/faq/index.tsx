@@ -4,7 +4,7 @@ import Navbar from "@/components/ui/navbar";
 
 export default function feature_1() {
     return (
-        <main className={`flex min-h-screen flex-col items-center bg-slate-500 justify-center p-24 ${inter.className}`}>
+        <main className={`flex min-h-screen flex-col items-center justify-center p-24 ${inter.className}`}>
             <p>FAQ</p>
         </main>
     )

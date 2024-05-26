@@ -46,7 +46,7 @@ export default function SavingsPage() {
 
     return (
         <main
-            className={`flex min-h-screen flex-col bg-slate-500 items-center justify-center ${inter.className}`}
+            className={`flex min-h-screen flex-col items-center justify-center ${inter.className}`}
         >
             <div className="flex">
                 <div className="flex flex-col justify-center items-center gap-8">
@@ -63,7 +63,7 @@ export default function SavingsPage() {
                     ))}
                 </div>
                 <div className="flex flex-col items-center justify-center">
-                    <h2 className="text-2xl text-slate-200 font-semibold text-center mb-8">
+                    <h2 className="text-2xl font-semibold text-center text-primary mb-8">
                         Your CPF Savings
                     </h2>
                     <div className="bg-inherit flex items-center justify-center h-[600px] w-[600px]">
