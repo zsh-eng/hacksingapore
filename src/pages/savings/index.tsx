@@ -50,7 +50,7 @@ export default function SavingsPage() {
       className={`flex min-h-screen flex-col items-center justify-center ${inter.className}`}
     >
       <div className='flex'>
-        <div className='flex flex-col justify-center items-start gap-8'>
+        <div className='flex flex-col justify-center items-center gap-8'>
           {data.slice(1, 3).map((item, index) => (
             <BalanceCard
               key={index}
